@@ -38,7 +38,6 @@ export const Nav = () => {
         <div className="nav-list_inferior">
           <ul>
             <li>
-              <Link to={imagesIcon.ruta}>
                 <button title='Boton de Acceso a la seccion de multimedia personal'>
                   <span
                     dangerouslySetInnerHTML={{
@@ -46,7 +45,7 @@ export const Nav = () => {
                     }}
                   />
                 </button>
-              </Link>
+
             </li>
             <li>
               <Link to="/perfil">
