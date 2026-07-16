@@ -18,7 +18,6 @@ function App() {
       <Route path="/" element={<LayoutScreen />}>
        <Route element= {<ContactContextProvider />} >
             <Route index element={<HomeScreen />} />
-            <Route path="home" element={<HomeScreen />} />
             <Route path="chats" element={<ChatsScreen />} />
         </Route>
         <Route path="calls" element={<CallScreen />} />
@@ -26,7 +25,7 @@ function App() {
         <Route path="communities" element={<CommunitiesScreen />} />
         <Route path="states" element={<StatesScreen />} />
         <Route path="profile" element={<MeScreen />} />
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   );
