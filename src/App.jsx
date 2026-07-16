@@ -10,6 +10,7 @@ import { ChannelsScreen } from "./Screens/ChannelsScreen/ChannelsScreen";
 import { CommunitiesScreen } from "./Screens/CommunitiesScreen/CommunitiesScreen";
 import { StatesScreen } from "./Screens/StatesScreen/StatesScreen";
 import { ContactContextProvider } from "./Context/ContactContext";
+import { MeScreen } from "./Screens/MeScreen/MeScreen";
 function App() {
   return (
     <Routes>
