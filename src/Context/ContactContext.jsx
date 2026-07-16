@@ -1,9 +1,10 @@
 import { createContext, useState } from "react";
 import { Outlet, useParams } from "react-router";
-import {contacts as server_contacts} from '../data/contacts.js'
+import {contactsList} from "../Data/contactsList.js"
 
+
+const server_contacts = contactsList
 const ContactContext = createContext()
-
 
 function ContactContextProvider() {
     const [contacts, setContacts] = useState(server_contacts)

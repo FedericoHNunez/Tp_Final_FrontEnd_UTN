@@ -1,5 +1,5 @@
 
-export const contacts =
+export const contactsList =
   [
     {
       "gender": "female",
