@@ -1,0 +1,69 @@
+:root{    
+    --verde-oscuro1:#075e54;
+    --verde-oscuro:#064e3b;
+    --verde-claro3:#128c7e;
+    --verde-claro1:#25d366;
+    --verde-claro:#dcf8c6;
+    --azul:#34b7f1;
+    --gris:#f7f5f2;
+    --gris-oscuro:#dedcda;
+
+    --backgroundColorNav: var(--gris);
+    --borderColorNav: var(--gris-oscuro);
+
+}
+
+
+
+/* CSS RESET */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,
+body,
+#root{
+    height: 100%;
+    background-color: aliceblue;
+}
+
+/* Globales */
+ul,
+ol {
+    list-style: none;
+}
+a,
+button {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+
+/*Layout  */
+
+.layout {
+    display: grid;
+    grid-template-columns: 6rem 1fr ;
+    grid-template-areas: 
+    "header main";
+}
+@media screen and (max-width: 480px) {
+    .layout{
+        grid-template-columns: 1fr;
+    }
+}

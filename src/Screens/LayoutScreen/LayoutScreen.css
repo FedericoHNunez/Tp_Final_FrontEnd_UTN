@@ -1,0 +1,35 @@
+.layout-main {
+    display: grid;
+    grid-template-columns: clamp(34rem, 30vw, 57rem) 1fr;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .layout-main {
+        grid-template-columns: 1fr;
+    }
+
+    .section-noVisible {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6rem;
+        z-index: 1000;
+    }
+
+    main {
+        padding-bottom: 6rem;
+    }
+
+}

@@ -1,0 +1,74 @@
+
+
+
+[
+{
+"contactId": 1,
+"unreadCount": 2,
+"messages": [
+{ "id": 1, "sender": "contact", "text": "Hola 👋", "timestamp": "2026-07-10T09:00:00Z" },
+{ "id": 2, "sender": "me", "text": "Hola Domenica, ¿cómo estás?", "timestamp": "2026-07-10T09:01:00Z" },
+{ "id": 3, "sender": "contact", "text": "Muy bien, gracias. ¿Y vos?", "timestamp": "2026-07-10T09:02:00Z" },
+{ "id": 4, "sender": "me", "text": "Todo tranquilo.", "timestamp": "2026-07-10T09:03:00Z" },
+{ "id": 5, "sender": "contact", "text": "¿Terminaste el proyecto?", "timestamp": "2026-07-10T09:05:00Z" },
+{ "id": 6, "sender": "me", "text": "Me falta una parte.", "timestamp": "2026-07-10T09:06:00Z" },
+{ "id": 7, "sender": "contact", "text": "Seguro queda genial 🚀", "timestamp": "2026-07-10T09:07:00Z" }
+]
+},
+{
+"contactId": 2,
+"unreadCount": 0,
+"messages": [
+{ "id": 1, "sender": "contact", "text": "¿Almorzamos hoy?", "timestamp": "2026-07-11T11:30:00Z" },
+{ "id": 2, "sender": "me", "text": "Dale.", "timestamp": "2026-07-11T11:31:00Z" },
+{ "id": 3, "sender": "contact", "text": "¿Te queda bien a las 13?", "timestamp": "2026-07-11T11:32:00Z" },
+{ "id": 4, "sender": "me", "text": "Perfecto.", "timestamp": "2026-07-11T11:33:00Z" },
+{ "id": 5, "sender": "contact", "text": "Nos vemos entonces 👍", "timestamp": "2026-07-11T11:34:00Z" }
+]
+},
+{
+"contactId": 3,
+"unreadCount": 1,
+"messages": [
+{ "id": 1, "sender": "me", "text": "¿Cómo estuvo tu fin de semana?", "timestamp": "2026-07-09T20:00:00Z" },
+{ "id": 2, "sender": "contact", "text": "Muy bueno, descansé bastante.", "timestamp": "2026-07-09T20:01:00Z" },
+{ "id": 3, "sender": "me", "text": "Qué bueno.", "timestamp": "2026-07-09T20:02:00Z" },
+{ "id": 4, "sender": "contact", "text": "¿Y el tuyo?", "timestamp": "2026-07-09T20:03:00Z" },
+{ "id": 5, "sender": "me", "text": "Trabajando un poco 😅", "timestamp": "2026-07-09T20:05:00Z" },
+{ "id": 6, "sender": "contact", "text": "No cambias más 😂", "timestamp": "2026-07-09T20:06:00Z" }
+]
+},
+{
+"contactId": 4,
+"unreadCount": 3,
+"messages": [
+{ "id": 1, "sender": "contact", "text": "Te mandé el documento.", "timestamp": "2026-07-08T15:00:00Z" },
+{ "id": 2, "sender": "me", "text": "Lo reviso en un rato.", "timestamp": "2026-07-08T15:01:00Z" },
+{ "id": 3, "sender": "contact", "text": "Perfecto.", "timestamp": "2026-07-08T15:02:00Z" },
+{ "id": 4, "sender": "contact", "text": "Hay algunos cambios importantes.", "timestamp": "2026-07-08T15:10:00Z" },
+{ "id": 5, "sender": "contact", "text": "Avisame cuando lo veas.", "timestamp": "2026-07-08T15:11:00Z" }
+]
+},
+{
+"contactId": 5,
+"unreadCount": 0,
+"messages": [
+{ "id": 1, "sender": "contact", "text": "¿Viste la película nueva?", "timestamp": "2026-07-07T22:00:00Z" },
+{ "id": 2, "sender": "me", "text": "Todavía no.", "timestamp": "2026-07-07T22:01:00Z" },
+{ "id": 3, "sender": "contact", "text": "Está muy buena.", "timestamp": "2026-07-07T22:02:00Z" },
+{ "id": 4, "sender": "me", "text": "La voy a ver este finde.", "timestamp": "2026-07-07T22:04:00Z" },
+{ "id": 5, "sender": "contact", "text": "Después contame qué te pareció.", "timestamp": "2026-07-07T22:05:00Z" }
+]
+},
+{
+"contactId": 6,
+"unreadCount": 1,
+"messages": [
+{ "id": 1, "sender": "contact", "text": "¿Tenés los archivos?", "timestamp": "2026-07-06T16:00:00Z" },
+{ "id": 2, "sender": "me", "text": "Sí, los descargué.", "timestamp": "2026-07-06T16:02:00Z" },
+{ "id": 3, "sender": "contact", "text": "Perfecto.", "timestamp": "2026-07-06T16:03:00Z" },
+{ "id": 4, "sender": "me", "text": "Los reviso hoy.", "timestamp": "2026-07-06T16:05:00Z" },
+{ "id": 5, "sender": "contact", "text": "Gracias 🙌", "timestamp": "2026-07-06T16:06:00Z" }
+]
+}
+]
