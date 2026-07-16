@@ -48,7 +48,7 @@ export const Nav = () => {
 
             </li>
             <li>
-              <Link to="/perfil">
+              <Link to="/profile">
                 <button> Me </button>
               </Link>
             </li>

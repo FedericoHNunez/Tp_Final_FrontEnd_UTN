@@ -11,21 +11,22 @@ import { CommunitiesScreen } from "./Screens/CommunitiesScreen/CommunitiesScreen
 import { StatesScreen } from "./Screens/StatesScreen/StatesScreen";
 import { ContactContextProvider } from "./Context/ContactContext";
 import { MeScreen } from "./Screens/MeScreen/MeScreen";
+import { Navigate } from "react-router";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<LayoutScreen />}>
        <Route element= {<ContactContextProvider />} >
             <Route index element={<HomeScreen />} />
-            <Route path="Home" element={<HomeScreen />} />
+            <Route path="home" element={<HomeScreen />} />
             <Route path="chats" element={<ChatsScreen />} />
         </Route>
         <Route path="calls" element={<CallScreen />} />
         <Route path="channels" element={<ChannelsScreen />} />
         <Route path="communities" element={<CommunitiesScreen />} />
         <Route path="states" element={<StatesScreen />} />
-        <Route path="Me" element={<MeScreen />} />
-        <Route path="*" element={<HomeScreen />} />
+        <Route path="profile" element={<MeScreen />} />
+        <Route path="*" element={<Navigate to="/home" replace />} />
       </Route>
     </Routes>
   );
