@@ -23,6 +23,7 @@ function App() {
         <Route path="channels" element={<ChannelsScreen />} />
         <Route path="communities" element={<CommunitiesScreen />} />
         <Route path="states" element={<StatesScreen />} />
+        <Route path="Me" element={<MeScreen />} />
         <Route path="*" element={<HomeScreen />} />
       </Route>
     </Routes>
