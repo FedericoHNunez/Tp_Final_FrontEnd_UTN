@@ -24,7 +24,7 @@ function App() {
         <Route path="communities" element={<CommunitiesScreen />} />
         <Route path="states" element={<StatesScreen />} />
         <Route path="profile" element={<MeScreen />} />
-        <Route path="*" element={<NotFoundScreen />} />
+        <Route path="*" element={<HomeScreen />} />
       </Route>
     </Routes>
   );
