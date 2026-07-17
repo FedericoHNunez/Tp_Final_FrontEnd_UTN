@@ -11,6 +11,7 @@ import { CommunitiesScreen } from "./Screens/CommunitiesScreen/CommunitiesScreen
 import { StatesScreen } from "./Screens/StatesScreen/StatesScreen";
 import { ContactContextProvider } from "./Context/ContactContext";
 import { MeScreen } from "./Screens/MeScreen/MeScreen";
+import { Navigate } from "react-router";
 function App() {
   return (
     <Routes>
@@ -24,7 +25,7 @@ function App() {
         <Route path="communities" element={<CommunitiesScreen />} />
         <Route path="states" element={<StatesScreen />} />
         <Route path="profile" element={<MeScreen />} />
-        <Route path="*" element={<HomeScreen />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   );
