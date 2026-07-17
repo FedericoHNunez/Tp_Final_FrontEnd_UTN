@@ -17,17 +17,16 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LayoutScreen />}>
-       <Route element= {<ContactContextProvider />} >
-            <Route index element={<HomeScreen />} />
-            <Route path="chats" element={<ChatsScreen />} />
-            <Route path="chats/:contact_id" element={<ContactChatScreen />} />
+        <Route element={<ContactContextProvider />} >
+          <Route index element={<HomeScreen />} />
+          <Route path="/chats" element={<ChatsScreen />} />
+          <Route path="/chats/:contact_id" element={<ContactChatScreen />} />
+          <Route path="/calls" element={<CallScreen />} />
+          <Route path="/channels" element={<ChannelsScreen />} />
+          <Route path="/communities" element={<CommunitiesScreen />} />
+          <Route path="/states" element={<StatesScreen />} />
+          <Route path="/profile" element={<MeScreen />} />
         </Route>
-        <Route path="calls" element={<CallScreen />} />
-        <Route path="channels" element={<ChannelsScreen />} />
-        <Route path="communities" element={<CommunitiesScreen />} />
-        <Route path="states" element={<StatesScreen />} />
-        <Route path="profile" element={<MeScreen />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   );

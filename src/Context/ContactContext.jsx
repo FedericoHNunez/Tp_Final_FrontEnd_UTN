@@ -8,8 +8,7 @@ const ContactContext = createContext()
 
 function ContactContextProvider() {
     const [contacts, setContacts] = useState(server_contacts)
-
-    const { contact_id } = useParams()
+const { contact_id } = useParams()
 
     let contact_selected = null
 
@@ -17,7 +16,7 @@ function ContactContextProvider() {
         contact_selected = contacts.find(contact => contact.id === Number(contact_id))
     }
 
-
+    
     function deleteMessageById(message_id) {
         const contacts_modified = contacts.map(
             (contact) => {
@@ -81,7 +80,7 @@ function ContactContextProvider() {
 
     const provider_values = {
         contacts,
-        contact_selected,
+       contact_selected,
         deleteMessageById,
         createMessage,
         deleteAllMessages

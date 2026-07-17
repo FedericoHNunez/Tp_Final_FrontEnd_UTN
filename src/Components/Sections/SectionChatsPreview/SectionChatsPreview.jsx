@@ -19,7 +19,7 @@ export const SectionChatsPreview = () => {
                   <img src={contact.picture.thumbnail} alt={`Imagen de perfil de ${contact.alias}}`} />
                 </div>
               </Link>
-              <Link to={`chats/${contact.id}`}>
+              <Link to={`/chats/${contact.id}`}>
                 <div className="messageBoxPreview-info">
                   <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
                   <p className="messageBoxPreview-message">{contact.messages[contact.messages.length - 1].text}</p>
