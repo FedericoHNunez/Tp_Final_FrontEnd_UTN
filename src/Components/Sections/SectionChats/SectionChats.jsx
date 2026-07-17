@@ -6,7 +6,7 @@ export const SectionChats = () => {
   
   return (
         <>
-    <section>
+   
             {
            contacts
   .filter(contact => contact.messages?.length > 0)
@@ -18,7 +18,7 @@ export const SectionChats = () => {
     </div>
   ))
         }
-   </section>     
+      
         </>
     )
 }
