@@ -1,0 +1,36 @@
+.contactInfoHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.4rem;
+    border-bottom: 0.1rem solid var(--gris-oscuro);
+    padding: 1rem;
+}
+
+.contactInfoHeader-left{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactInfoHeader-right{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.contactInfoHeader img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.contact-message {
+    min-height: 100vh;
+    background-image: url("../../assets/img/fondoChatsClaro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
