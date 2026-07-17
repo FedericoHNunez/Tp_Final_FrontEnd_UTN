@@ -15,7 +15,7 @@
     --black-light:#00000099;
 
 
-    --layout-color: var(white);
+    --layout-color: var(--white);
     --backgroundColorNav: var(--gris);
     --borderColorNav: var(--gris-oscuro);
     --font : 'Roboto', sans-serif;
