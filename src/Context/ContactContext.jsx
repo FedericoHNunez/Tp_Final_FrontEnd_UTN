@@ -17,6 +17,7 @@ function ContactContextProvider() {
         contact_selected = contacts.find(contact => contact.id === Number(contact_id))
     }
 
+
     function deleteMessageById(message_id) {
         const contacts_modified = contacts.map(
             (contact) => {

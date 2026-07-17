@@ -1,11 +1,11 @@
-import { SectionChats } from "../../Components/Sections/SectionChats/SectionChats"
+import { SectionChatsPreview } from "../../Components/Sections/SectionChatsPreview/SectionChatsPreview"
 import { SideBarHome } from "../../Components/SideBars/SideBarHome/SideBarHome"
 import { useLocation, useParams } from "react-router"
 export const HomeScreen = () => {
     return (
         <>  
                 <section className="">
-                <SectionChats/>  
+                <SectionChatsPreview/>
                 </section>
                 <aside className=""> 
                 <SideBarHome/> 

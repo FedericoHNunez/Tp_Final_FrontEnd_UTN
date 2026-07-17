@@ -12,6 +12,7 @@ import { StatesScreen } from "./Screens/StatesScreen/StatesScreen";
 import { ContactContextProvider } from "./Context/ContactContext";
 import { MeScreen } from "./Screens/MeScreen/MeScreen";
 import { Navigate } from "react-router";
+import { ContactChatScreen } from "./Screens/ContacChatScreen/ContactChatScreen";
 function App() {
   return (
     <Routes>
@@ -19,6 +20,7 @@ function App() {
        <Route element= {<ContactContextProvider />} >
             <Route index element={<HomeScreen />} />
             <Route path="chats" element={<ChatsScreen />} />
+            <Route path="chats/:contact_id" element={<ContactChatScreen />} />
         </Route>
         <Route path="calls" element={<CallScreen />} />
         <Route path="channels" element={<ChannelsScreen />} />
