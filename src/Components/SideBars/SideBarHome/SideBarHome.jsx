@@ -1,6 +1,7 @@
 import React from 'react'
 import './SideBarHome.css'
 import { Link } from 'react-router'
+import PcHomeSideBar from "../assets/img/PcHomeSideBar.jpeg";
 export const SideBarHome = () => {
     return (
         <>
@@ -9,7 +10,7 @@ export const SideBarHome = () => {
             <section>
                 <div className="sideBarHome-info ">
                     <div className="sideBarHome-img">
-                        <img src=".../../../src\assets\img\PcHomeSideBar.jpeg" />
+                     <img src={PcHomeSideBar} alt="imagen resprentativa de una Notebook" />
                     </div>
                     <h1>Descarga Whatsapp para Windows</h1>
                     <p>Obtén funciones adicionales, como llamadas y videollamadas, compartir pantalla y más</p>
