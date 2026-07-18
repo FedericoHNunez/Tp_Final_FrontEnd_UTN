@@ -4,10 +4,10 @@ import { SideBarChats } from "../../Components/SideBars/SidebarChats/SidebarChat
 export const ChatsScreen = () => {
     return (
         <>
-        <section className="">
+        <section className="sectionView">
             <SectionChatsPreview />
         </section>
-        <aside className="">
+        <aside className="asideView no-display">
             <SideBarChats />
         </aside>
         </>

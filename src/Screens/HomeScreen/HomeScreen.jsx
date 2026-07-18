@@ -4,10 +4,10 @@ import { useLocation, useParams } from "react-router"
 export const HomeScreen = () => {
     return (
         <>  
-                <section className="">
+                <section className="sectionView">
                 <SectionChatsPreview/>
                 </section>
-                <aside className=""> 
+                <aside className="asideView center backgroundSiderBar"> 
                 <SideBarHome/> 
                 </aside>
         </>

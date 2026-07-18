@@ -2,13 +2,14 @@ import { useContext } from "react"
 import { ContactContext } from "../../../Context/ContactContext"
 import "./SectionChatsPreview.css"
 import { Link } from "react-router"
+import { HeaderChatsPreview } from "../../HeaderChatsPreview/HeaderChatsPreview"
 export const SectionChatsPreview = () => {
 
   const { contacts } = useContext(ContactContext)
 
   return (
     <>
-
+          <HeaderChatsPreview />
       {
         contacts
           .filter(contact => contact.messages?.length > 0)

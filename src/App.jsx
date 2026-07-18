@@ -19,6 +19,8 @@ function App() {
       <Route path="/" element={<LayoutScreen />}>
         <Route element={<ContactContextProvider />} >
           <Route index element={<HomeScreen />} />
+          <Route path="/home" element={<HomeScreen /> }/>
+          <Route path="*" element={<HomeScreen />} />
           <Route path="/chats" element={<ChatsScreen />} />
           <Route path="/chats/:contact_id" element={<ContactChatScreen />} />
           <Route path="/calls" element={<CallScreen />} />

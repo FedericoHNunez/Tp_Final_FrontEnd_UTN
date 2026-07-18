@@ -1,0 +1,20 @@
+
+
+
+.sideBarHome-info{
+    width: 35.2rem;
+    height: 36.4rem;
+    padding: 2.4rem;
+    margin: 1.6rem;;
+    background-color: var(--white);
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.sideBarHome-img{
+    width: 15.6rem;
+    height: 13.4rem;
+    margin: 0 auto;
+}

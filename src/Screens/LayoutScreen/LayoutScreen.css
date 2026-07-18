@@ -9,13 +9,11 @@
     .layout-main {
         grid-template-columns: 1fr;
     }
-
-    .section-noVisible {
+        .no-display {
         display: none;
     }
 
 }
-
 
 @media screen and (max-width: 480px) {
 
@@ -31,9 +29,16 @@
     main {
         padding-bottom: 6rem;
     }
-
+    .no-display {
+        display: none;
+    }
 }
 
-section {
+.sectionView {
+    height: 100vh;
     border-right: 0.1rem solid var(--gris-oscuro);
+}
+
+.asideView {
+    height: 100vh;
 }

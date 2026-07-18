@@ -6,6 +6,7 @@ import { ContactContext } from '../../Context/ContactContext'
 import { SectionChatsPreview } from "../../Components/Sections/SectionChatsPreview/SectionChatsPreview"
 import { useContext } from "react"
 import "./ContactChatScreen.css"
+import { HeaderChatsPreview } from '../../Components/HeaderChatsPreview/HeaderChatsPreview'
 
 export const ContactChatScreen = () => {
     const { contact_selected } = useContext(ContactContext)
@@ -14,10 +15,10 @@ export const ContactChatScreen = () => {
 
     return (
         <>
-            <section>
+            <section className="sectionView">
                 <SectionChatsPreview />
             </section>
-            <aside>
+            <aside className="asideView">
                 <div className="contactInfoHeader">
                     <div className="contactInfoHeader-left">
                         <div>
