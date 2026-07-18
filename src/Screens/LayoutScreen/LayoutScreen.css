@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 480px) {
 
-    header {
+    .layout-header {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -37,8 +37,10 @@
 .sectionView {
     height: 100vh;
     border-right: 0.1rem solid var(--gris-oscuro);
+    overflow-y: scroll; 
 }
 
 .asideView {
     height: 100vh;
+    overflow-y: scroll;
 }

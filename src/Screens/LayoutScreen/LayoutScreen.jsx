@@ -5,7 +5,7 @@ import "./LayoutScreen.css";
 export function LayoutScreen() {
   return (
     <>
-    <header className="header">
+    <header className="layout-header">
         <Nav />
     </header>
     <main className="layout-main">
