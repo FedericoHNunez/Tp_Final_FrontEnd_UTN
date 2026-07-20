@@ -9,7 +9,7 @@
     --verde-claro:#dcf8c6;
     --azul:#34b7f1;
     --grey:#f7f5f2;
-    --gris-oscuro:#dedcda;
+    --grey-dark:#dedcda;
     --white:#fff;
     --black-dark:#0a0a0a;
     --black-light:#00000099;
@@ -31,7 +31,10 @@
     --whatsappLogo: var(--verde-claro3);
     /* backgrounds */
     --inputBackground: var(--grey);
-    --hoverBackground: var(--grey);
+    --hoverBackground-dark: var(--grey-dark);
+    --hoverBackground-light: var(--grey);
+    /* boder */
+    --boderColor: var(--grey-dark);
 }
 
 

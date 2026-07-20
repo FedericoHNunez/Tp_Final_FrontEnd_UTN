@@ -40,18 +40,19 @@
 .ChatsPreview-header-nav ul{
     display: flex;
     gap: 1rem;
+
 }
 .ChatsPreview-header-nav ul li:last-child{
-    width: 4rem;
-    height: 4rem;
-    padding: 0;
+    width: 3.6rem;
+    height: 3.2rem;
     border-radius: 50%;
+    
 }
 
 .ChatsPreview-header-nav ul li{
+    padding: 0rem 2rem;
     cursor: pointer;
-    padding: 0.5rem 2rem;
-    border: 1px solid var(--gris-oscuro);
+    border: 1px solid var(--boderColor);
     border-radius: 2rem;
     display: flex;
     justify-content: center;
@@ -59,5 +60,5 @@
 }
 
 .ChatsPreview-header-nav ul li:hover{
-    background-color: var(--hoverBackground);
+    background-color: var(--hoverBackground-light);
 }

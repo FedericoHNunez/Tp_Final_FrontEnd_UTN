@@ -17,10 +17,10 @@ export const Nav = () => {
             {NavIcons
               .filter(icon => icon.id !== imagesIcon.id)
               .map(icon => (
-                <li key={icon.id}>
+                <li key={icon.id} className='nav-liButton' >
                   <NavLink to={icon.ruta}>
                     {({ isActive }) => (
-                      <button>
+                      <button >
                         <span
                           dangerouslySetInnerHTML={{
                             __html: isActive
@@ -37,8 +37,8 @@ export const Nav = () => {
         </div>
         <div className="nav-list_inferior">
           <ul>
-            <li>
-                <button title='Boton de Acceso a la seccion de multimedia personal'>
+            <li className='nav-liButton'>
+                <button className='nav-button' title='Boton de Acceso a la seccion de multimedia personal'>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: imagesIcon.variantes.default,
@@ -47,9 +47,9 @@ export const Nav = () => {
                 </button>
 
             </li>
-            <li>
+            <li className='nav-liButton'>
               <Link to="/profile">
-                <button> Me </button>
+                <button > Me </button>
               </Link>
             </li>
           </ul>

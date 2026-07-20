@@ -5,7 +5,11 @@
     height: 6.4rem;
     border-bottom: 0.1rem solid var(--gris-oscuro);
     padding: 1rem;
+    position : sticky;
+    top: 0;
+    z-index: 1000; 
 }
+
 
 .contactInfoHeader-left{
     display: flex;
@@ -16,33 +20,52 @@
 
 .contactInfoHeader-right{
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: flex-end;
     align-items: center;
 }
 
+.contactInfoHeader-right span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+.contactInfoHeader-right span:hover
+{
+    cursor: pointer;
+    background-color: var(--hoverBackground-light);
+    border-radius: 50%;
 
+}
 .contactInfoHeader img{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
 }
-.contact-messages {
-    height: calc(100vh - 6.4rem); 
-    background-image: url("/img/fondoChatsClaro.jpg");
+.contact-messages{
+    width: 100%;
+    height: calc(100vh - 6.4rem - 6.4rem); 
+    background-image: url("/img/fondoChatsOscuro.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
     overflow-y: auto;
+   
 }
+.contact-messages-container{
+     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+
 .message-me,
 .message-contact {
     display: flex;
-    margin: 8px 0;
+    margin: 0.8rem 0;
 
 }
 
@@ -63,6 +86,26 @@
 
 .message-contact-text{
     background-color: var(--bubleChatContact);
+}
 
+.contact-input-label{
+    display:none;
+}
 
+.contactMessage-input{
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    height: 6.4rem;
+    background: url(/img/fondoChatsOscuro.jpg);
+}
+
+.contactMessage-input-textarea{
+    height: 4rem;
+    background-color: var( --inputBackground);
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 6rem;
+    border: none;
+    width: 100%;
+    
 }
