@@ -5,7 +5,7 @@
     --verde-oscuro1:#075e54;
     --verde-oscuro:#064e3b;
     --verde-claro3:#128c7e;
-    --verde-claro1:#25d366;
+    --verde-claro1:#d8fcd2;
     --verde-claro:#dcf8c6;
     --azul:#34b7f1;
     --grey:#f7f5f2;
@@ -22,6 +22,10 @@
 
     /* Fonts colors */
     --text: var(--black-light);
+
+    /* Bubles Chats */
+    --bubleChatContact: var(--white);
+    --bubleChatMe   : var(--verde-claro1);
 }
 
 

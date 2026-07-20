@@ -27,18 +27,42 @@
     height: 4rem;
     border-radius: 50%;
 }
-.contact-message {
-    min-height: 100vh;
-    background-image: url("../../assets/img/fondoChatsClaro.jpg");
-
+.contact-messages {
+    height: calc(100vh - 6.4rem); 
+    background-image: url("/img/fondoChatsClaro.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    overflow-y: auto;
+}
+.message-me,
+.message-contact {
+    display: flex;
+    margin: 8px 0;
+
 }
 
-.contact-message{
-        padding: 0 6rem;
+.message-me {
+    justify-content: flex-end;
+    text-align: right;
+
 
 }
 
-.me-message {
-    padding: 0 6rem;
+.message-contact {
+    justify-content: flex-start;
+}
+
+.message-me-text{
+    background-color: var(--bubleChatMe);
+}
+
+.message-contact-text{
+    background-color: var(--bubleChatContact);
+
+
 }

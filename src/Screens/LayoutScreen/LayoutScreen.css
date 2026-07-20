@@ -32,6 +32,9 @@
     .no-display {
         display: none;
     }
+    .sectionView{
+        height: calc(100vh - 6rem);
+    }
 }
 
 .sectionView {

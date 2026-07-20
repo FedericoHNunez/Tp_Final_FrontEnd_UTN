@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { ContactContext } from "../../../Context/ContactContext"
+import "./SideBarContactChats.css"
 export const SideBarContactChats = () => {
 
     const { contact_selected } = useContext(ContactContext)
@@ -20,24 +21,27 @@ export const SideBarContactChats = () => {
                     <span>more</span>
                 </div>
             </header>
-            <div className="contact-message">
-                <div className="contact-message__content">
-                    {
-                        contact_selected.messages.map((message) => (
-                            <div
-                                key={message.id}
-                                className={
-                                    message.sender === "me"
-                                        ? "message--me"
-                                        : "message--contact"
-                                }
-                            >
-                                <p>{message.text}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-
+            <div className="contact-messages">
+                {
+                    contact_selected.messages.map((message) => (
+                        <div
+                            key={message.id}
+                            className={
+                                message.sender === "me"
+                                    ? "message-me"
+                                    : "message-contact"
+                            }
+                        >
+                            <p className={
+                                message.sender === "me"
+                                    ? "message-me-text"
+                                    : "message-contact-text"
+                            }
+                                >{message.text}</p>
+                            
+                        </div>
+                    ))
+                }
                 <div className="contact-input">
                 </div>
             </div>
