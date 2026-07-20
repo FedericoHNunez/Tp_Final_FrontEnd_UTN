@@ -1,0 +1,63 @@
+.ChatsPreview-header{
+    padding: 1rem 2rem;
+}
+.ChatsPreview-header-logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.ChatsPreview-header-logo-icon{
+    color: var(--whatsappLogo)
+}
+.ChatsPreview-header-actions{
+    display: flex;
+    gap:3rem;
+}
+.ChatsPreview-header-input{
+    position: relative;
+    padding-right: 1rem;
+}
+.ChatsPreview-header-input input{
+    width: 100%;
+    height: 4rem;
+    background-color: var( --inputBackground);
+    border-radius: 2rem;
+    padding: 0 2rem 0 6rem;
+}
+
+.ChatsPreview-header-input span {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+
+.ChatsPreview-header-nav{
+    padding: 1rem 0;
+}   
+
+.ChatsPreview-header-nav ul{
+    display: flex;
+    gap: 1rem;
+}
+.ChatsPreview-header-nav ul li:last-child{
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.ChatsPreview-header-nav ul li{
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--gris-oscuro);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatsPreview-header-nav ul li:hover{
+    background-color: var(--hoverBackground);
+}

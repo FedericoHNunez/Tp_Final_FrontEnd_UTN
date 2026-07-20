@@ -4,7 +4,7 @@
 :root{    
     --verde-oscuro1:#075e54;
     --verde-oscuro:#064e3b;
-    --verde-claro3:#128c7e;
+    --verde-claro3:#1dab62;
     --verde-claro1:#d8fcd2;
     --verde-claro:#dcf8c6;
     --azul:#34b7f1;
@@ -26,6 +26,12 @@
     /* Bubles Chats */
     --bubleChatContact: var(--white);
     --bubleChatMe   : var(--verde-claro1);
+
+    /* WhatsaAppLogo */
+    --whatsappLogo: var(--verde-claro3);
+    /* backgrounds */
+    --inputBackground: var(--grey);
+    --hoverBackground: var(--grey);
 }
 
 
@@ -58,6 +64,9 @@ body   {
 ul,
 ol {
     list-style: none;
+}
+input {
+    border: none;
 }
 a,
 button {
