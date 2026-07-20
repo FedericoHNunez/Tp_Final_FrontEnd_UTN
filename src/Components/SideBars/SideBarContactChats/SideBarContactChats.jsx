@@ -8,7 +8,7 @@ export const SideBarContactChats = () => {
 
     return (
         <>
-            <header className="contactInfoHeader">
+             <header className="contactInfoHeader">
                 <div className="contactInfoHeader-left">
                     <div>
                         <img src={contact_selected.picture.thumbnail} alt={contact_selected.alias} />

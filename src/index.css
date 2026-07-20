@@ -9,15 +9,19 @@
     --verde-claro:#dcf8c6;
     --azul:#34b7f1;
     --grey:#f7f5f2;
-    --grey-dark:#dedcda;
+    --grey-light:#f6f5f4;
+    --grey-dark:#dedcdade;
     --white:#fff;
     --black-dark:#0a0a0a;
     --black-light:#00000099;
 
+  
+
+
 
     --layout-color: var(--white);
     --backgroundColorNav: var(--grey);
-    --borderColorNav: var(--gris-oscuro);
+    --borderColorNav: var(--grey-dark);
     --font : 'Roboto', sans-serif;
 
     /* Fonts colors */
@@ -31,8 +35,8 @@
     --whatsappLogo: var(--verde-claro3);
     /* backgrounds */
     --inputBackground: var(--grey);
-    --hoverBackground-dark: var(--grey-dark);
-    --hoverBackground-light: var(--grey);
+    --hoverBackground-dark: var(--grey);
+    --hoverBackground-light: var(--grey-light);
     /* boder */
     --boderColor: var(--grey-dark);
 }

@@ -1,19 +1,18 @@
 .messageBoxPreview{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;    
+    display: grid;
+    grid-template-columns: 4.9rem 1fr;
+    align-items: center;
+    height: 7.2rem;    
     padding: 1.5rem;
-    height: 7.2rem;
-    margin: 0.5rem 1rem ;
+    margin: 0.5rem;
     border-radius: 1rem;
+    gap: 1.5rem;
 }
 .messageBoxPreview:hover{
     background-color: var(--hoverBackground-light);
 }
 .messageBoxPreview-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 .messageBoxPreview-img img{
     width: 4.9rem;
@@ -22,8 +21,6 @@
 }
 
 .messageBoxPreview-info{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 1rem;
+    text-align: left;  
 }
+

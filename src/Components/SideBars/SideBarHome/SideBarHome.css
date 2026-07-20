@@ -1,7 +1,6 @@
 
 
-
-.sideBarHome-info{
+.sideBarHome-container{
     width: 35.2rem;
     height: 36.4rem;
     padding: 2.4rem;
@@ -18,3 +17,40 @@
     height: 13.4rem;
     margin: 0 auto;
 }
+
+.sideBarHome-options-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1.6rem 0;
+    text-align: center
+
+}
+.sideBarHome-options-list a {
+    width: 12.2rem;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.sideBarHome-options-list-span {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--hoverBackground-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideBarHome-options-list-p{
+    font-size: 1.2rem;
+}
+.sideBarHome-options-list-span:hover{
+    background-color: var(--hoverBackground-dark);
+}
+
