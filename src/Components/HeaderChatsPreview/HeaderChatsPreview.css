@@ -17,7 +17,6 @@
 }
 .ChatsPreview-header-input{
     position: relative;
-    padding-right: 1rem;
 }
 .ChatsPreview-header-input input{
     width: 100%;
@@ -25,6 +24,11 @@
     background-color: var( --inputBackground);
     border-radius: 2rem;
     padding: 0 2rem 0 6rem;
+}
+.ChatsPreview-header-input input:focus{
+    outline: none;
+    border: 1px solid var(--inputFocus);
+    box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2);
 }
 
 .ChatsPreview-header-input span {

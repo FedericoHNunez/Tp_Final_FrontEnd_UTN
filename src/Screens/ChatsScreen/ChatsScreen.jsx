@@ -1,5 +1,5 @@
 import { SectionChatsPreview } from "../../Components/Sections/SectionChatsPreview/SectionChatsPreview"
-import { SideBarChats } from "../../Components/SideBars/SidebarChats/SidebarChats"
+import { SideBarHome } from "../../Components/SideBars/SideBarHome/SideBarHome"
 
 export const ChatsScreen = () => {
     return (
@@ -7,8 +7,8 @@ export const ChatsScreen = () => {
         <section className="sectionView">
             <SectionChatsPreview />
         </section>
-        <aside className="asideView no-display">
-            <SideBarChats />
+        <aside className="asideView center backgroundSiderBar">
+            <SideBarHome />
         </aside>
         </>
     )

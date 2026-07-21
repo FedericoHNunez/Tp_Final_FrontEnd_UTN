@@ -41,7 +41,7 @@
 .sideBarHome-options-list-span {
     width: 5rem;
     height: 5rem;
-    background-color: var(--hoverBackground-light);
+    background-color: var(--grey);
     border-radius: 50%;
     display: flex;
     justify-content: center;

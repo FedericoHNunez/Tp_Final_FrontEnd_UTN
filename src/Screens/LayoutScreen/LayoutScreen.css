@@ -1,3 +1,4 @@
+
 .layout-main {
     display: grid;
     grid-template-columns: clamp(34rem, 30vw, 57rem) 1fr;

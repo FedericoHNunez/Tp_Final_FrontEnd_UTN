@@ -15,14 +15,14 @@
 .contactInfoHeader-left{
     display: flex;
     gap: 1.5rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .contactInfoHeader-right{
     display: flex;
     gap: 2rem;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -33,13 +33,7 @@
     width: 4rem;
     height: 4rem;
 }
-.contactInfoHeader-right span:hover
-{
-    cursor: pointer;
-    background-color: var(--hoverBackground-light);
-    border-radius: 50%;
 
-}
 .contactInfoHeader img{
     width: 4rem;
     height: 4rem;
@@ -53,13 +47,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: auto;
+    position: relative;
    
 }
 .contact-messages-container{
      display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem;
+    padding: 6rem;
 }
 
 
@@ -83,10 +78,14 @@
 
 .message-me-text{
     background-color: var(--bubleChatMe);
+    padding: 1rem;
+    border-radius: 1rem 0 1rem 1rem;
 }
 
 .message-contact-text{
     background-color: var(--bubleChatContact);
+    padding: 1rem;
+       border-radius: 0rem 1rem 1rem 1rem;
 }
 
 .contact-input-label{
@@ -94,20 +93,70 @@
 }
 
 .contactMessage-input{
+    padding-top: 0.5rem;
     position: sticky;
     bottom: 0;
     z-index: 1;
     height: 6.4rem;
     background: url(/img/fondoChatsOscuro.jpg);
+
+}
+
+.contact-message-input-relative{
+    position: relative;
 }
 
 .contactMessage-input-textarea{
-    height: 4rem;
     background-color: var( --white);
-    border-radius: 2rem;
-    padding: 1rem 6rem 1rem 6rem;
-    border: none;
+    border-radius: 4rem;
+    padding: 1rem 12rem 1rem 12rem;
     width: 97%;
     margin-left: 1.5rem;
-    
+    border: 1px solid var(--borderColorNav);
+    outline: none;
+     height: 5rem;
+    padding: 1rem 10rem;
+    line-height: 2rem;
+}
+
+
+.more-stikers{
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.more-stikers span{
+    width: 4rem;
+    height: 4rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}   
+.micro{
+    position: absolute;
+    top: 0.5rem;
+    right: 3rem;
+    width: 4rem;
+    height: 4rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.more-stikers span:hover,
+.contactInfoHeader-right span:hover{
+    cursor: pointer;
+    background-color: var(--hoverBackground-dark);
+    border-radius: 50%;
+}
+
+.micro:hover{
+    cursor: pointer;
+    background-color: var( --green-light3);
+    border-radius: 50%;
+    color: var(--white);
+    fill: var(--white);
+
 }
