@@ -39,10 +39,17 @@
 }
 
 .sectionView {
+    height: calc(100vh - 6rem);
+}
+
+
+
+@media screen and (max-width: 480px) {
+.sectionView {
     height: 100vh;
     border-right: 0.1rem solid var(--gris-oscuro);
 }
-
 .asideView {
     height: 100vh;
+}
 }
