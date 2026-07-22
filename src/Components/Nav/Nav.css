@@ -16,6 +16,7 @@
     display:none;
   }
 }
+
 .nav-list_superior li,
 .nav-list_inferior li{
   width: 4rem;
@@ -26,12 +27,13 @@
   margin:0.5rem;
 }
 
-@media screen and (max-width:480px){
-
-  .header-nav{
+  .header-nav-mobile{
+    border-top: 0.1rem solid var(--borderColorNav);
+    padding:1rem;
     flex-direction:row;
     width:100%;
-    height:6rem;
+    position: sticky;
+    top: 0;
   }
 
   .nav-list_superior{
@@ -47,7 +49,7 @@
     display:none;
   }
 
-}
+
 .nav-liButton:hover{
   background-color: var(--hoverBackground-dark);
   border-radius: 50%;
