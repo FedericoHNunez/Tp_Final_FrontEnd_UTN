@@ -1,57 +1,56 @@
-.header-nav-desktop{
+.header-nav-desktop {
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.2rem ;
+  padding: 0.2rem;
   background-color: var(--backgroundColorNav);
   border-right: 0.1rem solid var(--borderColorNav);
   height: 100vh;
   width: 6rem;
-  display:none;
+  display: none;
 }
-@media screen and (min-width:480px){
-  .header-nav-desktop{
-    display:flex;
-  }
-  header-nav-mobile{
-    display:none;
-  }
+
+.header-nav-mobile {
+  border-top: 0.1rem solid var(--borderColorNav);
+  padding: 1rem;
+  flex-direction: row;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .nav-list_superior li,
-.nav-list_inferior li{
+.nav-list_inferior li {
   width: 4rem;
   height: 4rem;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
 }
 
-  .header-nav-mobile{
-    border-top: 0.1rem solid var(--borderColorNav);
-    padding:1rem;
-    flex-direction:row;
-    width:100%;
-    position: sticky;
-    top: 0;
-  }
+.nav-list_superior_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
-  .nav-list_superior{
-    width:100%;
-  }
-
-  .nav-list_superior_items{
-    display:flex;
-    justify-content:space-around;
-  }
-
-  .nav-list_inferior{
-    display:none;
-  }
-
-
-.nav-liButton:hover{
+.nav-list_mobile_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav-liButton:hover {
   background-color: var(--hoverBackground-dark);
   border-radius: 50%;
+}
 
+@media screen and (min-width:480px) {
+  .header-nav-desktop {
+    display: flex;
+
+  }
+
+  header-nav-mobile {
+    display: none;
+  }
 }

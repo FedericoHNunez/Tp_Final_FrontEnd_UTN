@@ -1,5 +1,9 @@
 .ChatsPreview-header{
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 1000;
 }
 .ChatsPreview-header-logo-container{
     display: flex;

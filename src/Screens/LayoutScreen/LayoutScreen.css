@@ -8,6 +8,16 @@
 .asideView {
     display: none;
 }
+.sectionView{
+    height: calc(100vh - 8rem);
+    overflow: scroll;
+}
+@media screen and (min-width: 480px) {
+    .sectionView{
+        height: 100vh;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .layout-main {
         display: grid;
@@ -16,14 +26,6 @@
     .asideView {
         display: block;
     }  
+
 }
-.sectionView{
-    height: calc(100vh - 8rem);
-    overflow: scroll;
-}
-
-
-
-
-
 

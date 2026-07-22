@@ -56,8 +56,8 @@ export const Nav = () => {
       </nav>
 
       <nav className="header-nav-mobile">
-        <div className="nav-list_superior">
-          <ul className="nav-list_superior_items">
+        <div className="nav-list_mobile">
+          <ul className="nav-list_mobile_items">
             {NavIcons
        .filter(icon => icon.id !== imagesIcon.id && icon.id !== communitiesIcon.id)
               .map(icon => (
