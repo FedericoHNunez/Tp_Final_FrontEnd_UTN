@@ -121,13 +121,6 @@ p {
 
 /*Layout  */
 
-.layout {
-   
-  display: grid;
-    grid-template-areas:
-        "main"
-        "header";
-}
 
 @media screen  and (min-width: 480px) {
     .layout {
