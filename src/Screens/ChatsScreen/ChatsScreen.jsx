@@ -7,7 +7,7 @@ export const ChatsScreen = () => {
         <section className="sectionView">
             <SectionChatsPreview />
         </section>
-        <aside className="asideView center backgroundSiderBar">
+        <aside className="asideView center backgroundSiderBar no-display">
             <SideBarHome />
         </aside>
         </>
