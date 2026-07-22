@@ -37,19 +37,21 @@
     top: 1rem;
 }
 
-.ChatsPreview-header-nav{
-    padding: 1rem 0;
-}   
+
+
+
+
 
 .ChatsPreview-header-nav ul{
+    padding-top: 1rem;
     display: flex;
     gap: 1rem;
-
 }
 .ChatsPreview-header-nav ul li:last-child{
-    width: 3.6rem;
-    height: 3.2rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
+    padding: 0;
     
 }
 

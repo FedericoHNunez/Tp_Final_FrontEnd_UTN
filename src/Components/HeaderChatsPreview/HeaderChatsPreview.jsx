@@ -34,7 +34,7 @@ export const HeaderChatsPreview = () => {
                         </span>
                
 
-                    </div>
+                    </div>  
                     <nav className='ChatsPreview-header-nav'>
                         <ul>
                             <li>
@@ -44,16 +44,10 @@ export const HeaderChatsPreview = () => {
                                 <p>No Leidos</p>
                             </li>
                             <li>
-                                <p>Favoritos</p>
-                            </li>
-                            <li>
-                                <p>Grupos</p>
-                            </li>
-                            <li>
-                                <span>
-                                    <svg viewBox="0 0 24 24" height="20" width="20" preserveAspectRatio="xMidYMid meet" className="" fill="currentColor"><title>ic-add</title><path fill="currentColor" d="M11 13H6a.97.97 0 0 1-.71-.29A.97.97 0 0 1 5 12c0-.28.1-.52.29-.71.19-.2.43-.29.71-.29h5V6c0-.28.1-.52.29-.71.19-.2.43-.29.71-.29.28 0 .52.1.71.29.2.19.29.43.29.71v5h5c.28 0 .52.1.71.29.2.19.29.43.29.71 0 .28-.1.52-.29.71A.94.94 0 0 1 18 13h-5v5c0 .28-.1.52-.29.71A.94.94 0 0 1 12 19a.97.97 0 0 1-.71-.29A.97.97 0 0 1 11 18v-5Z"></path></svg>
-                                </span>
-                            </li>
+                               <span aria-hidden="true" class="x1qx5ct2 xw4jnvo"><svg viewBox="0 0 24 24" height="20" width="20" preserveAspectRatio="xMidYMid meet" class="" fill="currentColor"><title>ic-arrow-drop-down</title><path fill="currentColor" d="m11.47 14.47-3.62-3.62a.47.47 0 0 1-.15-.35.5.5 0 0 1 .14-.35c.09-.1.21-.15.36-.15h7.6c.15 0 .27.05.36.15.1.1.14.22.14.35 0 .03-.05.15-.15.35l-3.62 3.63a.76.76 0 0 1-.25.17.73.73 0 0 1-.28.05c-.1 0-.2-.02-.28-.05a.76.76 0 0 1-.25-.18Z"></path></svg></span>
+                            </li>    
+                               
+                          
                         </ul>    
                     </nav>
                 </header>    
