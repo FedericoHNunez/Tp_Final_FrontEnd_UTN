@@ -11,8 +11,16 @@
 .messageBoxPreview:hover{
     background-color: var(--hoverBackground-light);
 }
+.messageBoxPreview-img-link,
+.messageBoxPreview-info-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 .messageBoxPreview-img{
-
+    display: flex;
+    align-items: center;
 }
 .messageBoxPreview-img img{
     width: 4.9rem;
@@ -21,6 +29,7 @@
 }
 
 .messageBoxPreview-info{
-    text-align: left;  
+    text-align: left;
+    width: 100%;
 }
 
