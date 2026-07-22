@@ -21,8 +21,10 @@ let contact_selected = null
         const contacts_modified = contacts.map(
             (contact) => {
                 if (contact.id === Number(contact_id)) {
-                    const message_index = contact.messages.findIndex(message => message.id === Number(message_id))
-                    contact.messages.splice(message_index, 1)
+                    return {
+                        ...contact,
+                        messages: contact.messages.filter(message => message.id !== Number(message_id))
+                    }
                 }
 
                 return contact
@@ -33,20 +35,22 @@ let contact_selected = null
         )
     }
 
-    function createMessage(value, sendByMe) {
+       function createMessage(value, sender) {
         const contacts_modified = contacts.map(
             (contact) => {
                 if (contact.id === Number(contact_id)) {
-
                     const new_message = {
-                        content: value,
-                        sendByMe: sendByMe,
-                        id: contact.messages.length + 1
+                       id: Math.max(0, ...contact.messages.map(message => message.id)) + 1,
+                        sender: sender,
+                        text: value,
+                        timestamp: new Date().toISOString()
                     }
-                    contact.messages.push(new_message)
+                    return {
+                        ...contact,
+                        messages: [...contact.messages, new_message]
+                    }
                 }
-
-                return contact
+                return contact;
             }
         )
         setContacts(
@@ -58,7 +62,10 @@ let contact_selected = null
         const contacts_modified = contacts.map(
             (contact) => {
                 if (contact.id === Number(contact_id)) {
-                    contact.messages = []
+                    return {
+                        ...contact,
+                        messages: []
+                    }
                 }
 
                 return contact

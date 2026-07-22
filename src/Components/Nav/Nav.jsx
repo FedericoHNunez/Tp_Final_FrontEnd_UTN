@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router'
-import { useLocation } from 'react-router'
 import React from 'react'
 import { NavIcons } from "../../assets/NavIcons.js"
 import './Nav.css'

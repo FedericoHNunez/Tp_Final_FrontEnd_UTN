@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router";
 
 
 import { LayoutScreen } from "./Screens/LayoutScreen/LayoutScreen";
-import { NotFoundScreen } from "./Screens/NotFoundScreen/NotFoundScreen";
 import { HomeScreen } from "./Screens/HomeScreen/HomeScreen";
 import { ChatsScreen } from "./Screens/ChatsScreen/ChatsScreen";
 import { CallScreen } from "./Screens/CallScreen/CallScreen";
@@ -11,7 +10,6 @@ import { CommunitiesScreen } from "./Screens/CommunitiesScreen/CommunitiesScreen
 import { StatesScreen } from "./Screens/StatesScreen/StatesScreen";
 import { ContactContextProvider } from "./Context/ContactContext";
 import { MeScreen } from "./Screens/MeScreen/MeScreen";
-import { Navigate } from "react-router";
 import { ContactChatScreen } from "./Screens/ContacChatScreen/ContactChatScreen";
 function App() {
   return (

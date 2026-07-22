@@ -50,42 +50,69 @@
     position: relative;
    
 }
-.contact-messages-container{
-     display: flex;
+.contact-messages-container {
+    display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 6rem;
+    padding: 2rem 4rem;
 }
-
 
 .message-me,
 .message-contact {
     display: flex;
-    margin: 0.8rem 0;
-
+    margin: 0.4rem 0;
 }
 
 .message-me {
     justify-content: flex-end;
-    text-align: right;
-
-
 }
 
 .message-contact {
     justify-content: flex-start;
 }
 
-.message-me-text{
+.message-me-text {
     background-color: var(--bubleChatMe);
-    padding: 1rem;
-    border-radius: 1rem 0 1rem 1rem;
+    padding: 0.6rem 1.2rem 1.8rem 1.2rem;
+    border-radius: 0.8rem 0 0.8rem 0.8rem;
+    max-width: 65%;
+    box-shadow: 0 1px 0.5px rgba(11,20,26,.13);
+    word-break: break-word;
+    position: relative;
 }
 
-.message-contact-text{
+.message-contact-text {
     background-color: var(--bubleChatContact);
-    padding: 1rem;
-       border-radius: 0rem 1rem 1rem 1rem;
+    padding: 0.6rem 1.2rem 1.8rem 1.2rem;
+    border-radius: 0 0.8rem 0.8rem 0.8rem;
+    max-width: 65%;
+    box-shadow: 0 1px 0.5px rgba(11,20,26,.13);
+    word-break: break-word;
+    position: relative;
+}
+
+.message-content-text {
+    font-size: 1.4rem;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.9rem;
+}
+
+.message-time {
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.8rem;
+    font-size: 1.1rem;
+    color: #667781;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.message-status-ticks {
+    color: #53bdeb;
+    display: inline-flex;
+    align-items: center;
 }
 
 .contact-input-label{

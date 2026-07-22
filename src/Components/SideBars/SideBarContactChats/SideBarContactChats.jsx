@@ -1,7 +1,16 @@
 import { useContext } from "react"
 import { ContactContext } from "../../../Context/ContactContext"
 import "./SideBarContactChats.css"
-import { TiMicrophoneOutline } from "react-icons/ti";
+
+const formatTime = (timestamp) => {
+    if (!timestamp) return ""
+    try {
+        const date = new Date(timestamp)
+        return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })
+    } catch {
+        return ""
+    }
+}
 export const SideBarContactChats = () => {
 
     const { contact_selected } = useContext(ContactContext)
@@ -33,26 +42,35 @@ export const SideBarContactChats = () => {
             <div className="contact-messages">
 
                 <div className="contact-messages-container">
-                    {
-                        contact_selected.messages.map((message) => (
-                            <div
-                                key={message.id}
-                                className={
-                                    message.sender === "me"
-                                        ? "message-me"
-                                        : "message-contact"
-                                }
-                            >
-                                <p className={
-                                    message.sender === "me"
-                                        ? "message-me-text"
-                                        : "message-contact-text"
-                                }
-                                >{message.text}</p>
-
+                     {contact_selected.messages.map((message) => (
+                        <div
+                            key={message.id}
+                            className={
+                                message.sender === "me"
+                                    ? "message-me"
+                                    : "message-contact"
+                            }
+                        >
+                            <div className={
+                                message.sender === "me"
+                                    ? "message-me-text"
+                                    : "message-contact-text"
+                            }>
+                                <p className="message-content-text">{message.text}</p>
+                                <span className="message-time">
+                                    {formatTime(message.timestamp)}
+                                    {message.sender === "me" && (
+                                        <span className="message-status-ticks">
+                                            <svg viewBox="0 0 16 15" width="16" height="15" fill="currentColor">
+                                                <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879 5.817 6.927a.366.366 0 0 0-.51.015l-.475.49a.369.369 0 0 0 .016.511l3.52 3.429a.366.366 0 0 0 .528-.017l6.177-7.527a.366.366 0 0 0-.063-.512zm-4.226.06l-.476-.374a.366.366 0 0 0-.511.062L4.471 9.878 1.621 6.926a.366.366 0 0 0-.51.015l-.475.49a.369.369 0 0 0 .016.511l3.52 3.429a.366.366 0 0 0 .528-.017l6.177-7.527a.366.366 0 0 0-.063-.512z"/>
+                                            </svg>
+                                        </span>
+                                    )}
+                                </span>
                             </div>
-                        ))
-                    }
+                        </div>
+                    ))}
+        
                 </div>
 
             </div>

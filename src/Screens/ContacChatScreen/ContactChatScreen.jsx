@@ -2,7 +2,6 @@
 
 import { SectionChatsPreview } from "../../Components/Sections/SectionChatsPreview/SectionChatsPreview"
 import "./ContactChatScreen.css"
-import { HeaderChatsPreview } from '../../Components/HeaderChatsPreview/HeaderChatsPreview'
 import { SideBarContactChats } from '../../Components/SideBars/SideBarContactChats/SideBarContactChats'
 
 export const ContactChatScreen = () => {
