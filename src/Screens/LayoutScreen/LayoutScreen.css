@@ -41,7 +41,9 @@
 .sectionView {
     height: calc(100vh - 6rem);
 }
-
+.asideView {
+    height: calc(100vh - 6rem);
+}
 
 
 @media screen and (max-width: 480px) {
