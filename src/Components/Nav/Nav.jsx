@@ -6,11 +6,11 @@ import './Nav.css'
 export const Nav = () => {
 
   const imagesIcon = NavIcons.find(icon => icon.ruta === 'multimedia')
- 
+ const communitiesIcon = NavIcons.find(icon => icon.ruta === 'communities')
   return (
     <>
 
-      <nav className="header-nav">
+      <nav className="header-nav-desktop">
         <div className="nav-list_superior">
           <ul className="nav-list_superior_items">
             {NavIcons
@@ -51,6 +51,33 @@ export const Nav = () => {
                 <button > Me </button>
               </Link>
             </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav className="header-nav-mobile">
+        <div className="nav-list_superior">
+          <ul className="nav-list_superior_items">
+            {NavIcons
+       .filter(icon => icon.id !== imagesIcon.id && icon.id !== communitiesIcon.id)
+              .map(icon => (
+                <li key={icon.id} className='nav-liButton' >
+                  <NavLink to={icon.ruta}>
+                    {({ isActive }) => (
+                      <button >
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: isActive
+                              ? icon.variantes.seleccionado
+                              : icon.variantes.sin_seleccionar,
+                          }}
+                        />
+                        <p>{icon.nombre}</p>
+                      </button>
+                    )}
+                  </NavLink>
+                </li>
+              ))}
           </ul>
         </div>
       </nav>
