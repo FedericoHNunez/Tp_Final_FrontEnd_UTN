@@ -187,3 +187,14 @@
     fill: var(--white);
 
 }
+
+@media screen and (max-width:480px){
+    .contact-messages{
+        height: calc(100vh - 6.4rem - 6.4rem - 6rem); 
+    }
+    .contactMessage-input{
+        position: sticky;
+        bottom: 6rem;
+        z-index: 1;
+    }
+}
