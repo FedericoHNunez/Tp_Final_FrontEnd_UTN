@@ -120,39 +120,50 @@
 }
 
 .contactMessage-input{
-    padding-top: 0.5rem;
+    padding: 0.5rem 1.6rem;
     position: sticky;
     bottom: 0;
     z-index: 1;
-    height: 6.4rem;
+    height: auto;
     background: url(/img/fondoChatsOscuro.jpg);
-
 }
 
-.contact-message-input-relative{
+.contactMessage-input-relative{
     position: relative;
+    width: 100%;
 }
 
 .contactMessage-input-textarea{
-    background-color: var( --white);
-    border-radius: 4rem;
-    padding: 1rem 12rem 1rem 12rem;
-    width: 97%;
-    margin-left: 1.5rem;
-    border: 1px solid var(--borderColorNav);
+    background-color: var(--white);
+    border-radius: 2.4rem;
+    padding: 1.4rem 6rem 1.4rem 8rem;
+    width: 100%;
+    border: none;
     outline: none;
-     height: 5rem;
-    padding: 1rem 10rem;
+    min-height: 5.2rem;
+    max-height: 12rem;
+    resize: none;
+    font-size: 1.5rem;
     line-height: 2rem;
+    overflow-y: auto;
+}
+
+form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
 .more-stikers{
     position: absolute;
-    top: 0.5rem;
-    left: 2rem;
+    top: 50%;
+    left: 1.6rem;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
+    gap: 0.4rem;
+    z-index: 10;
 }
 .more-stikers span{
     width: 4rem;
@@ -160,16 +171,20 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    color: var(--text);
 }   
 .micro{
     position: absolute;
-    top: 0.5rem;
-    right: 3rem;
+    top: 50%;
+    right: 1.6rem;
+    transform: translateY(-50%);
     width: 4rem;
     height: 4rem;
     display:flex;
     justify-content:center;
     align-items:center;
+    color: var(--text);
+    z-index: 10;
 }
 
 .more-stikers span:hover,

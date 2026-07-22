@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useRef, useEffect } from "react"
 import { ContactContext } from "../../../Context/ContactContext"
 import "./SideBarContactChats.css"
 
@@ -14,6 +14,19 @@ const formatTime = (timestamp) => {
 export const SideBarContactChats = () => {
 
     const { contact_selected } = useContext(ContactContext)
+    const textareaRef = useRef(null)
+
+    useEffect(() => {
+        if (textareaRef.current) {
+            textareaRef.current.style.height = "5.2rem"
+            textareaRef.current.style.height = Math.min(textareaRef.current.scrollHeight, 120) + "px"
+        }
+    }, [])
+
+    const handleInput = (e) => {
+        e.target.style.height = "5.2rem"
+        e.target.style.height = Math.min(e.target.scrollHeight, 120) + "px"
+    }
 
     return (
         <>
@@ -92,9 +105,11 @@ export const SideBarContactChats = () => {
                             Escriba su mensaje
                         </label>
                         <textarea className="contactMessage-input-textarea"
+                            ref={textareaRef}
                             name="message"
                             id="message"
                             placeholder="Escriba su mensaje"
+                            onInput={handleInput}
                         ></textarea>
                     </form>
                     <div className="micro">

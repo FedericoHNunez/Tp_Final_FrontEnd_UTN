@@ -4,13 +4,14 @@ import { SectionChatsPreview } from "../../Components/Sections/SectionChatsPrevi
 import "./ContactChatScreen.css"
 import { SideBarContactChats } from '../../Components/SideBars/SideBarContactChats/SideBarContactChats'
 
-
 export const ContactChatScreen = () => {
+
+
 
 
     return (
         <>
-            <section className="sectionView no-display">
+            <section className="sectionView">
                 <SectionChatsPreview />
             </section>
             <aside className="asideView">
