@@ -10,10 +10,12 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+  
 }
 .sideBarContactInfo-container{
     background-color: var(--white);
     height: calc(100vh - 6.4rem);
+
 }
 .contactInfoHeader div{
     display: flex;
@@ -25,15 +27,18 @@
     max-width: 4rem;
     max-height: 4rem;
     border-radius: 50%;
-    margin: 2rem ;
+
 }
 
 .sideBarContactInfo-contact {
     height: 30rem;
+    padding: 2rem;
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    border-bottom: 0.1rem solid var(--borderColorNav);
 }
 
 .sideBarContactInfo-img{
@@ -48,7 +53,7 @@
 }
 
 .sideBarContactInfo-options{
-    height: 20rem;
+    height: 10rem;
 }
 
 .sideBarContactInfo-options ul{
@@ -79,4 +84,25 @@
     border-radius: 50%;
     background-color: var(--borderColorNav);
 
+}
+.sideBarContactInfo-actions{
+    padding: 2rem;
+    max-width: 32rem;
+}
+
+.sideBarContactInfo-actions-item{
+    max-width: 40rem;
+    
+}
+
+.sideBarContactInfo-actions-item li{
+ margin: 2rem;
+}
+
+.sideBarContactInfo-actions-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+    text-align: center;
 }
