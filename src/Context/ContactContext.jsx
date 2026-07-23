@@ -47,7 +47,8 @@ let contact_selected = null
                     }
                     return {
                         ...contact,
-                        messages: [...contact.messages, new_message]
+                        messages: [...contact.messages, new_message],
+                        chatStarted: true
                     }
                 }
                 return contact;
@@ -76,9 +77,28 @@ let contact_selected = null
         )
     }
 
+    function deleteContactById(contactId) {
+        const contacts_modified = contacts.filter(contact => contact.id !== Number(contactId));
+        setContacts(contacts_modified);
+    }
+
+    function deleteChat(contactId) {
+        const contacts_modified = contacts.map(
+            (contact) => {
+                if (contact.id === Number(contactId)) {
+                    return {
+                        ...contact,
+                        messages: []
+                    };
+                }
+                return contact;
+            }
+        );
+        setContacts(contacts_modified);
+    }
+
     /* 
     createContact
-    deleteContactById
     updateContactById
     updateMessageById
     */
@@ -90,7 +110,9 @@ let contact_selected = null
         contact_selected,
         deleteMessageById,
         createMessage,
-        deleteAllMessages
+        deleteAllMessages,
+        deleteContactById,
+        deleteChat
     }
     return (
         <ContactContext.Provider value={provider_values}>

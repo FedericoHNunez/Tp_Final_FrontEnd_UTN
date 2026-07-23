@@ -12,7 +12,7 @@ export const SectionChatsPreview = () => {
           <HeaderChatsPreview />
       {
         contacts
-          .filter(contact => contact.messages?.length > 0)
+          .filter(contact => contact.chatStarted)
           .map(contact => (
             <article className="messageBoxPreview" key={contact.id}>
               <Link to={`/state/${contact.id}`} className="messageBoxPreview-img-link">
@@ -23,7 +23,11 @@ export const SectionChatsPreview = () => {
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
                   <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
-                  <p className="messageBoxPreview-message">{contact.messages[contact.messages.length - 1].text}</p>
+                  <p className="messageBoxPreview-message">{
+                    contact.messages.length > 0 
+                      ? contact.messages[contact.messages.length - 1].text 
+                      : "No hay mensajes"
+                  }</p>
                 </div>
               </Link>
             </article>
@@ -31,7 +35,7 @@ export const SectionChatsPreview = () => {
       }
       {
         contacts
-          .filter(contact => contact.messages?.length > 0)
+          .filter(contact => contact.chatStarted)
           .map(contact => (
             <article className="messageBoxPreview" key={contact.id}>
               <Link to={`/state/${contact.id}`} className="messageBoxPreview-img-link">
@@ -42,7 +46,11 @@ export const SectionChatsPreview = () => {
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
                   <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
-                  <p className="messageBoxPreview-message">{contact.messages[contact.messages.length - 1].text}</p>
+                  <p className="messageBoxPreview-message">{
+                    contact.messages.length > 0 
+                      ? contact.messages[contact.messages.length - 1].text 
+                      : "No hay mensajes"
+                  }</p>
                 </div>
               </Link>
             </article>
@@ -50,7 +58,7 @@ export const SectionChatsPreview = () => {
       }
       {
         contacts
-          .filter(contact => contact.messages?.length > 0)
+          .filter(contact => contact.chatStarted)
           .map(contact => (
             <article className="messageBoxPreview" key={contact.id}>
               <Link to={`/state/${contact.id}`} className="messageBoxPreview-img-link">
@@ -61,7 +69,11 @@ export const SectionChatsPreview = () => {
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
                   <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
-                  <p className="messageBoxPreview-message">{contact.messages[contact.messages.length - 1].text}</p>
+                  <p className="messageBoxPreview-message">{
+                    contact.messages.length > 0 
+                      ? contact.messages[contact.messages.length - 1].text 
+                      : "No hay mensajes"
+                  }</p>
                 </div>
               </Link>
             </article>
@@ -69,7 +81,7 @@ export const SectionChatsPreview = () => {
       }
       {
         contacts
-          .filter(contact => contact.messages?.length > 0)
+          .filter(contact => contact.chatStarted)
           .map(contact => (
             <article className="messageBoxPreview" key={contact.id}>
               <Link to={`/state/${contact.id}`} className="messageBoxPreview-img-link">
@@ -80,7 +92,11 @@ export const SectionChatsPreview = () => {
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
                   <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
-                  <p className="messageBoxPreview-message">{contact.messages[contact.messages.length - 1].text}</p>
+                  <p className="messageBoxPreview-message">{
+                    contact.messages.length > 0 
+                      ? contact.messages[contact.messages.length - 1].text 
+                      : "No hay mensajes"
+                  }</p>
                 </div>
               </Link>
             </article>

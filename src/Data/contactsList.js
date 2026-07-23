@@ -22,6 +22,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/71.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/71.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -44,6 +45,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/16.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/16.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -67,6 +69,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/14.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/14.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -89,6 +92,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/64.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/64.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -105,6 +109,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/15.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/15.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -127,6 +132,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/3.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/3.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -148,6 +154,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/55.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/55.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -164,6 +171,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -180,6 +188,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/32.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/32.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -200,6 +209,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/58.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/58.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -216,6 +226,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/86.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/86.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -238,6 +249,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/25.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/25.jpg"
     },
+    "chatStarted": true,
   },
   {
     "name": {
@@ -254,6 +266,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/30.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/30.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -270,6 +283,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -286,6 +300,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/8.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/8.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -302,6 +317,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/59.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/59.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -318,6 +334,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/68.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/68.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -334,6 +351,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/48.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/48.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -350,6 +368,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/6.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/6.jpg"
     },
+    "chatStarted": false,
   },
   {
     "name": {
@@ -366,5 +385,6 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/women/48.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/women/48.jpg"
     },
+    "chatStarted": false,
   }
 ]
