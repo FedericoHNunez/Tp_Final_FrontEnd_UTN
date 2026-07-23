@@ -4,7 +4,7 @@
   padding: 2rem 0.5rem;
   background-color: var(--backgroundColorNav);
   border-right: 0.1rem solid var(--borderColorNav);
-  height: 100vh;
+  height: 100dvh;
   width: 6rem;
   display: none;
 }
@@ -41,6 +41,7 @@
   flex-direction: row;
   justify-content: space-around;
 }
+
 .nav-liButton:hover {
   background-color: var(--hoverBackground-dark);
   border-radius: 50%;
@@ -51,8 +52,9 @@
     display: flex;
 
   }
+
   .header-nav-mobile {
     display: none;
-    
+
   }
 }

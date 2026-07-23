@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
 :root {
     --verde-oscuro1: #075e54;
     --verde-oscuro: #064e3b;
@@ -194,13 +191,12 @@ p {
 
 @media screen and (max-width: 767px) {
 
-    /* Toggle list and detail views */
     .layout-main.has-active-contact .sectionView {
         display: none;
     }
 
     .layout-main.has-active-contact .asideView {
-        display: block !important;
+        display: block;
         width: 100%;
         height: 100dvh;
     }
