@@ -11,6 +11,7 @@ import { StatesScreen } from "./Screens/StatesScreen/StatesScreen";
 import { ContactContextProvider } from "./Context/ContactContext";
 import { MeScreen } from "./Screens/MeScreen/MeScreen";
 import { ContactChatScreen } from "./Screens/ContacChatScreen/ContactChatScreen";
+import { ContactInfoScreen } from "./Screens/ContactInfoScreen/ContactInfoScreen";
 function App() {
   return (
     <Routes>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/communities" element={<CommunitiesScreen />} />
           <Route path="/states" element={<StatesScreen />} />
           <Route path="/profile" element={<MeScreen />} />
+          <Route path="/contacts/:contact_id" element={<ContactInfoScreen />} />
         </Route>
       </Route>
     </Routes>

@@ -13,23 +13,14 @@
 
 
 .contactInfoHeader-left{
-    display: flex;
     gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .contactInfoHeader-right{
-    display: flex;
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .contactInfoHeader-right span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 4rem;
     height: 4rem;
 }
@@ -149,27 +140,20 @@
 
 .more-stikers{
     position: absolute;
-    top: 0.5rem;
+    top: 1rem;
     left: 2rem;
-    display: flex;
-    align-items: center;
 }
 .more-stikers span{
     width: 4rem;
     height: 4rem;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
 }   
 .micro{
     position: absolute;
-    top: 0.5rem;
-    right: 3rem;
+    top: 1rem;
+    right: 2rem;
     width: 4rem;
     height: 4rem;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
 .more-stikers span:hover,

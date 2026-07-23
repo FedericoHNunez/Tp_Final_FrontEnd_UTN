@@ -1,0 +1,82 @@
+  
+.contactInfoHeader {
+    background-color: var(--white);
+    height: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--borderColorNav);
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.sideBarContactInfo-container{
+    background-color: var(--white);
+    height: calc(100vh - 6.4rem);
+}
+.contactInfoHeader div{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contactInfoHeader img{
+    max-width: 4rem;
+    max-height: 4rem;
+    border-radius: 50%;
+    margin: 2rem ;
+}
+
+.sideBarContactInfo-contact {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarContactInfo-img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.sideBarContactInfo-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.sideBarContactInfo-options{
+    height: 20rem;
+}
+
+.sideBarContactInfo-options ul{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .sideBarContactInfo-options ul{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+    }
+}
+.sideBarContactInfo-options-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+
+}
+.sideBarContactInfo-options-item div{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--borderColorNav);
+
+}

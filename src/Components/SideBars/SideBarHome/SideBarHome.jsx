@@ -6,8 +6,8 @@ export const SideBarHome = () => {
     return (
         <>
 
-            <div>
-                <section className="sideBarHome center">
+            <div className="sideBarHome-div">
+                <section className="sideBarHome">
                     <div className="sideBarHome-container ">
                         <div className="sideBarHome-img">
                             <img src={PcHomeSideBar} alt="imagen resprentativa de una Notebook" />

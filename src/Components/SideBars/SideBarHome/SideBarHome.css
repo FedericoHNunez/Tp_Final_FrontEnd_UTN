@@ -1,4 +1,10 @@
-
+.sideBarHome-div{
+    height: 100dvh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .sideBarHome-container{
     width: 35.2rem;
