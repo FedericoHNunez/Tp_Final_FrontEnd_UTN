@@ -3,6 +3,7 @@ import { SideBarHome } from "../../Components/SideBars/SideBarHome/SideBarHome"
 export const HomeScreen = () => {
     return (
         <>  
+        
                 <section className="sectionView">
                 <SectionChatsPreview/>
                 </section>

@@ -121,6 +121,34 @@ p {
 
 /*Layout  */
 
+.layout-main{
+    grid-area: main;
+
+}
+.layout-header{
+    grid-area: header;
+    background-color: var(--white);
+}
+.asideView {
+    display: none;
+     background-color: var(--grey);
+     overflow-y: scroll;
+}
+.sectionView{
+    height: calc(100vh - 8rem);
+    background-color: var(--white);
+    overflow-y: scroll;
+}
+@media screen and (min-width: 768px) {
+    .layout-main {
+        display: grid;
+        grid-template-columns: clamp(34rem, 30vw, 57rem) 1fr;
+    }
+    .asideView {
+        display: block;
+    }  
+
+}
 
 @media screen  and (min-width: 480px) {
     .layout {
@@ -129,14 +157,9 @@ p {
         grid-template-areas:
             "header main";
     }
+    .sectionView{
+        height: 100vh;
+        
+    }
 }
 
-
-
-.backgroundSiderBar {
-    background-color: var(--grey);
-}
-
-.backgroundSection {
-    background-color: var(--white);
-}
