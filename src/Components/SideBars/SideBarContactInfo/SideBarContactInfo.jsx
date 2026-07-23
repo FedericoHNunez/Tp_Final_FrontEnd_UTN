@@ -30,7 +30,7 @@ export const SideBarContactInfo = () => {
             </header>
             <div className="sideBarContactInfo-container">
 
-            <section className="sideBarContactInfo-contact center">
+            <section className="sideBarContactInfo-contact">
                 <div className="sideBarContactInfo-img">
                     {contact_selected.picture
                         ? <img src={contact_selected.picture.large} alt={contact_selected.name} />
@@ -40,7 +40,7 @@ export const SideBarContactInfo = () => {
                 <h2>{`${contact_selected.name.first} ${contact_selected.name.last}`}</h2>
                 <p>{contact_selected.cell}</p>
             </section>
-            <section className="sideBarContactInfo-options center">
+            <section className="sideBarContactInfo-options">
                 <ul >
                     <li className="sideBarContactInfo-options-item">
                         <div className="center">
@@ -71,7 +71,7 @@ export const SideBarContactInfo = () => {
 
             </section>
 
-            <section className="sideBarContactInfo-actions">
+            <section className="sideBarContactInfo-actions center">
                 <ul>
                     <li className="sideBarContactInfo-actions-item danger">
                         <div className="center">

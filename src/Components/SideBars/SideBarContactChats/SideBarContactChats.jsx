@@ -32,7 +32,7 @@ export const SideBarContactChats = () => {
     return (
         <>
             <header className="contactInfoHeader">
-                <Link to={`/contacts/${contact_selected.id}`}>
+                <Link to={`/chats/contacts/${contact_selected.id}`}>
                 <div className="contactInfoHeader-left center">
                     <div>
                         <img src={contact_selected.picture.thumbnail} alt={contact_selected.alias} />
