@@ -65,7 +65,7 @@ function ContactContextProvider() {
                 if (contact.id === Number(contact_id)) {
                     return {
                         ...contact,
-                        messages: [],
+                        messages: []
                     }
                 }
 
