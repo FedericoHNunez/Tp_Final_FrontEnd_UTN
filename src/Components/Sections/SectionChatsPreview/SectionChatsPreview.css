@@ -33,3 +33,17 @@
     width: 100%;
 }
 
+.messageBoxPreview-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.messageBoxPreview-time {
+    font-size: 1.2rem;
+    color: var(--text);
+    opacity: 0.6;
+}
+
+

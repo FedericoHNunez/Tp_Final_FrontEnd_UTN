@@ -3,13 +3,15 @@ import { ContactContext } from "../../../Context/ContactContext"
 import "./SectionChatsPreview.css"
 import { Link } from "react-router"
 import { HeaderChatsPreview } from "../../HeaderChatsPreview/HeaderChatsPreview"
+import { formatTime } from "../../../utils/utils.js"
+
 export const SectionChatsPreview = () => {
 
   const { contacts } = useContext(ContactContext)
 
   return (
     <>
-          <HeaderChatsPreview />
+      <HeaderChatsPreview />
       {
         contacts
           .filter(contact => contact.chatStarted)
@@ -22,7 +24,14 @@ export const SectionChatsPreview = () => {
               </Link>
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
-                  <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                  <div className="messageBoxPreview-info-header">
+                    <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                    {contact.messages.length > 0 && (
+                      <span className="messageBoxPreview-time">
+                        {formatTime(contact.messages[contact.messages.length - 1].timestamp)}
+                      </span>
+                    )}
+                  </div>
                   <p className="messageBoxPreview-message">{
                     contact.messages.length > 0 
                       ? contact.messages[contact.messages.length - 1].text 
@@ -45,7 +54,14 @@ export const SectionChatsPreview = () => {
               </Link>
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
-                  <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                  <div className="messageBoxPreview-info-header">
+                    <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                    {contact.messages.length > 0 && (
+                      <span className="messageBoxPreview-time">
+                        {formatTime(contact.messages[contact.messages.length - 1].timestamp)}
+                      </span>
+                    )}
+                  </div>
                   <p className="messageBoxPreview-message">{
                     contact.messages.length > 0 
                       ? contact.messages[contact.messages.length - 1].text 
@@ -68,7 +84,14 @@ export const SectionChatsPreview = () => {
               </Link>
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
-                  <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                  <div className="messageBoxPreview-info-header">
+                    <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                    {contact.messages.length > 0 && (
+                      <span className="messageBoxPreview-time">
+                        {formatTime(contact.messages[contact.messages.length - 1].timestamp)}
+                      </span>
+                    )}
+                  </div>
                   <p className="messageBoxPreview-message">{
                     contact.messages.length > 0 
                       ? contact.messages[contact.messages.length - 1].text 
@@ -91,7 +114,14 @@ export const SectionChatsPreview = () => {
               </Link>
               <Link to={`/chats/${contact.id}`} className="messageBoxPreview-info-link">
                 <div className="messageBoxPreview-info">
-                  <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                  <div className="messageBoxPreview-info-header">
+                    <h2 className="messageBoxPreview-alias">{contact.alias}</h2>
+                    {contact.messages.length > 0 && (
+                      <span className="messageBoxPreview-time">
+                        {formatTime(contact.messages[contact.messages.length - 1].timestamp)}
+                      </span>
+                    )}
+                  </div>
                   <p className="messageBoxPreview-message">{
                     contact.messages.length > 0 
                       ? contact.messages[contact.messages.length - 1].text 

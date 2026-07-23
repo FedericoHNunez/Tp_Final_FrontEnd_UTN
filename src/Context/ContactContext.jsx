@@ -1,23 +1,23 @@
 import { createContext, useState } from "react";
 import { Outlet, useParams } from "react-router";
-import {contactsList} from "../Data/contactsList.js"
+import { contactsList } from "../Data/contactsList.js"
 
 
 const server_contacts = contactsList
 const ContactContext = createContext()
 
 function ContactContextProvider() {
-const [contacts, setContacts] = useState(server_contacts)
-const { contact_id } = useParams()
+    const [contacts, setContacts] = useState(server_contacts)
+    const { contact_id } = useParams()
 
-let contact_selected = null
+    let contact_selected = null
 
     if (contact_id) {
         contact_selected = contacts.find(contact => contact.id === Number(contact_id))
     }
 
-    
- function deleteMessageById(message_id) {
+
+    function deleteMessageById(message_id) {
         const contacts_modified = contacts.map(
             (contact) => {
                 if (contact.id === Number(contact_id)) {
@@ -35,12 +35,12 @@ let contact_selected = null
         )
     }
 
-       function createMessage(value, sender) {
+    function createMessage(value, sender) {
         const contacts_modified = contacts.map(
             (contact) => {
                 if (contact.id === Number(contact_id)) {
                     const new_message = {
-                       id: Math.max(0, ...contact.messages.map(message => message.id)) + 1,
+                        id: Math.max(0, ...contact.messages.map(message => message.id)) + 1,
                         sender: sender,
                         text: value,
                         timestamp: new Date().toISOString()
@@ -65,7 +65,7 @@ let contact_selected = null
                 if (contact.id === Number(contact_id)) {
                     return {
                         ...contact,
-                        messages: []
+                        messages: [],
                     }
                 }
 
@@ -88,7 +88,8 @@ let contact_selected = null
                 if (contact.id === Number(contactId)) {
                     return {
                         ...contact,
-                        messages: []
+                        messages: [],
+                        chatStarted: false
                     };
                 }
                 return contact;
