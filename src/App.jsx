@@ -1,6 +1,4 @@
 import { Routes, Route } from "react-router";
-
-
 import { LayoutScreen } from "./Screens/LayoutScreen/LayoutScreen";
 import { HomeScreen } from "./Screens/HomeScreen/HomeScreen";
 import { ChatsScreen } from "./Screens/ChatsScreen/ChatsScreen";
