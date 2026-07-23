@@ -172,13 +172,30 @@
 
 }
 
-@media screen and (max-width:480px){
-    .contact-messages{
-        height: calc(100vh - 6.4rem - 6.4rem - 6rem); 
-    }
-    .contactMessage-input{
-        position: sticky;
-        bottom: 6rem;
-        z-index: 1;
+.contactInfoHeader-left-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contactInfoHeader-back-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    cursor: pointer;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+.contactInfoHeader-back-btn:hover {
+    background-color: var(--hoverBackground-dark);
+}
+
+@media screen and (max-width: 767px) {
+    .contactInfoHeader-back-btn {
+        display: flex;
     }
 }
+

@@ -180,3 +180,21 @@ p {
     }
 }
 
+@media screen and (max-width: 767px) {
+    /* Hide navigation on mobile when inside an active chat */
+    .layout-header.hide-nav-mobile {
+        display: none;
+    }
+    
+    /* Toggle list and detail views */
+    .layout-main.has-active-contact .sectionView {
+        display: none;
+    }
+    .layout-main.has-active-contact .asideView {
+        display: block !important;
+        width: 100%;
+        height: 100dvh;
+    }
+}
+
+

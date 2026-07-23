@@ -32,14 +32,22 @@ export const SideBarContactChats = () => {
     return (
         <>
             <header className="contactInfoHeader">
-                <Link to={`/chats/contacts/${contact_selected.id}`}>
-                <div className="contactInfoHeader-left center">
-                    <div>
-                        <img src={contact_selected.picture.thumbnail} alt={contact_selected.alias} />
-                    </div>
-                    <h2>{contact_selected.alias}</h2>
+                <div className="contactInfoHeader-left-container center">
+                    <Link to="/chats" className="contactInfoHeader-back-btn">
+                        <svg viewBox="0 0 24 24" height="24" width="24" fill="currentColor">
+                            <title>Volver a los chats</title>
+                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                        </svg>
+                    </Link>
+                    <Link to={`/chats/contacts/${contact_selected.id}`}>
+                        <div className="contactInfoHeader-left center">
+                            <div>
+                                <img src={contact_selected.picture.thumbnail} alt={contact_selected.alias} />
+                            </div>
+                            <h2>{contact_selected.alias}</h2>
+                        </div>
+                    </Link>
                 </div>
-                </Link>
                 <div className="contactInfoHeader-right center">
                     <span className="center">
                         <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="currentColor"><title>Iniciar video llamada</title><path fill="currentColor" d="M4 20c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41V6c0-.55.2-1.02.59-1.41C2.98 4.19 3.45 4 4 4h12c.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41v4.5l3.15-3.15c.17-.17.35-.2.55-.13.2.09.3.25.3.48v8.6c0 .23-.1.4-.3.47-.2.09-.38.05-.55-.12L18 13.5V18c0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59H4Zm0-2h12V6H4v12Z"></path></svg>
