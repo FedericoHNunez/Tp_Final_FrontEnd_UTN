@@ -41,7 +41,7 @@
 }
 .contact-messages{
     width: 100%;
-    height: calc(100vh - 6.4rem - 6.4rem); 
+    height: calc(100dvh - 6.4rem - 6.4rem); 
     background-image: url("/img/fondoChatsOscuro.jpg");
     background-position: center;
     background-repeat: no-repeat;
