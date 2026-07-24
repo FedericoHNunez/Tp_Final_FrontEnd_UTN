@@ -146,7 +146,7 @@ p {
 .asideView {
     display: none;
     background-color: var(--grey);
-    overflow-y: scroll;
+    overflow: hidden;
     height: 100dvh;
 }
 
@@ -200,4 +200,10 @@ p {
         width: 100%;
         height: 100dvh;
     }
+}
+
+/* Estilos globales para hacer la barra de scroll transparente y delgada */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 }

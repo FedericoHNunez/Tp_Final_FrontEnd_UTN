@@ -113,67 +113,103 @@
 }
 
 .contactMessage-input {
-    padding-top: 0.5rem;
     position: sticky;
     bottom: 0;
-    z-index: 1;
-    height: 6.4rem;
+    z-index: 100;
+    min-height: 6.2rem;
+    height: auto;
     background: url(/img/fondoChatsOscuro.jpg);
-
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.contact-message-input-relative {
-    position: relative;
+.contactMessage-input-relative {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.4rem;
+    background-color: var(--white);
+    border-radius: 2.4rem;
+    border: 1px solid var(--borderColorNav);
+    padding: 0.3rem 0.8rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contactMessage-input-relative:focus-within {
+    border-color: var(--inputFocus);
+    box-shadow: 0 0 0 1px var(--inputFocus);
 }
 
 .contactMessage-input-textarea {
-    background-color: var(--white);
-    border-radius: 4rem;
-    padding: 1rem 12rem 1rem 12rem;
-    width: 97%;
-    margin-left: 1.5rem;
-    border: 1px solid var(--borderColorNav);
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
     outline: none;
-    height: 5rem;
-    padding: 1rem 10rem;
+    height: 3.6rem;
+    min-height: 3.6rem;
+    max-height: 12rem;
     line-height: 2rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    resize: none;
+    color: var(--black-dark);
+    padding: 0.8rem 0.4rem;
 }
 
-
 .more-stikers {
-    position: absolute;
-    top: 1rem;
-    left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .more-stikers span {
-    width: 4rem;
-    height: 4rem;
-
-}
-
-.micro {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    width: 4rem;
-    height: 4rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #54656f;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .more-stikers span:hover,
 .contactInfoHeader-right span:hover {
     cursor: pointer;
-    background-color: var(--hoverBackground-dark);
-    border-radius: 50%;
+    background-color: var(--hoverBackground-light);
+    color: #111b21;
 }
 
-.micro:hover {
-    cursor: pointer;
-    background-color: var(--green-light3);
-    border-radius: 50%;
-    color: var(--white);
-    fill: var(--white);
+.micro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+}
 
+.micro button,
+.micro span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    color: #54656f;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.micro button {
+    color: var(--green-light3);
+}
+
+.micro button:hover,
+.micro span:hover {
+    cursor: pointer;
+    background-color: var(--hoverBackground-light);
 }
 
 .contactInfoHeader-left-container {

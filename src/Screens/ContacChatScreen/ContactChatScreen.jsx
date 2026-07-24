@@ -1,23 +1,17 @@
-
-
-import { SectionChatsPreview } from "../../Components/Sections/SectionChatsPreview/SectionChatsPreview"
+import React from "react"
 import "./ContactChatScreen.css"
 import { SideBarContactChats } from '../../Components/SideBars/SideBarContactChats/SideBarContactChats'
+import { useValidateContact } from "../../Hooks/useValidateContact"
+
 
 export const ContactChatScreen = () => {
-
-
+    const redirect = useValidateContact()
+    if (redirect) return redirect
 
 
     return (
-        <>
-            <section className="sectionView">
-                <SectionChatsPreview />
-            </section>
-            <aside className="asideView">
-             <SideBarContactChats />
-
-            </aside>
-        </>
+        <aside className="asideView">
+            <SideBarContactChats />
+        </aside>
     )
 }
