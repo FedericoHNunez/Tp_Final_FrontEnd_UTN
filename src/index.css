@@ -61,7 +61,7 @@ html {
 html,
 body,
 #root {
-    height: 100vh;
+    height: 100dvh;
     background-color: var(--layout-color);
     font-family: var(--font);
     overflow: hidden;

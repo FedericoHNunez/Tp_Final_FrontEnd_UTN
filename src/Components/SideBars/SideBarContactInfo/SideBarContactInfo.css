@@ -14,7 +14,7 @@
 
 .sideBarContactInfo-container {
   background-color: var(--white);
-  height: calc(100vh - 6.4rem);
+  height: calc(100dvh - 6.4rem);
   overflow-y: auto;
 }
 

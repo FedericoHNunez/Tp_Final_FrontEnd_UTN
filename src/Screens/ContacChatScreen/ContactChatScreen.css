@@ -28,7 +28,7 @@
     border-radius: 50%;
 }
 .contact-message {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-image: url("../../assets/img/fondoChatsClaro.jpg");
 
     background-position: center;
