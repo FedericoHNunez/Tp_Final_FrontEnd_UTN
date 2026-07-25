@@ -98,6 +98,21 @@ function ContactContextProvider() {
         setContacts(contacts_modified);
     }
 
+    function startChat(contactId) {
+        const contacts_modified = contacts.map(
+            (contact) => {
+                if (contact.id === Number(contactId)) {
+                    return {
+                        ...contact,
+                        chatStarted: true
+                    };
+                }
+                return contact;
+            }
+        );
+        setContacts(contacts_modified);
+    }
+
     /* 
     createContact
     updateContactById
@@ -113,7 +128,8 @@ function ContactContextProvider() {
         createMessage,
         deleteAllMessages,
         deleteContactById,
-        deleteChat
+        deleteChat,
+        startChat
     }
     return (
         <ContactContext.Provider value={provider_values}>

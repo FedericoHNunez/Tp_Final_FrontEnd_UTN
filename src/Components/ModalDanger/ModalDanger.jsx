@@ -1,8 +1,8 @@
 
 import React from 'react';
-import './Modal.css';
+import './ModalDanger.css';
 
-export const Modal = ({ isOpen, onClose, title, message, onConfirm, onCancel }) => {
+export const ModalDanger = ({ isOpen, onClose, title, message, onConfirm, onCancel }) => {
   if (!isOpen) return null;
 
   return (

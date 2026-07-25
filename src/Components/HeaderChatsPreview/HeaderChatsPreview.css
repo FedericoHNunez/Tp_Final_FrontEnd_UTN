@@ -1,74 +1,24 @@
-.ChatsPreview-header{
+.ChatsPreview-header {
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     background-color: var(--white);
-    z-index: 1000;
+    z-index: 1;
 }
-.ChatsPreview-header-logo-container{
+
+.ChatsPreview-header-logo-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
-.ChatsPreview-header-logo-icon{
+
+.ChatsPreview-header-logo-icon {
     color: var(--whatsappLogo)
 }
-.ChatsPreview-header-actions{
+
+.ChatsPreview-header-actions {
     display: flex;
-    gap:3rem;
-}
-.ChatsPreview-header-input{
-    position: relative;
-}
-.ChatsPreview-header-input input{
-    width: 100%;
-    height: 4rem;
-    background-color: var( --inputBackground);
-    border-radius: 2rem;
-    padding: 0 2rem 0 6rem;
-}
-.ChatsPreview-header-input input:focus{
-    outline: none;
-    border: 1px solid var(--inputFocus);
-    box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2);
-}
-
-.ChatsPreview-header-input span {
-    position: absolute;
-    left: 2rem;
-    top: 1rem;
-}
-
-
-
-
-
-
-.ChatsPreview-header-nav ul{
-    padding-top: 1rem;
-    display: flex;
-    gap: 1rem;
-}
-.ChatsPreview-header-nav ul li:last-child{
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    padding: 0;
-    
-}
-
-.ChatsPreview-header-nav ul li{
-    padding: 0rem 2rem;
-    cursor: pointer;
-    border: 1px solid var(--boderColor);
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ChatsPreview-header-nav ul li:hover{
-    background-color: var(--hoverBackground-light);
+    gap: 3rem;
 }

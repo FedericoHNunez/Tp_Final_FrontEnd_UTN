@@ -1,16 +1,9 @@
 import React from "react"
 import "./HeaderChatsPreview.css"
-import { IoMdSearch } from "react-icons/io";
-import { Link } from "react-router";
-export const HeaderChatsPreview = ({ searchChatsValue, setSearchChatsValue }) => {
 
-    const onChangeSearchChats = (e) => {
-        setSearchChatsValue(e.target.value)
-    }
-
+export const HeaderChatsPreview = ({ onNewChatClick }) => {
     return (
         <>
-
             <header className="ChatsPreview-header">
                 <div className="ChatsPreview-header-logo-container">
                     <div className="ChatsPreview-header-logo">
@@ -19,7 +12,7 @@ export const HeaderChatsPreview = ({ searchChatsValue, setSearchChatsValue }) =>
                         </span>
                     </div>
                     <div className="ChatsPreview-header-actions">
-                        <button >
+                        <button onClick={onNewChatClick}>
                             <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="none"><title>Iniciar nuevo chat</title><path fill="currentColor" d="M9.53 13h1.98v1.97c0 .43.25.85.67.98a1 1 0 0 0 1.31-.94v-2.02h1.98c.43 0 .85-.25.98-.67a1 1 0 0 0-.94-1.31h-2.02V9.03c0-.43-.25-.85-.67-.98a1 1 0 0 0-1.31.94v2.02H9.49a1 1 0 0 0-.94 1.31c.13.42.55.67.98.67Z"></path><path fill="currentColor" fillRule="evenodd" d="M.94 5.53 3 8.85v8.48C3 18.81 4.2 20 5.67 20h13.66c1.48 0 2.67-1.2 2.67-2.67V6.67C22 5.19 20.8 4 19.33 4H1.8a1 1 0 0 0-.85 1.53ZM5 8.28v9.05c0 .37.3.67.67.67h13.66c.37 0 .67-.3.67-.67V6.67c0-.37-.3-.67-.67-.67H3.6L5 8.28Z" clipRule="evenodd"></path></svg>
                         </button>
                         <span >
@@ -27,39 +20,7 @@ export const HeaderChatsPreview = ({ searchChatsValue, setSearchChatsValue }) =>
                         </span>
                     </div>
                 </div>
-                <div className='ChatsPreview-header-input'>
-                    <label htmlFor="searchChats" disabled></label>
-                    <input
-                        id="searchChats"
-                        name="searchChats"
-                        type="text"
-                        placeholder="Buscar en chats de grupos"
-                        value={searchChatsValue}
-                        onChange={onChangeSearchChats}
-                    />
-                    <span className="search-icon">
-                        <IoMdSearch />
-                    </span>
-
-
-                </div>
-                <nav className='ChatsPreview-header-nav'>
-                    <ul>
-                        <li>
-                            <p>Todos</p>
-                        </li>
-                        <li>
-                            <p>No Leidos</p>
-                        </li>
-                        <li>
-                            <span aria-hidden="true" className="x1qx5ct2 xw4jnvo"><svg viewBox="0 0 24 24" height="20" width="20" preserveAspectRatio="xMidYMid meet" className="" fill="currentColor"><title>ic-arrow-drop-down</title><path fill="currentColor" d="m11.47 14.47-3.62-3.62a.47.47 0 0 1-.15-.35.5.5 0 0 1 .14-.35c.09-.1.21-.15.36-.15h7.6c.15 0 .27.05.36.15.1.1.14.22.14.35 0 .03-.05.15-.15.35l-3.62 3.63a.76.76 0 0 1-.25.17.73.73 0 0 1-.28.05c-.1 0-.2-.02-.28-.05a.76.76 0 0 1-.25-.18Z"></path></svg></span>
-                        </li>
-
-
-                    </ul>
-                </nav>
             </header>
-
         </>
     )
 }

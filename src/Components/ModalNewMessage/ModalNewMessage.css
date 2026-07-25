@@ -1,0 +1,114 @@
+.ModalNewMessage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--white);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: slideIn 0.22s cubic-bezier(0.1, 0.9, 0.2, 1);
+    background-color: var(--white);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.ModalNewMessage-header {
+    padding: 1.5rem 2rem;
+}
+
+.ModalNewMessage-header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ModalNewMessage-header button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.ModalNewMessage-contacts-list {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.ModalNewMessage-contacts-list a {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    color: var(--black-dark);
+    font-size: 1.6rem;
+    transition: background-color 0.2s;
+    margin: 1rem;
+    border-radius: 1.2rem;
+}
+
+.ModalNewMessage-contacts-list a:hover {
+    background-color: var(--hoverBackground-light);
+}
+
+.ModalNewMessage-contacts-list a span {
+    background-color: var(--verde-oscuro1);
+    color: var(--white);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contacts item container and layout */
+.ModalNewMessage-contact-item {
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+.ModalNewMessage-contact-item:hover {
+    background-color: var(--hoverBackground-light);
+}
+
+.ModalNewMessage-contact-item article {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.2rem 2rem;
+}
+
+.ModalNewMessage-contact-item img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ModalNewMessage-contact-item p {
+    font-size: 1.6rem;
+    color: var(--black-dark);
+    margin: 0;
+    font-weight: 400;
+}

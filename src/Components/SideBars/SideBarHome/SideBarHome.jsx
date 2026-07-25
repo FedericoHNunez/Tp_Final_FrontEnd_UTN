@@ -2,9 +2,13 @@ import React from 'react'
 import './SideBarHome.css'
 import { Link } from 'react-router'
 import PcHomeSideBar from ".../../../src/assets/img/PcHomeSideBar.jpeg";
+import { ModalNewContact } from '../../ModalNewContact/ModalNewConctact';
 export const SideBarHome = () => {
     return (
+
+
         <>
+            <ModalNewContact />
 
             <div className="sideBarHome-div">
                 <section className="sideBarHome">

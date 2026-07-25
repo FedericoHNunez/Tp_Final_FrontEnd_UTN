@@ -1,16 +1,18 @@
-.messageBoxPreview{
+.messageBoxPreview {
     display: grid;
     grid-template-columns: 4.9rem 1fr;
     align-items: center;
-    height: 7.2rem;    
+    height: 7.2rem;
     padding: 1.5rem;
     margin: 0.5rem;
     border-radius: 1rem;
     gap: 1.5rem;
 }
-.messageBoxPreview:hover{
+
+.messageBoxPreview:hover {
     background-color: var(--hoverBackground-light);
 }
+
 .messageBoxPreview-img-link,
 .messageBoxPreview-info-link {
     text-decoration: none;
@@ -18,17 +20,19 @@
     align-items: center;
     height: 100%;
 }
-.messageBoxPreview-img{
+
+.messageBoxPreview-img {
     display: flex;
     align-items: center;
 }
-.messageBoxPreview-img img{
+
+.messageBoxPreview-img img {
     width: 4.9rem;
     height: 4.9rem;
     border-radius: 50%;
 }
 
-.messageBoxPreview-info{
+.messageBoxPreview-info {
     text-align: left;
     width: 100%;
 }
@@ -46,4 +50,34 @@
     opacity: 0.6;
 }
 
+.ChatsPreview-header-nav {
+    padding: 0.5rem 2rem 1rem 2rem;
+    background-color: var(--white);
+}
 
+.ChatsPreview-header-nav ul {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.ChatsPreview-header-nav ul li:last-child {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.ChatsPreview-header-nav ul li {
+    padding: 0rem 2rem;
+    cursor: pointer;
+    border: 1px solid var(--boderColor);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChatsPreview-header-nav ul li:hover {
+    background-color: var(--hoverBackground-light);
+}

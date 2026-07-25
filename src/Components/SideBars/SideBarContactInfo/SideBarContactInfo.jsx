@@ -1,7 +1,7 @@
 import "./SideBarContactInfo.css"
 import { Link } from "react-router"
 import { useContactModalActions } from "../../../Hooks/useContactModalActions"
-import { Modal } from "../../Modal/Modal"
+import { ModalDanger } from "../../ModalDanger/ModalDanger"
 
 export const SideBarContactInfo = () => {
 
@@ -115,7 +115,7 @@ export const SideBarContactInfo = () => {
 
                     </ul>
                 </section>
-                <Modal
+                <ModalDanger
                     isOpen={isOpen}
                     onClose={closeModal}
                     title={modalContent.title}
