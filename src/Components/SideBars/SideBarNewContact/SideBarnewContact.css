@@ -1,0 +1,111 @@
+.ModalNewContact {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ModalNewContact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.4rem;
+    border-bottom: 0.1rem solid var(--borderColorNav);
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    border-left: 1px solid var(--borderColorNav);
+}
+
+.ModalNewContact-header span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--black-dark);
+}
+
+.ModalNewContact-header button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #54656f;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.ModalNewContact-header button:hover {
+    background-color: var(--hoverBackground-light);
+    color: #111b21;
+}
+
+.ModalNewContact-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    max-width: 50rem;
+    margin: 4rem auto 0 auto;
+}
+
+.ModalNewContact-content h2 {
+    font-size: 2.2rem;
+    color: var(--black-dark);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.ModalNewContact-content p {
+    font-size: 1.4rem;
+    color: var(--text);
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.ModalNewContact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.ModalNewContact-form input {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    background-color: var(--grey);
+    border: 1px solid var(--borderColorNav);
+    color: var(--black-dark);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.ModalNewContact-form input:focus {
+    border-color: var(--inputFocus);
+    box-shadow: 0 0 0 1px var(--inputFocus);
+}
+
+.ModalNewContact-form button[type="submit"] {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--green-light3);
+    border-radius: 0.8rem;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ModalNewContact-form button[type="submit"]:hover {
+    background-color: var(--verde-oscuro1);
+}
+
+.ModalNewContact-form button[type="submit"]:active {
+    transform: scale(0.98);
+}

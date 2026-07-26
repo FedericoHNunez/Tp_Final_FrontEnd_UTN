@@ -113,8 +113,28 @@ function ContactContextProvider() {
         setContacts(contacts_modified);
     }
 
+    function createContact(firstName, lastName, phoneNumber) {
+        const new_contact = {
+            id: Math.max(0, ...contacts.map(contact => contact.id)) + 1,
+            name: {
+                first: firstName,
+                last: lastName || ""
+            },
+            alias: `${firstName} ${lastName || ""}`.trim(),
+            unreadCount: 0,
+            messages: [],
+            cell: phoneNumber,
+            picture: {
+                large: "/img/avatarDefault.webp",
+                medium: "/img/avatarDefault.webp",
+                thumbnail: "/img/avatarDefault.webp"
+            },
+            chatStarted: false
+        };
+        setContacts(prev => [...prev, new_contact]);
+    }
+
     /* 
-    createContact
     updateContactById
     updateMessageById
     */
@@ -129,13 +149,14 @@ function ContactContextProvider() {
         deleteAllMessages,
         deleteContactById,
         deleteChat,
-        startChat
+        startChat,
+        createContact
     }
     return (
         <ContactContext.Provider value={provider_values}>
-            {/* 
-            el outlet hace referencia a las subrutas
-            */}
+            {
+
+            }
             <Outlet />
         </ContactContext.Provider>
     )

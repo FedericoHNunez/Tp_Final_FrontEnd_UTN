@@ -10,6 +10,7 @@ import { ContactContextProvider } from "./Context/ContactContext";
 import { MeScreen } from "./Screens/MeScreen/MeScreen";
 import { ContactChatScreen } from "./Screens/ContacChatScreen/ContactChatScreen";
 import { ContactInfoScreen } from "./Screens/ContactInfoScreen/ContactInfoScreen";
+import { SideBarNewContact } from "./Components/SideBars/SideBarNewContact/SideBarnewContact";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/home" element={<ChatsScreen />} />
             <Route path="/chats" element={<ChatsScreen />} />
             <Route path="/chats/:contact_id" element={<ContactChatScreen />} />
+            <Route path="/chats/new-contact" element={<SideBarNewContact />} />
             <Route path="/chats/contacts/:contact_id" element={<ContactInfoScreen />} />
             <Route path="*" element={<ChatsScreen />} />
           </Route>

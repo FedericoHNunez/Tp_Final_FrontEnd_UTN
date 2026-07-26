@@ -17,13 +17,7 @@ export const SideBarContactChats = () => {
         handleKeyDown
     } = useChatForm()
 
-    const scrollToBottom = () => {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
-    }
 
-    useEffect(() => {
-        scrollToBottom()
-    }, [contact_selected.messages, contact_selected.id])
 
     return (
         <>
