@@ -25,7 +25,7 @@ export const SideBarContactInfo = () => {
                         <p>Volver</p>
                     </div>
                 </Link>
-                <Link to={`/editContact/${contact_selected.id}`}>
+                <Link to={`/chats/edit-contact/${contact_selected.id}`}>
                     <div>
                         <p>Editar</p>
                         <span>

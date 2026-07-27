@@ -138,7 +138,25 @@ function ContactContextProvider() {
     updateContactById
     updateMessageById
     */
-
+    const updateContactById = (contactId, data) => {
+        const contacts_modified = contacts.map(
+            (contact) => {
+                if (contact.id === Number(contactId)) {
+                    return {
+                        ...contact,
+                        name: {
+                            first: data.first,
+                            last: data.last || ""
+                        },
+                        alias: `${data.first} ${data.last || ""}`.trim(),
+                        cell: data.cell,
+                    };
+                }
+                return contact;
+            }
+        );
+        setContacts(contacts_modified);
+    }
 
 
     const provider_values = {
@@ -150,7 +168,8 @@ function ContactContextProvider() {
         deleteContactById,
         deleteChat,
         startChat,
-        createContact
+        createContact,
+        updateContactById
     }
     return (
         <ContactContext.Provider value={provider_values}>

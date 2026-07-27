@@ -3,7 +3,7 @@ import { ContactContext } from "../../../Context/ContactContext"
 import { useChatForm } from "../../../Hooks/useChatForm"
 import "./SideBarContactChats.css"
 import { Link } from "react-router"
-import { formatTime } from "../../../utils/utils.js"
+import { formatTime } from "../../../utils/Timestamp.js"
 export const SideBarContactChats = () => {
 
     const { contact_selected } = useContext(ContactContext)

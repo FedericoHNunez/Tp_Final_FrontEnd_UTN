@@ -11,6 +11,7 @@ import { MeScreen } from "./Screens/MeScreen/MeScreen";
 import { ContactChatScreen } from "./Screens/ContacChatScreen/ContactChatScreen";
 import { ContactInfoScreen } from "./Screens/ContactInfoScreen/ContactInfoScreen";
 import { SideBarNewContact } from "./Components/SideBars/SideBarNewContact/SideBarnewContact";
+import { SideBarEditContact } from "./Components/SideBars/SideBarEditContact/SideBarEditContact";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/chats/:contact_id" element={<ContactChatScreen />} />
             <Route path="/chats/new-contact" element={<SideBarNewContact />} />
             <Route path="/chats/contacts/:contact_id" element={<ContactInfoScreen />} />
+            <Route path="/chats/edit-contact/:contact_id" element={<SideBarEditContact />} />
             <Route path="*" element={<ChatsScreen />} />
           </Route>
           <Route path="/calls" element={<CallScreen />} />

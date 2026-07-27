@@ -4,7 +4,7 @@ import "./SectionChatsPreview.css"
 import { Link } from "react-router"
 import { HeaderChatsPreview } from "../../HeaderChatsPreview/HeaderChatsPreview"
 import { InputSearchContact } from "../../InputSearchContact/InputSearchContact"
-import { formatTime } from "../../../utils/utils.js"
+import { formatTime } from "../../../utils/Timestamp.js"
 import { ModalNewMessage } from "../../ModalNewMessage/ModalNewMessage"
 
 export const SectionChatsPreview = () => {
