@@ -1,7 +1,15 @@
+import { SideBarStatus } from "../../Components/SideBars/SideBarStatus/SideBarStatus"
+import { SectionStates } from "../../Components/Sections/SectionStates/SectionStates"
+
 export const StatesScreen = () => {
     return (
         <>
-            <h1>StatesScreen</h1>
+            <section className="mainView">
+                <SectionStates />
+            </section>
+            <aside className="asideView backgroundSiderBar">
+                <SideBarStatus />
+            </aside>
         </>
     )
 }

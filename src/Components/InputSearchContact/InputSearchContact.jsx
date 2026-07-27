@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdSearch } from "react-icons/io";
 import "./InputSearchContact.css";
 
-export const InputSearchContact = ({ searchChatsValue, setSearchChatsValue }) => {
+export const InputSearchContact = ({ searchChatsValue, setSearchChatsValue, placeholder }) => {
   const onChangeSearchChats = (e) => {
     setSearchChatsValue(e.target.value);
   };
@@ -15,7 +15,7 @@ export const InputSearchContact = ({ searchChatsValue, setSearchChatsValue }) =>
           id="searchChats"
           name="searchChats"
           type="text"
-          placeholder="Buscar en chats de grupos"
+          placeholder={placeholder}
           value={searchChatsValue}
           onChange={onChangeSearchChats}
         />

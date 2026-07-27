@@ -22,6 +22,7 @@ export const SectionChatsPreview = () => {
       <InputSearchContact
         searchChatsValue={searchChatsValue}
         setSearchChatsValue={setSearchChatsValue}
+        placeholder="Buscar chats o grupos"
       />
       <nav className='ChatsPreview-header-nav'>
         <ul>

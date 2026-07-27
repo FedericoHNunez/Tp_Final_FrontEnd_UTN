@@ -24,6 +24,7 @@ export const ModalNewMessage = ({ onClose }) => {
                 <InputSearchContact
                     searchChatsValue={searchChatsValue}
                     setSearchChatsValue={setSearchChatsValue}
+                    placeholder="Buscar contactos"
                 />
 
 

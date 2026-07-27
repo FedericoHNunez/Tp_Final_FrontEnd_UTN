@@ -1,7 +1,15 @@
+import { SideBarCalls } from "../../Components/SideBars/SideBarCalls/SideBarCalls"
+import { SectionCalls } from "../../Components/Sections/SectionCalls/SectionCalls"
+
 export const CallScreen = () => {
     return (
         <>
-            <h1>callScreen</h1>
+            <section className="mainView">
+                <SectionCalls />
+            </section>
+            <aside className="asideView">
+                <SideBarCalls />
+            </aside>
         </>
     )
 }
