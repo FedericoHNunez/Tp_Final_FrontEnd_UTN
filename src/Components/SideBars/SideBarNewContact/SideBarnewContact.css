@@ -65,47 +65,4 @@
     margin-bottom: 1.5rem;
 }
 
-.ModalNewContact-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-}
 
-.ModalNewContact-form input {
-    width: 100%;
-    padding: 1.2rem 1.6rem;
-    font-size: 1.5rem;
-    border-radius: 0.8rem;
-    background-color: var(--grey);
-    border: 1px solid var(--borderColorNav);
-    color: var(--black-dark);
-    transition: border-color 0.2s, box-shadow 0.2s;
-    outline: none;
-}
-
-.ModalNewContact-form input:focus {
-    border-color: var(--inputFocus);
-    box-shadow: 0 0 0 1px var(--inputFocus);
-}
-
-.ModalNewContact-form button[type="submit"] {
-    margin-top: 1rem;
-    width: 100%;
-    padding: 1.2rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--white);
-    background-color: var(--green-light3);
-    border-radius: 0.8rem;
-    transition: background-color 0.2s, transform 0.1s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.ModalNewContact-form button[type="submit"]:hover {
-    background-color: var(--verde-oscuro1);
-}
-
-.ModalNewContact-form button[type="submit"]:active {
-    transform: scale(0.98);
-}

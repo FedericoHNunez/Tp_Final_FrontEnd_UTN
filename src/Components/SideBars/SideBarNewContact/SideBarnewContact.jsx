@@ -2,22 +2,15 @@ import "./SideBarnewContact.css";
 import { useContext } from "react";
 import { useNavigate } from "react-router";
 import { ContactContext } from "../../../Context/ContactContext";
+import { ContactForm } from "../../ContactForm/ContactForm";
 
 export const SideBarNewContact = () => {
     const { createContact } = useContext(ContactContext);
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const data = new FormData(e.target);
-        const nombre = data.get("nombre");
-        const apellido = data.get("apellido");
-        const telefono = data.get("telefono");
-        
-        if (nombre && telefono) {
-            createContact(nombre, apellido, telefono);
-            navigate("/chats");
-        }
+    const handleFormSubmit = ({ nombre, apellido, telefono }) => {
+        createContact(nombre, apellido, telefono);
+        navigate("/chats");
     };
 
     return (
@@ -44,14 +37,12 @@ export const SideBarNewContact = () => {
                 <section className="ModalNewContact-content">
                     <h2>Crear nuevo contacto</h2>
                     <p>Puedes agregar un contacto ingresando su nombre, apellido y número de teléfono.</p>
-                    <form className="ModalNewContact-form" onSubmit={handleSubmit}>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" />
-                        <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required />
-                        <button type="submit">Agregar</button>
-                    </form>
+                    <ContactForm 
+                        onSubmit={handleFormSubmit} 
+                        submitButtonText="Agregar"
+                    />
                 </section>
             </section>
         </aside>
     );
-}
+}

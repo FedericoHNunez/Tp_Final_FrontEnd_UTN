@@ -1,6 +1,7 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { useParams, useNavigate } from "react-router";
 import { ContactContext } from "../../../Context/ContactContext";
+import { ContactForm } from "../../ContactForm/ContactForm";
 import "./SideBarEditContact.css";
 
 export const SideBarEditContact = () => {
@@ -9,18 +10,6 @@ export const SideBarEditContact = () => {
     const navigate = useNavigate();
 
     const contact = contacts.find(c => c.id === Number(contact_id));
-
-    const [nombre, setNombre] = useState("");
-    const [apellido, setApellido] = useState("");
-    const [telefono, setTelefono] = useState("");
-
-    useEffect(() => {
-        if (contact) {
-            setNombre(contact.name.first || "");
-            setApellido(contact.name.last || "");
-            setTelefono(contact.cell || "");
-        }
-    }, [contact]);
 
     if (!contact) {
         return (
@@ -47,16 +36,23 @@ export const SideBarEditContact = () => {
         );
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (nombre.trim() && telefono.trim()) {
-            updateContactById(contact.id, {
-                first: nombre.trim(),
-                last: apellido.trim(),
-                cell: telefono.trim()
-            });
-            navigate(`/chats/contacts/${contact.id}`);
-        }
+    const handleFormSubmit = ({ nombre, apellido, telefono }) => {
+        updateContactById(contact.id, {
+            first: nombre,
+            last: apellido,
+            cell: telefono
+        });
+        navigate(`/chats/contacts/${contact.id}`);
+    };
+
+    const handleCancel = () => {
+        navigate(`/chats/contacts/${contact.id}`);
+    };
+
+    const initialValues = {
+        nombre: contact.name.first || "",
+        apellido: contact.name.last || "",
+        telefono: contact.cell || ""
     };
 
     return (
@@ -91,54 +87,16 @@ export const SideBarEditContact = () => {
                     <h2>{`${contact.name.first} ${contact.name.last}`}</h2>
                     <p className="subtitle">Realiza los cambios necesarios para actualizar la información de tu contacto.</p>
                     
-                    <form className="ModalEditContact-form" onSubmit={handleSubmit}>
-                        <div className="form-group">
-                            <label htmlFor="nombre">Nombre</label>
-                            <input 
-                                type="text" 
-                                name="nombre" 
-                                id="nombre" 
-                                placeholder="Nombre" 
-                                value={nombre}
-                                onChange={(e) => setNombre(e.target.value)}
-                                required 
-                            />
-                        </div>
-                        
-                        <div className="form-group">
-                            <label htmlFor="apellido">Apellido (Opcional)</label>
-                            <input 
-                                type="text" 
-                                name="apellido" 
-                                id="apellido" 
-                                placeholder="Apellido" 
-                                value={apellido}
-                                onChange={(e) => setApellido(e.target.value)}
-                            />
-                        </div>
-                        
-                        <div className="form-group">
-                            <label htmlFor="telefono">Número de Teléfono</label>
-                            <input 
-                                type="text" 
-                                name="telefono" 
-                                id="telefono" 
-                                placeholder="Teléfono" 
-                                value={telefono}
-                                onChange={(e) => setTelefono(e.target.value)}
-                                required 
-                            />
-                        </div>
-                        
-                        <div className="button-group">
-                            <button type="submit" className="save-btn">Guardar Cambios</button>
-                            <button type="button" className="cancel-btn" onClick={() => navigate(`/chats/contacts/${contact.id}`)}>
-                                Cancelar
-                            </button>
-                        </div>
-                    </form>
+                    <ContactForm 
+                        initialValues={initialValues}
+                        onSubmit={handleFormSubmit}
+                        onCancel={handleCancel}
+                        submitButtonText="Guardar Cambios"
+                        cancelButtonText="Cancelar"
+                    />
                 </section>
             </section>
         </aside>
     );
 };
+

@@ -1,0 +1,83 @@
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-form label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #54656f;
+    margin-left: 0.4rem;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    background-color: var(--grey);
+    border: 1px solid var(--borderColorNav);
+    color: var(--black-dark);
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+    outline: none;
+}
+
+.contact-form input:focus {
+    background-color: var(--white);
+    border-color: var(--inputFocus);
+    box-shadow: 0 0 0 1px var(--inputFocus);
+}
+
+.contact-form .button-group {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.contact-form button {
+    flex: 1;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, border-color 0.2s;
+}
+
+.contact-form button:active {
+    transform: scale(0.98);
+}
+
+.contact-form .save-btn {
+    color: var(--white);
+    background-color: var(--green-light3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .save-btn:hover {
+    background-color: var(--verde-oscuro1);
+}
+
+.contact-form .cancel-btn {
+    color: #54656f;
+    background-color: transparent;
+    border: 1px solid var(--borderColorNav);
+}
+
+.contact-form .cancel-btn:hover {
+    background-color: var(--hoverBackground-light);
+    color: #111b21;
+    border-color: #54656f;
+}
