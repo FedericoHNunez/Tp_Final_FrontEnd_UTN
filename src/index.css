@@ -28,7 +28,7 @@
     --whatsappLogo: var(--green-light3);
     /* backgrounds */
     --inputBackground: var(--grey);
-    --hoverBackground-dark: var(--grey-dark);
+    --hover-dark: var(--grey-dark);
     --hoverBackground-light: var(--grey-light);
     /* boder */
     --boderColor: var(--grey-dark);
