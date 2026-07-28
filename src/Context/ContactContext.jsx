@@ -17,13 +17,16 @@ function ContactContextProvider() {
     }
 
 
-    function deleteMessageById(message_id) {
+    function deleteMessageById(contactId, messageId) {
+        const targetContactId = messageId !== undefined ? contactId : contact_id;
+        const targetMessageId = messageId !== undefined ? messageId : contactId;
+
         const contacts_modified = contacts.map(
             (contact) => {
-                if (contact.id === Number(contact_id)) {
+                if (contact.id === Number(targetContactId)) {
                     return {
                         ...contact,
-                        messages: contact.messages.filter(message => message.id !== Number(message_id))
+                        messages: contact.messages.filter(message => message.id !== Number(targetMessageId))
                     }
                 }
 
@@ -134,10 +137,7 @@ function ContactContextProvider() {
         setContacts(prev => [...prev, new_contact]);
     }
 
-    /* 
-    updateContactById
-    updateMessageById
-    */
+
     const updateContactById = (contactId, data) => {
         const contacts_modified = contacts.map(
             (contact) => {

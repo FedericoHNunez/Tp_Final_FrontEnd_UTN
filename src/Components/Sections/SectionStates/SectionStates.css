@@ -1,0 +1,52 @@
+.section-states-container {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.states-header {
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+}
+
+.states-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--black-dark);
+}
+
+.states-my-status {
+    margin-bottom: 2.5rem;
+}
+
+.states-recientes {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.states-section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--verde-oscuro1);
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.no-states-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: var(--grey-light);
+    border-radius: 1rem;
+    border: 1px dashed var(--borderColorNav);
+}
+
+.no-states-container p {
+    font-size: 1.4rem;
+    color: var(--text);
+    opacity: 0.7;
+    text-align: center;
+}

@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { useNavigate } from "react-router";
+import { useContext } from "react"
+import { useNavigate } from "react-router"
 import { ContactContext } from "../Context/ContactContext";
 import { useModal } from "./useModals";
 
@@ -9,7 +9,7 @@ export const useContactModalActions = () => {
         deleteAllMessages,
         deleteChat,
         deleteContactById
-    } = useContext(ContactContext);
+    } = useContext(ContactContext)
 
     const { isOpen, modalContent, openModal, closeModal } = useModal();
     const navigate = useNavigate();
@@ -49,8 +49,8 @@ export const useContactModalActions = () => {
                 navigate('/chats');
             },
             onCancel: closeModal,
-        });
-    };
+        })
+    }
 
     return {
         contact_selected,
@@ -60,5 +60,5 @@ export const useContactModalActions = () => {
         handleVaciarChat,
         handleEliminarChat,
         handleEliminarContacto
-    };
-};
+    }
+}

@@ -1,0 +1,71 @@
+.chatbox-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    gap: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    color: inherit;
+    font-family: inherit;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.chatbox-container:hover {
+    background-color: var(--hoverBackground-light);
+}
+
+.chatbox-avatar {
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.chatbox-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0; /* allows text truncation */
+    text-decoration: none;
+    color: inherit;
+}
+
+.chatbox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.chatbox-header h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black-dark);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chatbox-time {
+    font-size: 1.2rem;
+    color: var(--text);
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+.chatbox-details p {
+    font-size: 1.4rem;
+    color: var(--text);
+    margin: 0.4rem 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.8;
+}

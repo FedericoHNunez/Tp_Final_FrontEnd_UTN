@@ -1,14 +1,14 @@
 export const contactsList = [
   {
     "name": {
-      "first": "Domenica",
-      "last": "Durand"
+      "first": "Delfina",
+      "last": "Díaz"
     },
-    "alias": "Domenica Durand",
+    "alias": "Delfina Díaz",
     "unreadCount": 2,
     "messages": [
       { "id": 1, "sender": "contact", "text": "Hola 👋", "timestamp": "2026-07-10T09:00:00Z" },
-      { "id": 2, "sender": "me", "text": "Hola Domenica, ¿cómo estás?", "timestamp": "2026-07-10T09:01:00Z" },
+      { "id": 2, "sender": "me", "text": "Hola Delfina, ¿cómo estás?", "timestamp": "2026-07-10T09:01:00Z" },
       { "id": 3, "sender": "contact", "text": "Muy bien, gracias. ¿Y vos?", "timestamp": "2026-07-10T09:02:00Z" },
       { "id": 4, "sender": "me", "text": "Todo tranquilo.", "timestamp": "2026-07-10T09:03:00Z" },
       { "id": 5, "sender": "contact", "text": "¿Terminaste el proyecto?", "timestamp": "2026-07-10T09:05:00Z" },
@@ -26,10 +26,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Leanne",
-      "last": "Patel"
+      "first": "Laura",
+      "last": "Pérez"
     },
-    "alias": "Leanne Patel",
+    "alias": "Laura Pérez",
     "unreadCount": 0,
     "messages": [
       { "id": 1, "sender": "contact", "text": "¿Almorzamos hoy?", "timestamp": "2026-07-11T11:30:00Z" },
@@ -50,9 +50,9 @@ export const contactsList = [
   {
     "name": {
       "first": "Rosa",
-      "last": "Pedersen"
+      "last": "Palacios"
     },
-    "alias": "Rosa Pedersen",
+    "alias": "Rosa Palacios",
     "unreadCount": 2,
     "messages": [
       { "id": 1, "sender": "me", "text": "¿Cómo estuvo tu fin de semana?", "timestamp": "2026-07-09T20:00:00Z" },
@@ -73,10 +73,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Ali",
-      "last": "Alnıaçık"
+      "first": "Alejandro",
+      "last": "Álvarez"
     },
-    "alias": "Ali Alnıaçık",
+    "alias": "Alejandro Álvarez",
     "unreadCount": 3,
     "messages": [
       { "id": 1, "sender": "contact", "text": "Te mandé el documento.", "timestamp": "2026-07-08T15:00:00Z" },
@@ -96,10 +96,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Brett",
-      "last": "Williams"
+      "first": "Bruno",
+      "last": "Varela"
     },
-    "alias": "Brett Williams",
+    "alias": "Bruno Varela",
     "unreadCount": 0,
     "messages": [],
     "cell": "081-811-9109",
@@ -136,10 +136,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Clayton",
-      "last": "Perez"
+      "first": "Carlos",
+      "last": "Pérez"
     },
-    "alias": "Clayton Perez",
+    "alias": "Carlos Pérez",
     "unreadCount": 2,
     "messages": [
       { "id": 1, "sender": "contact", "text": "¿Viste la nueva actualización?", "timestamp": "2026-07-16T10:00:00Z" },
@@ -158,10 +158,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Mohamed",
+      "first": "Manuel",
       "last": "Nieto"
     },
-    "alias": "Mohamed Nieto",
+    "alias": "Manuel Nieto",
     "unreadCount": 0,
     "messages": [],
     "cell": "645-322-570",
@@ -175,10 +175,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Brent",
-      "last": "Rhodes"
+      "first": "Bautista",
+      "last": "Ruiz"
     },
-    "alias": "Brent Rhodes",
+    "alias": "Bautista Ruiz",
     "cell": "081-707-6584",
     "unreadCount": 0,
     "messages": [],
@@ -192,13 +192,13 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Nivalda",
-      "last": "Aragão"
+      "first": "Natalia",
+      "last": "Arias"
     },
-    "alias": "Nivalda Aragão",
-   "unreadCount": 0,
+    "alias": "Natalia Arias",
+    "unreadCount": 0,
     "messages": [
-      { "id": 1, "sender": "me", "text": "Hola Mateo, ¿todo listo para la reunión?", "timestamp": "2026-07-15T14:00:00Z" },
+      { "id": 1, "sender": "me", "text": "Hola Natalia, ¿todo listo para la reunión?", "timestamp": "2026-07-15T14:00:00Z" },
       { "id": 2, "sender": "contact", "text": "¡Hola! Sí, ya envié la presentación.", "timestamp": "2026-07-15T14:15:00Z" },
       { "id": 3, "sender": "me", "text": "Perfecto, nos vemos a las 3.", "timestamp": "2026-07-15T14:16:00Z" }
     ],
@@ -213,10 +213,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Clifton",
-      "last": "Barrett"
+      "first": "Cristian",
+      "last": "Benítez"
     },
-    "alias": "Clifton Barrett",
+    "alias": "Cristian Benítez",
     "unreadCount": 0,
     "messages": [],
     "cell": "07702 001142",
@@ -230,11 +230,11 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Ali",
-      "last": "Metzger"
+      "first": "Adrián",
+      "last": "Medina"
     },
-    "alias": "Ali Metzger",
-   "unreadCount": 5,
+    "alias": "Adrián Medina",
+    "unreadCount": 5,
     "messages": [
       { "id": 1, "sender": "contact", "text": "¡Feliz cumpleaños! 🎂", "timestamp": "2026-07-17T08:00:00Z" },
       { "id": 2, "sender": "contact", "text": "Espero que tengas un día excelente.", "timestamp": "2026-07-17T08:01:00Z" },
@@ -253,10 +253,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Marius",
-      "last": "Nielsen"
+      "first": "Mariano",
+      "last": "Navarro"
     },
-    "alias": "Marius Nielsen",
+    "alias": "Mariano Navarro",
     "unreadCount": 0,
     "messages": [],
     "cell": "09871322",
@@ -287,10 +287,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Umut",
-      "last": "Sözeri"
+      "first": "Ulises",
+      "last": "Sosa"
     },
-    "alias": "Umut Sözeri",
+    "alias": "Ulises Sosa",
     "unreadCount": 0,
     "messages": [],
     "cell": "(418)-650-4698",
@@ -304,10 +304,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Baljiwan",
-      "last": "Fernandes"
+      "first": "Benjamín",
+      "last": "Fernández"
     },
-    "alias": "Baljiwan Fernandes",
+    "alias": "Benjamín Fernández",
     "unreadCount": 0,
     "messages": [],
     "cell": "9020527585",
@@ -321,10 +321,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Jasmina",
-      "last": "Malešević"
+      "first": "Juana",
+      "last": "Martínez"
     },
-    "alias": "Jasmina Malešević",
+    "alias": "Juana Martínez",
     "unreadCount": 0,
     "messages": [],
     "cell": "068-5998-059",
@@ -338,10 +338,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Freya",
-      "last": "Tuft"
+      "first": "Florencia",
+      "last": "Torres"
     },
-    "alias": "Freya Tuft",
+    "alias": "Florencia Torres",
     "unreadCount": 0,
     "messages": [],
     "cell": "96555156",
@@ -355,10 +355,10 @@ export const contactsList = [
   },
   {
     "name": {
-      "first": "Helmer",
-      "last": "Haraldstad"
+      "first": "Hugo",
+      "last": "Herrera"
     },
-    "alias": "Helmer Haraldstad",
+    "alias": "Hugo Herrera",
     "unreadCount": 0,
     "messages": [],
     "cell": "43207824",
@@ -373,9 +373,9 @@ export const contactsList = [
   {
     "name": {
       "first": "Olga",
-      "last": "Terzić"
+      "last": "Toledo"
     },
-    "alias": "Olga Terzić",
+    "alias": "Olga Toledo",
     "unreadCount": 0,
     "messages": [],
     "cell": "065-1584-652",
