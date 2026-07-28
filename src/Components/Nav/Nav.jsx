@@ -6,7 +6,7 @@ import './Nav.css'
 export const Nav = () => {
 
   const imagesIcon = NavIcons.find(icon => icon.ruta === 'multimedia')
- const communitiesIcon = NavIcons.find(icon => icon.ruta === 'communities')
+  const communitiesIcon = NavIcons.find(icon => icon.ruta === 'communities')
   return (
     <>
 
@@ -16,18 +16,16 @@ export const Nav = () => {
             {NavIcons
               .filter(icon => icon.id !== imagesIcon.id)
               .map(icon => (
-                <li key={icon.id} className='nav-liButton' >
+                <li key={icon.id} className='nav-liButton center'>
                   <NavLink to={icon.ruta}>
                     {({ isActive }) => (
-                      <button >
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: isActive
-                              ? icon.variantes.seleccionado
-                              : icon.variantes.sin_seleccionar,
-                          }}
-                        />
-                      </button>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: isActive
+                            ? icon.variantes.seleccionado
+                            : icon.variantes.sin_seleccionar,
+                        }}
+                      />
                     )}
                   </NavLink>
                 </li>
@@ -36,19 +34,19 @@ export const Nav = () => {
         </div>
         <div className="nav-list_inferior">
           <ul>
-            <li className='nav-liButton'>
-                <button className='nav-button' title='Boton de Acceso a la seccion de multimedia personal'>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: imagesIcon.variantes.default,
-                    }}
-                  />
-                </button>
+            <li className='nav-liButton center'>
+              <button className='nav-button' title='Boton de Acceso a la seccion de multimedia personal'>
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: imagesIcon.variantes.default,
+                  }}
+                />
+              </button>
 
             </li>
-            <li className='nav-liButton'>
+            <li className='nav-liButton center'>
               <Link to="/profile">
-                <button > Me </button>
+                <img src={`./img/avatarDefault.webp`} alt="Mi perfil" />
               </Link>
             </li>
           </ul>
@@ -59,21 +57,23 @@ export const Nav = () => {
         <div className="nav-list_mobile">
           <ul className="nav-list_mobile_items">
             {NavIcons
-       .filter(icon => icon.id !== imagesIcon.id && icon.id !== communitiesIcon.id)
+              .filter(icon => icon.id !== imagesIcon.id && icon.id !== communitiesIcon.id)
               .map(icon => (
                 <li key={icon.id} className='nav-liButton' >
                   <NavLink to={icon.ruta}>
                     {({ isActive }) => (
-                      <button >
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: isActive
-                              ? icon.variantes.seleccionado
-                              : icon.variantes.sin_seleccionar,
-                          }}
-                        />
+                      <div>
+                        <div className='center'>
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: isActive
+                                ? icon.variantes.seleccionado
+                                : icon.variantes.sin_seleccionar,
+                            }}
+                          />
+                        </div>
                         <p>{icon.nombre}</p>
-                      </button>
+                      </div>
                     )}
                   </NavLink>
                 </li>
