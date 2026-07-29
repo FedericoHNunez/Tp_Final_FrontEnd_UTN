@@ -16,3 +16,7 @@
     background-color: var(--hover-light);
     border-radius: 50%;
 }
+
+.border-none {
+    border: none;
+}

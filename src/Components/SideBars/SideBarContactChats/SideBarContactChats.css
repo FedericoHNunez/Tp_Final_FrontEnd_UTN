@@ -1,4 +1,7 @@
 /* Estilos para el el header  */
+.contactInfoHeader-left {
+    gap: 2rem;
+}
 
 .contactInfoHeader-back-btn {
     display: none;
@@ -154,10 +157,9 @@
 .contactMessage-input {
     position: sticky;
     bottom: 0;
-
     min-height: 6.2rem;
     height: auto;
-    /*   background: url(/img/fondoChatsOscuro.jpg); */
+    background-image: url("/img/fondoChatsOscuro.jpg");
     padding: 0.8rem 1.6rem;
     display: flex;
     align-items: center;

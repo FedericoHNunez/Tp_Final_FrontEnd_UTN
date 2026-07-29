@@ -9,14 +9,14 @@ export const useChatForm = () => {
     // Reset textarea height when contact selection changes
     useEffect(() => {
         if (textareaRef.current) {
-            textareaRef.current.style.height = "5.2rem";
+            textareaRef.current.style.height = "auto";
             textareaRef.current.style.height = Math.min(textareaRef.current.scrollHeight, 120) + "px";
         }
     }, [contact_selected?.id]);
 
     const handleInputChange = (e) => {
         setMessageValue(e.target.value);
-        e.target.style.height = "5.2rem";
+        e.target.style.height = "auto";
         e.target.style.height = Math.min(e.target.scrollHeight, 120) + "px";
     };
 
@@ -26,7 +26,7 @@ export const useChatForm = () => {
         createMessage(messageValue, "me");
         setMessageValue("");
         if (textareaRef.current) {
-            textareaRef.current.style.height = "5.2rem";
+            textareaRef.current.style.height = "auto";
         }
     };
 

@@ -1,40 +1,15 @@
 import React, { useContext } from "react";
-import { useParams, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { ContactContext } from "../../../Context/ContactContext";
 import { ContactForm } from "../../ContactForm/ContactForm";
 import "./SideBarEditContact.css";
 
 export const SideBarEditContact = () => {
-    const { contact_id } = useParams();
-    const { contacts, updateContactById } = useContext(ContactContext);
+
+    const { contact_selected: contact, updateContactById } = useContext(ContactContext);
     const navigate = useNavigate();
 
-    const contact = contacts.find(c => c.id === Number(contact_id));
-
-    if (!contact) {
-        return (
-            <aside className="asideView">
-                <section className="ModalEditContact">
-                    <header className="ModalEditContact-header">
-                        <div className="contactInfoHeader-left-container">
-                            <button onClick={() => navigate("/chats")} title="Volver" className="contactInfoHeader-back-btn">
-                                <svg viewBox="0 0 24 24" height="20" width="20" fill="currentColor">
-                                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
-                                </svg>
-                            </button>
-                            <span>Contacto no encontrado</span>
-                        </div>
-                    </header>
-                    <section className="ModalEditContact-content">
-                        <p>No se pudo cargar la información del contacto solicitado.</p>
-                        <button onClick={() => navigate("/chats")} className="cancel-btn" style={{ marginTop: "2rem" }}>
-                            Volver a Chats
-                        </button>
-                    </section>
-                </section>
-            </aside>
-        );
-    }
+    if (!contact) return null;
 
     const handleFormSubmit = ({ nombre, apellido, telefono }) => {
         updateContactById(contact.id, {
@@ -78,16 +53,16 @@ export const SideBarEditContact = () => {
                 </header>
                 <section className="ModalEditContact-content">
                     <div className="ModalEditContact-avatar">
-                        <img 
-                            src={contact.picture?.large || "/img/avatarDefault.webp"} 
-                            alt={`${contact.name.first} ${contact.name.last}`} 
+                        <img
+                            src={contact.picture?.large || "/img/avatarDefault.webp"}
+                            alt={`${contact.name.first} ${contact.name.last}`}
                             onError={(e) => { e.target.src = "/img/avatarDefault.webp"; }}
                         />
                     </div>
                     <h2>{`${contact.name.first} ${contact.name.last}`}</h2>
                     <p className="subtitle">Realiza los cambios necesarios para actualizar la información de tu contacto.</p>
-                    
-                    <ContactForm 
+
+                    <ContactForm
                         initialValues={initialValues}
                         onSubmit={handleFormSubmit}
                         onCancel={handleCancel}

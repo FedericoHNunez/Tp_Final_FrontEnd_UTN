@@ -3,7 +3,10 @@ import React from "react";
 export const SideBarMe = () => {
     return (
         <>
-            <h1>SideBarMe</h1>
+            <aside className="asideView center backgroundSiderBar">
+
+                <h1>SideBarMe</h1>
+            </aside>
         </>
     );
 };

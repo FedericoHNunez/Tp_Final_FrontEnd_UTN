@@ -10,7 +10,7 @@ export const InputSearchContact = ({ searchChatsValue, setSearchChatsValue, plac
   return (
     <div className="ChatsPreview-header-input-container">
       <div className="ChatsPreview-header-input">
-        <label htmlFor="searchChats" disabled></label>
+        <label htmlFor="searchChats" className="label-none"> Buscar</label>
         <input
           id="searchChats"
           name="searchChats"

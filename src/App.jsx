@@ -1,15 +1,15 @@
 import { Routes, Route } from "react-router";
 import { LayoutScreen } from "./Screens/LayoutScreen/LayoutScreen";
 import { ChatsLayout } from "./Screens/ChatsLayout/ChatsLayout";
-import { ChatsScreen } from "./Screens/ChatsScreen/ChatsScreen";
+import { SideBarHome } from "./Components/SideBars/SideBarHome/SideBarHome";
 import { CallScreen } from "./Screens/CallScreen/CallScreen";
 import { ChannelsScreen } from "./Screens/ChannelsScreen/ChannelsScreen";
 import { CommunitiesScreen } from "./Screens/CommunitiesScreen/CommunitiesScreen";
 import { StatesScreen } from "./Screens/StatesScreen/StatesScreen";
 import { ContactContextProvider } from "./Context/ContactContext";
 import { MeScreen } from "./Screens/MeScreen/MeScreen";
-import { ContactChatScreen } from "./Screens/ContacChatScreen/ContactChatScreen";
-import { ContactInfoScreen } from "./Screens/ContactInfoScreen/ContactInfoScreen";
+import { SideBarContactChats } from "./Components/SideBars/SideBarContactChats/SideBarContactChats";
+import { SideBarContactInfo } from "./Components/SideBars/SideBarContactInfo/SideBarContactInfo";
 import { SideBarNewContact } from "./Components/SideBars/SideBarNewContact/SideBarnewContact";
 import { SideBarEditContact } from "./Components/SideBars/SideBarEditContact/SideBarEditContact";
 
@@ -19,14 +19,14 @@ function App() {
       <Route path="/" element={<LayoutScreen />}>
         <Route element={<ContactContextProvider />} >
           <Route element={<ChatsLayout />}>
-            <Route index element={<ChatsScreen />} />
-            <Route path="/home" element={<ChatsScreen />} />
-            <Route path="/chats" element={<ChatsScreen />} />
-            <Route path="/chats/:contact_id" element={<ContactChatScreen />} />
+            <Route index element={<SideBarHome />} />
+            <Route path="/home" element={<SideBarHome />} />
+            <Route path="/chats" element={<SideBarHome />} />
+            <Route path="/chats/:contact_id" element={<SideBarContactChats />} />
             <Route path="/chats/new-contact" element={<SideBarNewContact />} />
-            <Route path="/chats/contacts/:contact_id" element={<ContactInfoScreen />} />
+            <Route path="/chats/contacts/:contact_id" element={<SideBarContactInfo />} />
             <Route path="/chats/edit-contact/:contact_id" element={<SideBarEditContact />} />
-            <Route path="*" element={<ChatsScreen />} />
+            <Route path="*" element={<SideBarHome />} />
           </Route>
           <Route path="/calls" element={<CallScreen />} />
           <Route path="/channels" element={<ChannelsScreen />} />

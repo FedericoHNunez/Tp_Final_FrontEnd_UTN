@@ -2,41 +2,50 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6rem;
 }
 
-.contact-form .form-group {
+.form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 4rem;
     text-align: left;
     width: 100%;
 }
 
-.contact-form label {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #54656f;
-    margin-left: 0.4rem;
-}
-
 .contact-form input {
-    width: 100%;
-    padding: 1.2rem 1.6rem;
-    font-size: 1.5rem;
-    border-radius: 0.8rem;
-    background-color: var(--grey);
-    border: 1px solid var(--borderColorNav);
-    color: var(--black-dark);
-    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+    border: none;
+    border-bottom: 1px solid var(--borderColor);
     outline: none;
+    background: transparent;
+    padding: 0.8rem 0;
+    width: 100%;
 }
 
 .contact-form input:focus {
-    background-color: var(--white);
-    border-color: var(--inputFocus);
-    box-shadow: 0 0 0 1px var(--inputFocus);
+    outline: none;
 }
+
+.contact-form input.has-content {
+    border-bottom: 1px solid var(--green);
+}
+
+.contact-form span.has-content {
+    color: var(--green);
+}
+
+
+.form-group {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: start;
+
+}
+
+
+
 
 .contact-form .button-group {
     display: flex;
@@ -51,33 +60,26 @@
     font-size: 1.6rem;
     font-weight: 500;
     border-radius: 0.8rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s, border-color 0.2s;
 }
 
-.contact-form button:active {
-    transform: scale(0.98);
-}
 
 .contact-form .save-btn {
     color: var(--white);
-    background-color: var(--green-light3);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--green);
 }
 
 .contact-form .save-btn:hover {
-    background-color: var(--verde-oscuro1);
+    background-color: var(--green-light);
+
 }
 
 .contact-form .cancel-btn {
-    color: #54656f;
-    background-color: transparent;
-    border: 1px solid var(--borderColorNav);
+    color: var(--white);
+    font-weight: 600;
+    background-color: var(--red);
+    border: 1px solid var(--red);
 }
 
 .contact-form .cancel-btn:hover {
-    background-color: var(--hoverBackground-light);
-    color: #111b21;
-    border-color: #54656f;
+    background-color: var(--red-dark);
 }
