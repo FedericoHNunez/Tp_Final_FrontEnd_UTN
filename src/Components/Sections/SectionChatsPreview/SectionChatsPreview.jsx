@@ -24,7 +24,7 @@ export const SectionChatsPreview = () => {
         setSearchChatsValue={setSearchChatsValue}
         placeholder="Buscar chats o grupos"
       />
-      <nav className='ChatsPreview-header-nav'>
+      <nav className='ChatsPreview-nav'>
         <ul>
           <li>
             <button title="Todos los chats">Todos</button>
@@ -49,7 +49,7 @@ export const SectionChatsPreview = () => {
               imgSrc={contact.picture.thumbnail}
               imgAlt={`Imagen de perfil de ${contact.alias}`}
               title={contact.alias}
-              subtitle={
+              previewText={
                 contact.messages.length > 0
                   ? contact.messages[contact.messages.length - 1].text
                   : "No hay mensajes"

@@ -1,24 +1,18 @@
-.ChatsPreview-header {
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    background-color: var(--white);
-    z-index: 1;
-}
-
-.ChatsPreview-header-logo-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
 .ChatsPreview-header-logo-icon {
     color: var(--whatsappLogo)
 }
 
 .ChatsPreview-header-actions {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
+}
+
+.ChatsPreview-header-actions div {
+    width: 4rem;
+    height: 4rem;
+}
+
+.ChatsPreview-header-actions div:hover {
+    background-color: var(--hover-light);
+    border-radius: 50%;
 }

@@ -16,7 +16,7 @@ export const SideBarContactInfo = () => {
     } = useContactModalActions();
     return (
         <>
-            <header className="contactInfoHeader">
+            <header className="section-header">
                 <Link to={`/chats/${contact_selected.id}`}>
                     <div>
                         <span>

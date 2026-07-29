@@ -1,39 +1,44 @@
-.contactInfoHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6.4rem;
-    border-bottom: 0.1rem solid var(--gris-oscuro);
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-left: 1px solid var(--borderColorNav);
-}
+/* Estilos para el el header  */
 
-
-.contactInfoHeader-left {
-    gap: 1.5rem;
-}
-
-.contactInfoHeader-right {
-    gap: 2rem;
-}
-
-.contactInfoHeader-right span {
-    width: 4rem;
-    height: 4rem;
-}
-
-.contactInfoHeader img {
+.contactInfoHeader-back-btn {
+    display: none;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+    margin-left: -1rem;
 }
 
-.contact-messages {
+@media screen and (max-width: 992px) {
+    .contactInfoHeader-back-btn {
+        display: flex;
+    }
+
+    .display-none {
+        display: none;
+    }
+}
+
+.avatar-img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+}
+
+.contactInfoHeader-right button {
+    width: 4rem;
+    height: 4rem;
+}
+
+.contactInfoHeader-back-btn:hover,
+.contactInfoHeader-right button:hover {
+    background-color: var(--hover-light);
+    border-radius: 50%;
+}
+
+/* estilos para la caja de los chats */
+.contact-messages-container {
     width: 100%;
-    height: calc(100dvh - 6.4rem - 6.4rem);
+    height: calc(100dvh - 6.4rem - 6.7rem);
     background-image: url("/img/fondoChatsOscuro.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -43,11 +48,11 @@
 
 }
 
-.contact-messages-container {
+.contact-messages {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem 4rem;
+    padding: 2rem;
 }
 
 .message-me,
@@ -64,30 +69,34 @@
     justify-content: flex-start;
 }
 
-.message-me-text {
-    background-color: var(--bubleChatMe);
+.message-me-text,
+.message-contact-text {
     padding: 0.6rem 2.8rem 1.8rem 1.2rem;
-    border-radius: 0.8rem 0 0.8rem 0.8rem;
-    max-width: 65%;
-    box-shadow: 0 1px 0.5px rgba(11, 20, 26, .13);
+    max-width: 95%;
+    min-width: 10%;
     word-break: break-word;
     position: relative;
+}
+
+@media screen and (min-width: 768px) {
+
+    .message-me-text,
+    .message-contact-text {
+        max-width: 65%;
+    }
+}
+
+.message-me-text {
+    background-color: var(--bubleChatMe);
+    border-radius: 0.8rem 0 0.8rem 0.8rem;
 }
 
 .message-contact-text {
     background-color: var(--bubleChatContact);
-    padding: 0.6rem 2.8rem 1.8rem 1.2rem;
     border-radius: 0 0.8rem 0.8rem 0.8rem;
-    max-width: 65%;
-    box-shadow: 0 1px 0.5px rgba(11, 20, 26, .13);
-    word-break: break-word;
-    position: relative;
 }
 
 .message-content-text {
-    font-size: 1.4rem;
-    color: var(--text);
-    margin: 0;
     line-height: 1.9rem;
 }
 
@@ -96,7 +105,7 @@
     bottom: 0.4rem;
     right: 0.8rem;
     font-size: 1.1rem;
-    color: #667781;
+    color: var(--black-light);
     display: flex;
     align-items: center;
     gap: 0.3rem;
@@ -108,6 +117,36 @@
     align-items: center;
 }
 
+/* Estilos para el botón de borrar mensajes */
+.message-delete-btn {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--red-dark);
+    opacity: 0;
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background-color 0.2s, color 0.2s;
+    z-index: 10;
+}
+
+.message-delete-btn:hover {
+    background-color: var(--red-dark);
+    color: var(--red-light);
+}
+
+.message-me-text:hover .message-delete-btn,
+.message-contact-text:hover .message-delete-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* estilos para el input y el boton de enviar */
+
 .contact-input-label {
     display: none;
 }
@@ -115,10 +154,10 @@
 .contactMessage-input {
     position: sticky;
     bottom: 0;
-    z-index: 100;
+
     min-height: 6.2rem;
     height: auto;
-    background: url(/img/fondoChatsOscuro.jpg);
+    /*   background: url(/img/fondoChatsOscuro.jpg); */
     padding: 0.8rem 1.6rem;
     display: flex;
     align-items: center;
@@ -132,9 +171,7 @@
     gap: 0.4rem;
     background-color: var(--white);
     border-radius: 2.4rem;
-    border: 1px solid var(--borderColorNav);
     padding: 0.3rem 0.8rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .contactMessage-input-relative:focus-within {
@@ -144,128 +181,49 @@
 
 .contactMessage-input-textarea {
     flex-grow: 1;
-    background-color: transparent;
     border: none;
     outline: none;
-    height: 3.6rem;
-    min-height: 3.6rem;
     max-height: 12rem;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    font-family: inherit;
+    line-height: 1.5rem;
     resize: none;
-    color: var(--black-dark);
     padding: 0.8rem 0.4rem;
 }
 
 .more-stikers {
-    display: flex;
-    align-items: center;
     gap: 0.2rem;
 }
 
 .more-stikers span {
     width: 3.6rem;
     height: 3.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #54656f;
     border-radius: 50%;
-    transition: background-color 0.2s, color 0.2s;
 }
 
 .more-stikers span:hover,
 .contactInfoHeader-right span:hover {
     cursor: pointer;
-    background-color: var(--hoverBackground-light);
-    color: #111b21;
+    background-color: var(--hover-light);
 }
 
 .micro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 3.6rem;
     height: 3.6rem;
 }
 
 .micro button,
 .micro span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 3.6rem;
     height: 3.6rem;
     border-radius: 50%;
-    color: #54656f;
-    transition: background-color 0.2s, color 0.2s;
+
 }
 
 .micro button {
-    color: var(--green-light3);
+    color: var(--green);
 }
 
 .micro button:hover,
 .micro span:hover {
     cursor: pointer;
     background-color: var(--hoverBackground-light);
-}
-
-.contactInfoHeader-left-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.contactInfoHeader-back-btn {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    color: var(--text);
-    cursor: pointer;
-    width: 3.2rem;
-    height: 3.2rem;
-    border-radius: 50%;
-}
-
-.contactInfoHeader-back-btn:hover {
-    background-color: var(--hoverBackground-dark);
-}
-
-@media screen and (max-width: 767px) {
-    .contactInfoHeader-back-btn {
-        display: flex;
-    }
-}
-
-/* Estilos para el botón de borrar mensajes */
-.message-delete-btn {
-    position: absolute;
-    top: 0.4rem;
-    right: 0.4rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    color: #667781;
-    opacity: 0;
-    visibility: hidden;
-    padding: 0.4rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.2s ease, visibility 0.2s ease, background-color 0.2s, color 0.2s;
-    z-index: 10;
-}
-
-.message-delete-btn:hover {
-    background-color: rgba(255, 0, 0, 0.1);
-    color: #ea4335;
-}
-
-.message-me-text:hover .message-delete-btn,
-.message-contact-text:hover .message-delete-btn {
-    opacity: 1;
-    visibility: visible;
 }
