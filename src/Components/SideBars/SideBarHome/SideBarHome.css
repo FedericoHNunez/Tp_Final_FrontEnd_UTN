@@ -61,5 +61,5 @@
 }
 
 .sideBarHome-options-list-span:hover {
-    background-color: var(--hoverBackground-dark);
+    background-color: var(--hover-dark);
 }
