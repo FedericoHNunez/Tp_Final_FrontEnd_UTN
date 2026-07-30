@@ -1,14 +1,14 @@
 :root {
     --green: #1dab62;
-    --green-light: #28d40a;
+    --green-light: #1dab62b7;
     --green-light1: #d9fdd3;
     --green-light3: var(--green);
     --grey: #f7f5f2;
     --grey-light: #eaeaea;
     --grey-dark: #dedcdade;
     --white: #fff;
-    --black-dark: #0a0a0a;
-    --black-light: #00000099;
+    --black-dark: #0a0a0ac9;
+    --black-light: #000000af;
     --red: #ff0000;
     --red-light: #ffe6e6;
     --red-dark: rgba(255, 0, 0, 0.473);
@@ -123,11 +123,8 @@ h3 {
 p {
     font-size: 1.4rem;
     font-weight: 400;
-    color: var(--black-dark);
     color: var(--text);
 }
-
-
 
 .section-header {
     background-color: var(--white);
@@ -201,6 +198,7 @@ p {
     overflow: hidden;
     height: 100dvh;
     border-left: 0.1rem solid var(--borderColor);
+    background-color: var(--grey);
 }
 
 .sectionView {

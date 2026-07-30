@@ -51,9 +51,6 @@
     height: 5rem;
     background-color: var(--grey);
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .sideBarHome-options-list-p {
@@ -62,4 +59,17 @@
 
 .sideBarHome-options-list-span:hover {
     background-color: var(--hover-dark);
+}
+
+.btn-download {
+    background-color: var(--green);
+    color: var(--white);
+    width: 12rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn-download:hover {
+    background-color: var(--green-light);
 }

@@ -1,5 +1,5 @@
-.contact-form-header {
-    border-bottom: 1px solid var(--borderColor);
+.new-contact {
+    background-color: var(--layout-color);
 }
 
 .contact-form-header a {

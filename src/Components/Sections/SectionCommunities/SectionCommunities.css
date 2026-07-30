@@ -1,0 +1,13 @@
+.communities-section {
+    height: calc(100dvh - 6.7rem);
+}
+
+.communities-section div {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}

@@ -19,8 +19,8 @@ export const SideBarNewContact = () => {
 
     return (
         <>
-            <aside className="asideView center  ">
-                <header className="contact-form-header section-header">
+            <aside className="asideView center new-contact">
+                <div className="contact-form-header section-header">
                     <h3>Crear nuevo contacto</h3>
 
                     <Link to="/chats" title="Cerrar" className="center">
@@ -29,7 +29,7 @@ export const SideBarNewContact = () => {
                         </svg>
                     </Link>
 
-                </header>
+                </div>
                 <section className="contact-form-container center" >
                     <div className="contact-form-content">
                         <div className="contact-form-header">

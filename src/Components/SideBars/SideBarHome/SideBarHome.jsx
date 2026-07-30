@@ -11,13 +11,14 @@ export const SideBarHome = () => {
 
                 <div className="sideBarHome-div">
                     <section className="sideBarHome">
-                        <div className="sideBarHome-container ">
+                        <div className="sideBarHome-container center ">
                             <div className="sideBarHome-img">
                                 <img src={PcHomeSideBar} alt="imagen resprentativa de una Notebook" />
                             </div>
                             <h1>Descarga Whatsapp para Windows</h1>
                             <p>Obtén funciones adicionales, como llamadas y videollamadas, compartir pantalla y más</p>
-                            <button disabled>DESCARGAR</button>
+
+                            <button className='btn-download' disabled>DESCARGAR</button>
                         </div>
                     </section>
                     <section className="sideBarHome-options">
