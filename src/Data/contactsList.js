@@ -111,7 +111,11 @@ export const contactsList = [
     },
     "alias": "Bruno Varela",
     "unreadCount": 0,
-    "messages": [],
+    "messages": [
+      { "id": 1, "sender": "contact", "text": "Hola, ¿cómo va?", "timestamp": "2026-07-29T18:00:00Z" },
+      { "id": 2, "sender": "me", "text": "Hola Bruno, todo bien por suerte! ¿Vos?", "timestamp": "2026-07-29T18:02:00Z" },
+      { "id": 3, "sender": "contact", "text": "Todo bien, por suerte. ¿Sale juntada el finde?", "timestamp": "2026-07-29T18:05:00Z" }
+    ],
     "cell": "081-811-9109",
     "id": 5,
     "picture": {
@@ -119,7 +123,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/15.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/15.jpg"
     },
-    "chatStarted": false,
+    "chatStarted": true,
   },
   {
     "name": {
@@ -173,7 +177,11 @@ export const contactsList = [
     },
     "alias": "Manuel Nieto",
     "unreadCount": 0,
-    "messages": [],
+    "messages": [
+      { "id": 1, "sender": "me", "text": "Manuel, te hago una consulta del backend.", "timestamp": "2026-07-28T11:00:00Z" },
+      { "id": 2, "sender": "contact", "text": "Buenas! Sí, decime, ¿en qué te puedo ayudar?", "timestamp": "2026-07-28T11:05:00Z" },
+      { "id": 3, "sender": "me", "text": "Estamos teniendo un problema con la carga de la base de datos.", "timestamp": "2026-07-28T11:07:00Z" }
+    ],
     "cell": "645-322-570",
     "id": 8,
     "picture": {
@@ -181,7 +189,7 @@ export const contactsList = [
       "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
     },
-    "chatStarted": false,
+    "chatStarted": true,
   },
   {
     "name": {
@@ -191,14 +199,17 @@ export const contactsList = [
     "alias": "Bautista Ruiz",
     "cell": "081-707-6584",
     "unreadCount": 0,
-    "messages": [],
+    "messages": [
+      { "id": 1, "sender": "contact", "text": "Hola! ¿Tenés el contacto del diseñador?", "timestamp": "2026-07-27T15:30:00Z" },
+      { "id": 2, "sender": "me", "text": "Hola Bauti, sí, ahí te lo paso por privado.", "timestamp": "2026-07-27T15:32:00Z" }
+    ],
     "id": 9,
     "picture": {
       "large": "https://randomuser.me/api/portraits/men/32.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/32.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/32.jpg"
     },
-    "chatStarted": false,
+    "chatStarted": true,
   },
   {
     "name": {

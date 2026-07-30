@@ -1,5 +1,5 @@
 .ModalNewMessage {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,7 +10,13 @@
     flex-direction: column;
     overflow: hidden;
     animation: slideIn 0.22s cubic-bezier(0.1, 0.9, 0.2, 1);
-    background-color: var(--white);
+}
+
+@media screen and (min-width: 480px) {
+    .ModalNewMessage {
+        position: absolute;
+        height: 100%;
+    }
 }
 
 @keyframes slideIn {
@@ -30,7 +36,8 @@
 }
 
 .ModalNewMessage-contacts-list {
-    overflow-y: scroll;
+    flex: 1;
+    overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding: 1rem;
