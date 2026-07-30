@@ -10,6 +10,7 @@
 .ChatsPreview-header-actions div {
     width: 4rem;
     height: 4rem;
+    cursor: pointer;
 }
 
 .ChatsPreview-header-actions div:hover {

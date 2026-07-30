@@ -22,13 +22,15 @@ export const SideBarNewContact = () => {
             <aside className="asideView center  ">
                 <header className="contact-form-header section-header">
                     <h3>Crear nuevo contacto</h3>
-                    <Link to="/chats" title="Cerrar">
+
+                    <Link to="/chats" title="Cerrar" className="center">
                         <svg title="Cerrar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 5L19 19M5 19L19 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </Link>
+
                 </header>
-                <section className="contact-form-container center">
+                <section className="contact-form-container center" >
                     <div className="contact-form-content">
                         <div className="contact-form-header">
                             <h2>Nuevo contacto</h2>

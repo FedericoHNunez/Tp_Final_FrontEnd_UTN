@@ -2,13 +2,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 1rem;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     text-align: left;
     width: 100%;
 }
@@ -34,14 +34,18 @@
     color: var(--green);
 }
 
+@media screen and (min-width: 768px) {
+    .form-group {
+        display: grid;
+        grid-template-columns: 4rem 1fr;
+        gap: 1.6rem;
+        align-items: center;
+        justify-content: start;
+    }
 
-.form-group {
-    display: grid;
-    grid-template-columns: 4rem 1fr;
-    gap: 1.6rem;
-    align-items: center;
-    justify-content: start;
-
+    .contact-form {
+        gap: 6rem;
+    }
 }
 
 

@@ -1,10 +1,27 @@
-.Contact-form-header {
+.contact-form-header {
     border-bottom: 1px solid var(--borderColor);
+}
+
+.contact-form-header a {
+    width: 4rem;
+    height: 4rem;
+}
+
+.contact-form-header a:hover {
+    border-radius: 50%;
+    background-color: var(--hover-light);
 }
 
 .contact-form-container {
     height: calc(100dvh - 6.7rem);
+    margin: 0 auto;
+    max-width: 90%;
+}
 
+@media (min-width: 996px) {
+    .contact-form-container {
+        max-width: 100%;
+    }
 }
 
 .contact-form-header {

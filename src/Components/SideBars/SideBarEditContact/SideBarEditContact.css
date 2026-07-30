@@ -1,4 +1,4 @@
-.ModalEditContact {
+.editContact {
     width: 100%;
     height: 100%;
     background-color: var(--white);
@@ -7,44 +7,23 @@
     overflow-y: auto;
 }
 
-.ModalEditContact-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6.4rem;
-    border-bottom: 0.1rem solid var(--borderColorNav);
-    padding: 1rem 2rem;
-    background-color: var(--white);
-    border-left: 1px solid var(--borderColorNav);
-    flex-shrink: 0;
-}
-
-.ModalEditContact-header span {
+.editContact-header span {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--black-dark);
 }
 
-.ModalEditContact-header button {
+.close-btn {
     width: 4rem;
     height: 4rem;
+}
+
+.close-btn:hover {
+    background-color: var(--hover-light);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #54656f;
-    transition: background-color 0.2s, color 0.2s;
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 
-.ModalEditContact-header button:hover {
-    background-color: var(--hoverBackground-light);
-    color: #111b21;
-}
-
-.ModalEditContact-content {
+.editContact-content {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -55,7 +34,7 @@
     gap: 2rem;
 }
 
-.ModalEditContact-avatar {
+.editContact-avatar {
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -67,30 +46,28 @@
     transition: transform 0.3s ease, outline-color 0.3s ease;
 }
 
-.ModalEditContact-avatar:hover {
+.editContact-avatar:hover {
     transform: scale(1.05);
     outline-color: var(--green-light3);
 }
 
-.ModalEditContact-avatar img {
+.editContact-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.ModalEditContact-content h2 {
+.editContact-content h2 {
     font-size: 2.2rem;
     color: var(--black-dark);
     font-weight: 500;
     text-align: center;
 }
 
-.ModalEditContact-content .subtitle {
+.editContact-content .subtitle {
     font-size: 1.4rem;
     color: var(--text);
     line-height: 2rem;
     text-align: center;
     margin-bottom: 1rem;
 }
-
-
