@@ -13,7 +13,17 @@ export const contactsList = [
       { "id": 4, "sender": "me", "text": "Todo tranquilo.", "timestamp": "2026-07-10T09:03:00Z" },
       { "id": 5, "sender": "contact", "text": "¿Terminaste el proyecto?", "timestamp": "2026-07-10T09:05:00Z" },
       { "id": 6, "sender": "me", "text": "Me falta una parte.", "timestamp": "2026-07-10T09:06:00Z" },
-      { "id": 7, "sender": "contact", "text": "Seguro queda genial 🚀", "timestamp": "2026-07-10T09:07:00Z" }
+      { "id": 7, "sender": "contact", "text": "Seguro queda genial 🚀", "timestamp": "2026-07-10T09:07:00Z" },
+      { "id": 8, "sender": "me", "text": "Gracias! Estuve trabajando en la interfaz hoy.", "timestamp": "2026-07-10T09:08:00Z" },
+      { "id": 9, "sender": "contact", "text": "¡Qué bueno! ¿Ya se ve el diseño final?", "timestamp": "2026-07-10T09:09:00Z" },
+      { "id": 10, "sender": "me", "text": "Sí, quedó excelente. Agregué unas animaciones en las llamadas.", "timestamp": "2026-07-10T09:10:00Z" },
+      { "id": 11, "sender": "contact", "text": "Me encanta la idea de las animaciones 😍", "timestamp": "2026-07-10T09:11:00Z" },
+      { "id": 12, "sender": "me", "text": "También acomodé el perfil del usuario.", "timestamp": "2026-07-10T09:12:00Z" },
+      { "id": 13, "sender": "contact", "text": "Buenísimo, hacía falta pulir esa parte.", "timestamp": "2026-07-10T09:13:00Z" },
+      { "id": 14, "sender": "me", "text": "Totalmente. ¿Querés que te muestre una captura?", "timestamp": "2026-07-10T09:14:00Z" },
+      { "id": 15, "sender": "contact", "text": "¡Dale, por favor!", "timestamp": "2026-07-10T09:15:00Z" },
+      { "id": 16, "sender": "me", "text": "Ahí te la mando.", "timestamp": "2026-07-10T09:16:00Z" },
+      { "id": 17, "sender": "contact", "text": "Quedó genial, felicitaciones de verdad 👏", "timestamp": "2026-07-10T09:17:00Z" }
     ],
     "cell": "077 434 15 20",
     "id": 1,

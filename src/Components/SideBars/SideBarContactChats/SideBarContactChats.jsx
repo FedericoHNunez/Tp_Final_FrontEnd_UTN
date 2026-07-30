@@ -1,4 +1,4 @@
-import { useContext, useRef, useEffect } from "react"
+import { useContext, useRef, useLayoutEffect } from "react"
 import { ContactContext } from "../../../Context/ContactContext"
 import { useChatForm } from "../../../Hooks/useChatForm"
 import "./SideBarContactChats.css"
@@ -19,10 +19,12 @@ export const SideBarContactChats = () => {
         handleKeyDown
     } = useChatForm()
 
-    useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
-    }, [contact_selected?.messages])
 
+    useLayoutEffect(() => {
+        messagesEndRef.current?.scrollIntoView({
+            block: "end"
+        });
+    }, []);
     return (
         <>
             <aside className="asideView">
@@ -99,120 +101,7 @@ export const SideBarContactChats = () => {
                                 </div>
                             </div>
                         ))}
-                        {contact_selected.messages.map((message) => (
-                            <div
-                                key={message.id}
-                                className={
-                                    message.sender === "me"
-                                        ? "message-me"
-                                        : "message-contact"
-                                }
-                            >
-                                <div className={
-                                    message.sender === "me"
-                                        ? "message-me-text"
-                                        : "message-contact-text"
-                                }>
-                                    <p className="message-content-text">{message.text}</p>
-                                    <span className="message-time">
-                                        {formatTime(message.timestamp)}
-                                        {message.sender === "me" && (
-                                            <span className="message-status-ticks">
-                                                <svg viewBox="0 0 16 15" width="16" height="15" fill="currentColor">
-                                                    <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879 5.817 6.927a.366.366 0 0 0-.51.015l-.475.49a.369.369 0 0 0 .016.511l3.52 3.429a.366.366 0 0 0 .528-.017l6.177-7.527a.366.366 0 0 0-.063-.512z" />
-                                                </svg>
-                                            </span>
-                                        )}
-                                    </span>
-                                    <button
-                                        className="message-delete-btn center"
-                                        onClick={() => deleteMessageById(message.id)}
-                                        title="Eliminar mensaje"
-                                        aria-label="Eliminar mensaje"
-                                    >
-                                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-                                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
-                        {contact_selected.messages.map((message) => (
-                            <div
-                                key={message.id}
-                                className={
-                                    message.sender === "me"
-                                        ? "message-me"
-                                        : "message-contact"
-                                }
-                            >
-                                <div className={
-                                    message.sender === "me"
-                                        ? "message-me-text"
-                                        : "message-contact-text"
-                                }>
-                                    <p className="message-content-text">{message.text}</p>
-                                    <span className="message-time">
-                                        {formatTime(message.timestamp)}
-                                        {message.sender === "me" && (
-                                            <span className="message-status-ticks">
-                                                <svg viewBox="0 0 16 15" width="16" height="15" fill="currentColor">
-                                                    <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879 5.817 6.927a.366.366 0 0 0-.51.015l-.475.49a.369.369 0 0 0 .016.511l3.52 3.429a.366.366 0 0 0 .528-.017l6.177-7.527a.366.366 0 0 0-.063-.512z" />
-                                                </svg>
-                                            </span>
-                                        )}
-                                    </span>
-                                    <button
-                                        className="message-delete-btn center"
-                                        onClick={() => deleteMessageById(message.id)}
-                                        title="Eliminar mensaje"
-                                        aria-label="Eliminar mensaje"
-                                    >
-                                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-                                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
-                        {contact_selected.messages.map((message) => (
-                            <div
-                                key={message.id}
-                                className={
-                                    message.sender === "me"
-                                        ? "message-me"
-                                        : "message-contact"
-                                }
-                            >
-                                <div className={
-                                    message.sender === "me"
-                                        ? "message-me-text"
-                                        : "message-contact-text"
-                                }>
-                                    <p className="message-content-text">{message.text}</p>
-                                    <span className="message-time">
-                                        {formatTime(message.timestamp)}
-                                        {message.sender === "me" && (
-                                            <span className="message-status-ticks">
-                                                <svg viewBox="0 0 16 15" width="16" height="15" fill="currentColor">
-                                                    <path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879 5.817 6.927a.366.366 0 0 0-.51.015l-.475.49a.369.369 0 0 0 .016.511l3.52 3.429a.366.366 0 0 0 .528-.017l6.177-7.527a.366.366 0 0 0-.063-.512z" />
-                                                </svg>
-                                            </span>
-                                        )}
-                                    </span>
-                                    <button
-                                        className="message-delete-btn center"
-                                        onClick={() => deleteMessageById(message.id)}
-                                        title="Eliminar mensaje"
-                                        aria-label="Eliminar mensaje"
-                                    >
-                                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-                                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
+
                         <div ref={messagesEndRef} />
                     </div>
 
