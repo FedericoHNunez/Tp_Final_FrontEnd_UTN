@@ -19,7 +19,7 @@
 .ChatsPreview-header-input input:focus {
     outline: none;
     border: 1px solid var(--inputFocus);
-    box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2);
+
 }
 
 .ChatsPreview-header-input span.search-icon {
