@@ -127,11 +127,6 @@ p {
     color: var(--text);
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 .section-header {
@@ -162,16 +157,32 @@ p {
     object-fit: cover;
 }
 
+/* utiles */
 .label-none {
     display: none;
 }
 
-/* util */
+.section-width {
+    max-width: 97%;
+}
+
+.padding {
+    padding: 2rem;
+}
 
 .danger {
     color: var(--red);
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-margin {
+    margin: 0 auto;
+}
 
 /*Layout  */
 

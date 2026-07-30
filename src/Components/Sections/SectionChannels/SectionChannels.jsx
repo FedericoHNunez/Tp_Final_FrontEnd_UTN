@@ -6,7 +6,9 @@ export const SectionChannels = () => {
 
     return (
         <>
-            <h1>Canales</h1>
+            <header className="section-header">
+                <h1>Canales</h1>
+            </header>
 
             <section>
                 <InputSearchContact
@@ -15,8 +17,9 @@ export const SectionChannels = () => {
                     placeholder="Buscar Canales"
                 />
             </section>
-
-            <p>Sin Canales para Visualizar</p>
+            <section className="section-width center padding" >
+                <p>Sin Canales para Visualizar</p>
+            </section>
         </>
     );
 };

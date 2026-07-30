@@ -6,7 +6,7 @@ export const SectionCalls = () => {
 
     return (
         <>
-            <header>
+            <header className="section-header">
                 <h1>Llamadas</h1>
             </header>
             <section>
@@ -16,8 +16,8 @@ export const SectionCalls = () => {
                     placeholder="Buscar en llamadas"
                 />
             </section>
-            <section>
-                <h2>No tienes llamadas</h2>
+            <section className="section-width center padding" >
+                <p>No tienes llamadas</p>
 
             </section>
 
