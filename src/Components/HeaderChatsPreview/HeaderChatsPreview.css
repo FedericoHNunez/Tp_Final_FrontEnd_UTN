@@ -7,12 +7,12 @@
     gap: 1rem;
 }
 
-.ChatsPreview-header-actions div {
+.ChatsPreview-action-btn-container {
     width: 4rem;
     height: 4rem;
 }
 
-.ChatsPreview-header-actions div:hover {
+.ChatsPreview-action-btn-container:hover {
     background-color: var(--hover-light);
     border-radius: 50%;
 }

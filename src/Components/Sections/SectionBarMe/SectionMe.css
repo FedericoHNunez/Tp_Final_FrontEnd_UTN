@@ -36,5 +36,18 @@
 
 .profile-logout-btn:hover {
     background-color: var(--red-dark);
-    ;
+}
+
+.profile-back-link {
+    padding: 0.5rem;
+}
+
+.profile-back-link:hover {
+    background-color: var(--hover-light);
+}
+
+@media screen and (min-width: 600px) {
+    .profile-back-link {
+        display: none;
+    }
 }

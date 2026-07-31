@@ -206,20 +206,22 @@ p {
     overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-    .layout-main {
-        display: grid;
-        grid-template-columns: clamp(34rem, 30vw, 57rem) 1fr;
-    }
-
-    .asideView {
-        display: block;
-
-    }
-
+/* Estilos móviles por defecto (pantallas < 480px) */
+.layout-header.hide-nav-mobile {
+    display: none;
 }
 
-@media screen and (min-width: 480px) {
+.layout-main.has-active-contact .sectionView {
+    display: none;
+}
+
+.layout-main.has-active-contact .asideView {
+    display: block;
+    width: 100%;
+    height: 100dvh;
+}
+
+@media screen and (min-width: 600px) {
     .layout {
         grid-template-columns: 6rem 1fr;
         display: grid;
@@ -229,25 +231,29 @@ p {
 
     .sectionView {
         height: 100dvh;
-
     }
-}
 
-@media screen and (max-width: 479px) {
     .layout-header.hide-nav-mobile {
-        display: none;
+        display: block;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 800px) {
+    .layout-main {
+        display: grid;
+        grid-template-columns: clamp(34rem, 30vw, 57rem) 1fr;
+    }
+
+    .asideView {
+        display: block;
+    }
 
     .layout-main.has-active-contact .sectionView {
-        display: none;
+        display: block;
     }
 
     .layout-main.has-active-contact .asideView {
-        display: block;
-        width: 100%;
+        width: auto;
         height: 100dvh;
     }
 }
