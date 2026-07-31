@@ -1,8 +1,8 @@
 import { Link, NavLink } from 'react-router'
 import React from 'react'
-import './Nav.css'
+import './MainNavigation.css'
 
-export const Nav = () => {
+export const MainNavigation = () => {
   return (
     <>
       <nav className="header-nav-desktop">

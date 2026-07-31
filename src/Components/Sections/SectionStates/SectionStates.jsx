@@ -11,12 +11,12 @@ export const SectionStates = () => {
             </header>
 
             <div className="section-states-container">
-                <section className="padding">
+                <section className="padding ">
                     <ChatBox
                         imgSrc="/img/avatarDefault.webp"
                         imgAlt="Mi estado"
                         title="Mi estado"
-                        subtitle="Toca para agregar actualizaciones de estado"
+                        previewText="Toca para agregar actualizaciones de estado"
                     />
                 </section>
 

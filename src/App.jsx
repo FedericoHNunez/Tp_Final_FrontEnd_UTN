@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route, Navigate } from "react-router";
 import { LayoutScreen } from "./Screens/LayoutScreen/LayoutScreen";
 import { ChatsLayout } from "./Screens/ChatsLayout/ChatsLayout";
 import { SideBarHome } from "./Components/SideBars/SideBarHome/SideBarHome";
@@ -16,8 +16,8 @@ import { SideBarEditContact } from "./Components/SideBars/SideBarEditContact/Sid
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<LayoutScreen />}>
-        <Route element={<ContactContextProvider />} >
+      <Route element={<ContactContextProvider />} >
+        <Route path="/" element={<LayoutScreen />}>
           <Route element={<ChatsLayout />}>
             <Route index element={<SideBarHome />} />
             <Route path="/home" element={<SideBarHome />} />
@@ -26,13 +26,13 @@ function App() {
             <Route path="/chats/new-contact" element={<SideBarNewContact />} />
             <Route path="/chats/contacts/:contact_id" element={<SideBarContactInfo />} />
             <Route path="/chats/edit-contact/:contact_id" element={<SideBarEditContact />} />
-            <Route path="*" element={<SideBarHome />} />
           </Route>
           <Route path="/calls" element={<CallScreen />} />
           <Route path="/channels" element={<ChannelsScreen />} />
           <Route path="/communities" element={<CommunitiesScreen />} />
           <Route path="/states" element={<StatesScreen />} />
           <Route path="/profile" element={<MeScreen />} />
+          <Route path="*" element={<Navigate to="/chats" replace />} />
         </Route>
       </Route>
     </Routes>

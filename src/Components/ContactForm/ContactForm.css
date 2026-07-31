@@ -87,3 +87,12 @@
 .contact-form .cancel-btn:hover {
     background-color: var(--red-dark);
 }
+
+.contact-form .disabled-btn {
+    background-color: var(--grey-dark);
+    color: var(--black-light);
+}
+
+.contact-form .disabled-btn:hover {
+    cursor: not-allowed;
+}

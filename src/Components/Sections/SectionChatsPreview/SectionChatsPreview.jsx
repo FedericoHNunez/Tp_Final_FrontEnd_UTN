@@ -40,9 +40,14 @@ export const SectionChatsPreview = () => {
         </ul>
       </nav>
       {
-        contacts
+        [...contacts]
           .filter(contact => contact.chatStarted)
           .filter(contact => contact.alias.toLowerCase().includes(searchChatsValue.toLowerCase()))
+          .sort((a, b) => {
+            const timeA = a.messages.length > 0 ? new Date(a.messages[a.messages.length - 1].timestamp).getTime() : 0;
+            const timeB = b.messages.length > 0 ? new Date(b.messages[b.messages.length - 1].timestamp).getTime() : 0;
+            return timeB - timeA;
+          })
           .map(contact => (
             <ChatBox
               key={contact.id}

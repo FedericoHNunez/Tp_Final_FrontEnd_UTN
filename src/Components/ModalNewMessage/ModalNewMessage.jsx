@@ -1,12 +1,11 @@
 import "./ModalNewMessage.css";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ContactContext } from "../../Context/ContactContext";
 import { InputSearchContact } from "../InputSearchContact/InputSearchContact";
 import { Link } from "react-router";
 
 export const ModalNewMessage = ({ onClose }) => {
     const { contacts, startChat } = useContext(ContactContext);
-
     const [searchChatsValue, setSearchChatsValue] = useState("");
 
     return (
@@ -34,7 +33,8 @@ export const ModalNewMessage = ({ onClose }) => {
                     </Link>
                 </div>
                 <div>
-                    {contacts
+                    {[...contacts]
+                        .sort((a, b) => a.alias.localeCompare(b.alias))
                         .filter(contact => contact.alias.toLowerCase().includes(searchChatsValue.toLowerCase()))
                         .map(contact => (
                             <ul>

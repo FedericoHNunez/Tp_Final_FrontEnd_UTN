@@ -11,7 +11,7 @@ export const ChatBox = ({
     infoLink,
 }) => {
     const location = useLocation();
-    const isSelected = infoLink && location.pathname === infoLink;
+    const isSelected = infoLink && location.pathname === infoLink
 
     return (
         <article className={`chatbox-container ${isSelected ? "active" : ""}`}>

@@ -18,9 +18,8 @@
     --backgroundColorNav: var(--grey);
     --borderColor: var(--grey-dark);
     --borderColorNav: var(--borderColor);
-    --font: 'Roboto', sans-serif;
 
-    /* Fonts colors */
+    --font: 'Roboto', sans-serif;
     --text: var(--black-light);
 
     /* Bubles Chats */
@@ -34,21 +33,16 @@
     --hover-dark: var(--grey-dark);
     --hover-light: var(--grey-light);
     --hoverBackground-light: var(--hover-light);
-    --hoverBackground-dark: var(--hover-dark);
+    --backgroundHoverDanger: var(--red-light);
     /* boder */
     --boderColor: var(--grey-dark);
     /* input border focus */
     --inputFocus: var(--green);
-
-    --backgroundHoverDanger: var(--red-light);
-
-
 }
 
 
 
 /* CSS RESET */
-
 * {
     margin: 0;
     padding: 0;

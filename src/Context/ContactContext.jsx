@@ -18,8 +18,8 @@ function ContactContextProvider() {
 
 
     function deleteMessageById(contactId, messageId) {
-        const targetContactId = messageId !== undefined ? contactId : contact_id;
-        const targetMessageId = messageId !== undefined ? messageId : contactId;
+        const targetContactId = messageId !== undefined ? contactId : contact_id
+        const targetMessageId = messageId !== undefined ? messageId : contactId
 
         const contacts_modified = contacts.map(
             (contact) => {
@@ -54,7 +54,7 @@ function ContactContextProvider() {
                         chatStarted: true
                     }
                 }
-                return contact;
+                return contact
             }
         )
         setContacts(
@@ -81,8 +81,8 @@ function ContactContextProvider() {
     }
 
     function deleteContactById(contactId) {
-        const contacts_modified = contacts.filter(contact => contact.id !== Number(contactId));
-        setContacts(contacts_modified);
+        const contacts_modified = contacts.filter(contact => contact.id !== Number(contactId))
+        setContacts(contacts_modified)
     }
 
     function deleteChat(contactId) {
@@ -95,25 +95,25 @@ function ContactContextProvider() {
                         chatStarted: false
                     };
                 }
-                return contact;
+                return contact
             }
         );
-        setContacts(contacts_modified);
+        setContacts(contacts_modified)
     }
 
     function startChat(contactId) {
         const contacts_modified = contacts.map(
             (contact) => {
-                if (contact.id === Number(contactId)) {
+                if (contact.id === Number(contactId) && contact.messages.length !== 0) {
                     return {
                         ...contact,
                         chatStarted: true
                     };
                 }
-                return contact;
+                return contact
             }
         );
-        setContacts(contacts_modified);
+        setContacts(contacts_modified)
     }
 
     function createContact(firstName, lastName, phoneNumber) {
@@ -150,12 +150,12 @@ function ContactContextProvider() {
                         },
                         alias: `${data.first} ${data.last || ""}`.trim(),
                         cell: data.cell,
-                    };
+                    }
                 }
-                return contact;
+                return contact
             }
         );
-        setContacts(contacts_modified);
+        setContacts(contacts_modified)
     }
 
 
