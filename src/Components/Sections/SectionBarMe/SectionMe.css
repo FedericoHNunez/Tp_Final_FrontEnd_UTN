@@ -51,3 +51,9 @@
         display: none;
     }
 }
+
+.profile-header-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}

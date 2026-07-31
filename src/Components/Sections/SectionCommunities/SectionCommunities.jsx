@@ -5,7 +5,7 @@ export const SectionCommunities = () => {
     return (
         <>
             <div className="section-header">
-                <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
+                <div className="communities-header-content">
                     <Link to="/" className="communities-back-link center" title="Volver a chats">
                         <svg viewBox="0 0 24 24" height="24" width="24" fill="currentColor">
                             <title>Volver</title>
