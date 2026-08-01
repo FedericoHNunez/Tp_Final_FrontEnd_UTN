@@ -78,10 +78,10 @@ export const SideBarContactInfo = () => {
                     </section>
                     <section className="sideBarContactInfo-actions">
                         <ul>
-                            <li className="sideBarContactInfo-actions-item danger">
-                                <button title="vaciar chat" onClick={handleVaciarChat}>
-                                    <div className="">
-                                        <span className="">
+                            <li className="sideBarContactInfo-actions-item">
+                                <button className="danger" title="vaciar chat" onClick={handleVaciarChat}>
+                                    <div>
+                                        <span>
                                             <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="none"><title>clear-refreshed</title><path fill="currentColor" d="M7 12a1 1 0 0 0 1 1h8a1 1 0 1 0 0-2H8a1 1 0 0 0-1 1Zm5 10a10.1 10.1 0 0 1-9.21-6.1A9.74 9.74 0 0 1 2 12a10.1 10.1 0 0 1 6.1-9.21A9.74 9.74 0 0 1 12 2a10.1 10.1 0 0 1 9.21 6.1c.53 1.22.79 2.52.79 3.9s-.26 2.68-.79 3.9a10.1 10.1 0 0 1-5.31 5.31A9.74 9.74 0 0 1 12 22Zm0-2c2.23 0 4.13-.77 5.68-2.32A7.72 7.72 0 0 0 20 12a7.7 7.7 0 0 0-2.32-5.67A7.72 7.72 0 0 0 12 4a7.7 7.7 0 0 0-5.67 2.33A7.72 7.72 0 0 0 4 12c0 2.23.78 4.13 2.33 5.68A7.72 7.72 0 0 0 12 20Z"></path></svg>
                                         </span>
                                         <p className="danger">Vaciar chat</p>
@@ -90,9 +90,9 @@ export const SideBarContactInfo = () => {
                             </li>
 
                             <li className="sideBarContactInfo-actions-item danger">
-                                <button title="eliminar chat" onClick={handleEliminarChat}>
+                                <button className="danger" title="eliminar chat" onClick={handleEliminarChat}>
                                     <div className="">
-                                        <span className=" ">
+                                        <span>
                                             <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="currentColor"><title>Volver</title><path fill="currentColor" d="m12 13.4-4.9 4.9a.95.95 0 0 1-.7.27.95.95 0 0 1-.7-.27.95.95 0 0 1-.28-.7c0-.28.1-.52.28-.7l4.9-4.9-4.9-4.9a.95.95 0 0 1-.28-.7.95.95 0 0 1 .97-.98c.3 0 .53.1.71.28l4.9 4.9 4.9-4.9a.95.95 0 0 1 .7-.27c.28 0 .52.09.7.27.18.18.27.42.27.7 0 .28-.09.52-.27.7L13.4 12l4.9 4.9c.18.18.27.42.27.7 0 .28-.09.52-.27.7a.95.95 0 0 1-.7.27.95.95 0 0 1-.7-.27L12 13.4Z"></path></svg>
                                         </span>
                                         <p className="danger">Eliminar Chat</p>
@@ -101,9 +101,9 @@ export const SideBarContactInfo = () => {
                             </li>
 
                             <li className="sideBarContactInfo-actions-item danger">
-                                <button title="eliminar contacto" onClick={handleEliminarContacto}>
+                                <button className="danger" title="eliminar contacto" onClick={handleEliminarContacto}>
                                     <div className="">
-                                        <span className="">
+                                        <span>
                                             <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="none"><title>delete-refreshed</title><path fill="currentColor" d="M7 21c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41V6a1 1 0 0 1 0-2h4v-.5c0-.28.22-.5.5-.5h5c.28 0 .5.22.5.5V4h4a1 1 0 1 1 0 2v13c0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59H7ZM17 6H7v13h10V6ZM9 16.5c0 .28.22.5.5.5h1a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v8Zm4 0c0 .28.22.5.5.5h1a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v8Z"></path></svg>
                                         </span>
                                         <p className="danger">Eliminar Contacto</p>

@@ -96,7 +96,29 @@ button {
     font-weight: 400;
 }
 
+svg {
+    color: var(--text);
+}
 
+svg.danger,
+.danger svg {
+    color: var(--red);
+}
+
+/* WhatsApp Brand Logo */
+.ChatsPreview-header-logo-icon svg {
+    color: var(--whatsappLogo);
+}
+
+/* Read Status Ticks */
+.message-status-ticks svg {
+    color: #53bdeb;
+}
+
+/* Chat Send Button */
+.micro button svg {
+    color: var(--green);
+}
 
 img {
     width: 100%;
