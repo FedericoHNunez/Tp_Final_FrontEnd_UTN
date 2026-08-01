@@ -50,30 +50,28 @@ export const SideBarContactInfo = () => {
                     <section className="sideBarContactInfo-options">
                         <ul >
                             <li className="sideBarContactInfo-options-item">
-
-                                <Link to={`/chats/${contact_selected.id}`} className="center">
-                                    <span className='center'>
+                                <Link to={`/chats/${contact_selected.id}`} className="sideBarContactInfo-options-link">
+                                    <div className="sideBarContactInfo-icon-container center">
                                         <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="none"><title>Iniciar nuevo chat</title><path fill="currentColor" d="M9.53 13h1.98v1.97c0 .43.25.85.67.98a1 1 0 0 0 1.31-.94v-2.02h1.98c.43 0 .85-.25.98-.67a1 1 0 0 0-.94-1.31h-2.02V9.03c0-.43-.25-.85-.67-.98a1 1 0 0 0-1.31.94v2.02H9.49a1 1 0 0 0-.94 1.31c.13.42.55.67.98.67Z"></path><path fill="currentColor" fillRule="evenodd" d="M.94 5.53 3 8.85v8.48C3 18.81 4.2 20 5.67 20h13.66c1.48 0 2.67-1.2 2.67-2.67V6.67C22 5.19 20.8 4 19.33 4H1.8a1 1 0 0 0-.85 1.53ZM5 8.28v9.05c0 .37.3.67.67.67h13.66c.37 0 .67-.3.67-.67V6.67c0-.37-.3-.67-.67-.67H3.6L5 8.28Z" clipRule="evenodd"></path></svg>
-                                    </span>
+                                    </div>
+                                    <p>Iniciar Chat</p>
                                 </Link>
-                                <p>Iniciar Chat</p>
                             </li>
                             <li className="sideBarContactInfo-options-item">
-                                <Link to={`/chats/call/${contact_selected.id}`} className="center">
-                                    <span className="center">
+                                <Link to={`/chats/call/${contact_selected.id}`} className="sideBarContactInfo-options-link">
+                                    <div className="sideBarContactInfo-icon-container center">
                                         <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="currentColor"><title>Iniciar Llamada</title><path fill="currentColor" d="M19.95 21c-2.08 0-4.14-.45-6.17-1.36a18.3 18.3 0 0 1-5.55-3.87 18.47 18.47 0 0 1-3.87-5.54C3.46 8.18 3 6.13 3 4.04A1.02 1.02 0 0 1 4.05 3H8.1c.23 0 .44.08.63.24a.9.9 0 0 1 .32.56l.65 3.5c.03.27.03.5-.02.67-.05.19-.15.35-.28.48L6.97 10.9c.34.62.73 1.21 1.2 1.79.45.57.96 1.13 1.5 1.66A17.59 17.59 0 0 0 13.1 17l2.35-2.35a1.61 1.61 0 0 1 1.3-.4l3.45.7c.23.07.43.19.57.36.16.18.23.37.23.59v4.05A1.02 1.02 0 0 1 19.95 21ZM6.03 9l1.64-1.65L7.25 5H5.03c.08.68.2 1.36.34 2.03.16.66.37 1.32.66 1.97Zm8.95 8.95a12.42 12.42 0 0 0 4.02 1v-2.2l-2.35-.48-1.67 1.68Z"></path></svg>
-                                    </span>
+                                    </div>
+                                    <p>Llamada</p>
                                 </Link>
-                                <p>Llamada</p>
-
                             </li>
                             <li className="sideBarContactInfo-options-item">
-                                <Link to={`/chats/video-call/${contact_selected.id}`} className="center">
-                                    <span className="center">
+                                <Link to={`/chats/video-call/${contact_selected.id}`} className="sideBarContactInfo-options-link">
+                                    <div className="sideBarContactInfo-icon-container center">
                                         <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="" fill="currentColor"><title>Iniciar Videollamada</title><path fill="currentColor" d="M4 20c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41V6c0-.55.2-1.02.59-1.41C2.98 4.19 3.45 4 4 4h12c.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41v4.5l3.15-3.15c.17-.17.35-.2.55-.13.2.09.3.25.3.48v8.6c0 .23-.1.4-.3.47-.2.09-.38.05-.55-.12L18 13.5V18c0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59H4Zm0-2h12V6H4v12Z"></path></svg>
-                                    </span>
+                                    </div>
+                                    <p>Video</p>
                                 </Link>
-                                <p>Video</p>
                             </li>
                         </ul>
 

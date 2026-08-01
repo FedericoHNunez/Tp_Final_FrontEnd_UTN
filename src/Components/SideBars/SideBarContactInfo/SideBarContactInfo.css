@@ -8,10 +8,9 @@
   height: 4rem;
 }
 
-.contact-header-actions span:hover {
+.contact-header-actions:hover span {
   background-color: var(--hover-dark);
   border-radius: 50%;
-
 }
 
 /* Foto y datos de contacto */
@@ -68,14 +67,27 @@
   width: 100%;
 }
 
-.sideBarContactInfo-options-item a {
+.sideBarContactInfo-options-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sideBarContactInfo-icon-container {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   background-color: var(--grey-dark);
+  transition: background-color 0.2s ease;
 }
 
-.sideBarContactInfo-options-item a:hover {
+.sideBarContactInfo-options-link:hover .sideBarContactInfo-icon-container {
   background-color: var(--hover-light);
 }
 

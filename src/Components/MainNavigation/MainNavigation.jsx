@@ -9,8 +9,8 @@ export const MainNavigation = () => {
         <div className="nav-list_superior">
           <ul className="nav-list_superior_items">
             {/* Chats */}
-            <li className='nav-liButton center'>
-              <NavLink to="chats">
+            <li className='center'>
+              <NavLink to="chats" className="nav-liButton center">
                 {({ isActive }) => isActive
                   ? (
                     <svg viewBox='0 0 24 24' height='24' width='24' preserveAspectRatio='xMidYMid meet' fill='currentColor'>
@@ -29,8 +29,8 @@ export const MainNavigation = () => {
             </li>
 
             {/* Llamadas */}
-            <li className='nav-liButton center'>
-              <NavLink to="calls">
+            <li className='center'>
+              <NavLink to="calls" className="nav-liButton center">
                 {({ isActive }) => isActive
                   ? (
                     <svg viewBox='0 0 24 24' height='24' width='24' preserveAspectRatio='xMidYMid meet' fill='currentColor'>
@@ -48,8 +48,8 @@ export const MainNavigation = () => {
             </li>
 
             {/* Estados */}
-            <li className='nav-liButton center'>
-              <NavLink to="states">
+            <li className='center'>
+              <NavLink to="states" className="nav-liButton center">
                 {({ isActive }) => isActive
                   ? (
                     <svg viewBox='0 0 24 24' height='24' width='24' preserveAspectRatio='xMidYMid meet' fill='currentColor'>
@@ -69,8 +69,8 @@ export const MainNavigation = () => {
             </li>
 
             {/* Canales */}
-            <li className='nav-liButton center'>
-              <NavLink to="channels">
+            <li className='center'>
+              <NavLink to="channels" className="nav-liButton center">
                 {({ isActive }) => isActive
                   ? (
                     <svg viewBox='0 0 24 24' height='24' width='24' preserveAspectRatio='xMidYMid meet' fill='none'>
@@ -90,8 +90,8 @@ export const MainNavigation = () => {
             </li>
 
             {/* Comunidades */}
-            <li className='nav-liButton center'>
-              <NavLink to="communities">
+            <li className='center'>
+              <NavLink to="communities" className="nav-liButton center">
                 {({ isActive }) => isActive
                   ? (
                     <svg viewBox='0 0 24 24' height='24' width='24' preserveAspectRatio='xMidYMid meet' fill='currentColor'>
@@ -113,8 +113,8 @@ export const MainNavigation = () => {
         <div className="nav-list_inferior">
           <ul>
             {/* Multimedia */}
-            <li className='nav-liButton center'>
-              <button className='nav-button' title='Boton de Acceso a la seccion de multimedia personal'>
+            <li className='center'>
+              <button className='nav-liButton center' title='Boton de Acceso a la seccion de multimedia personal'>
                 <span>
                   <svg viewBox='0 0 24 24' height='24' width='24' preserveAspectRatio='xMidYMid meet' fill='currentColor'>
                     <title>Icono de imagenes</title>
@@ -124,8 +124,8 @@ export const MainNavigation = () => {
               </button>
             </li>
             {/* Perfil */}
-            <li className='nav-liButton center'>
-              <Link to="/profile" >
+            <li className='center'>
+              <Link to="/profile" className="nav-liButton center">
                 <img src={`./img/avatarDefault.webp`} alt="Mi perfil" className='img-profile-link' />
               </Link>
             </li>

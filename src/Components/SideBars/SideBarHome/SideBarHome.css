@@ -57,7 +57,7 @@
     font-size: 1.2rem;
 }
 
-.sideBarHome-options-list-span:hover {
+.sideBarHome-options-list a:hover .sideBarHome-options-list-span {
     background-color: var(--hover-dark);
 }
 

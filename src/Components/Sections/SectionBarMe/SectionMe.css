@@ -44,6 +44,7 @@
 
 .profile-back-link:hover {
     background-color: var(--hover-light);
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 600px) {

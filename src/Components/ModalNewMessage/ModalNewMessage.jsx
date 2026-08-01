@@ -1,5 +1,5 @@
 import "./ModalNewMessage.css";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { ContactContext } from "../../Context/ContactContext";
 import { InputSearchContact } from "../InputSearchContact/InputSearchContact";
 import { Link } from "react-router";
@@ -32,31 +32,29 @@ export const ModalNewMessage = ({ onClose }) => {
                         <h3>Nuevo contacto</h3>
                     </Link>
                 </div>
-                <div>
+                <ul>
                     {[...contacts]
                         .sort((a, b) => a.alias.localeCompare(b.alias))
                         .filter(contact => contact.alias.toLowerCase().includes(searchChatsValue.toLowerCase()))
                         .map(contact => (
-                            <ul>
-                                <li key={contact.id}>
-                                    <Link
-                                        to={`/chats/${contact.id}`}
+                            <li key={contact.id}>
+                                <Link
+                                    to={`/chats/${contact.id}`}
 
-                                        className="ModalNewMessage-contact-item"
-                                        onClick={() => {
-                                            startChat(contact.id)
-                                            onClose()
-                                        }}
-                                    >
+                                    className="ModalNewMessage-contact-item"
+                                    onClick={() => {
+                                        startChat(contact.id)
+                                        onClose()
+                                    }}
+                                >
 
-                                        <img src={contact.picture.thumbnail} alt={contact.alias} />
-                                        <h3>{contact.alias}</h3>
+                                    <img src={contact.picture.thumbnail} alt={contact.alias} />
+                                    <h3>{contact.alias}</h3>
 
-                                    </Link>
-                                </li>
-                            </ul>
+                                </Link>
+                            </li>
                         ))}
-                </div>
+                </ul>
             </section>
         </div>
     );
