@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import communities from "../../../assets/img/communities.jpeg"
+import communities from "../../../assets/img/communities.webp"
 import "./SectionCommunities.css"
 export const SectionCommunities = () => {
     return (
