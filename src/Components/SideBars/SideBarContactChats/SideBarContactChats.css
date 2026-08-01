@@ -1,4 +1,8 @@
 /* Estilos para el el header  */
+.contactInfoHeader-left-container {
+    gap: 1rem;
+}
+
 .contactInfoHeader-left {
     gap: 2rem;
 }
