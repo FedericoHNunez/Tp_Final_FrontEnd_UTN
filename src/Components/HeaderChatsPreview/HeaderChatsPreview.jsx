@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HeaderChatsPreview.css";
-import { ModalMoreOption } from "../ModalMoreOption";
+import { ModalMoreOption } from "../ModalMoreOption/ModalMoreOption";
 
 export const HeaderChatsPreview = ({ onNewChatClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
