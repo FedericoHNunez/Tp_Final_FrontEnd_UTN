@@ -9,7 +9,7 @@
 }
 
 .contact-header-actions:hover span {
-  background-color: var(--hover-dark);
+  background-color: var(--hover-bg-dark);
   border-radius: 50%;
 }
 
@@ -36,7 +36,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: 0.1rem solid var(--borderColor);
+  border-bottom: 0.1rem solid var(--border-color);
 }
 
 /* Botones de acciones */
@@ -88,7 +88,7 @@
 }
 
 .sideBarContactInfo-options-link:hover .sideBarContactInfo-icon-container {
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
 }
 
 /* Acciones destructivas */
@@ -130,10 +130,6 @@
 }
 
 .sideBarContactInfo-actions-item div:hover {
-  background-color: var(--backgroundHoverDanger);
+  background-color: var(--hover-bg-danger);
   border-radius: 1rem;
-}
-
-.danger {
-  color: var(--red);
 }

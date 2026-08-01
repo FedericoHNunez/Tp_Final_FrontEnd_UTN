@@ -53,7 +53,7 @@
 }
 
 .modal-button-cancel:hover {
-  background-color: var(--borderColorNav);
+  background-color: var(--border-color);
 }
 
 .modal-button-confirm {

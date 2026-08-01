@@ -38,7 +38,7 @@
 
 .contactInfoHeader-back-btn:hover,
 .contactInfoHeader-right button:hover {
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
   border-radius: 50%;
 }
 
@@ -92,12 +92,12 @@
 }
 
 .message-me-text {
-  background-color: var(--bubleChatMe);
+  background-color: var(--bubble-me-bg);
   border-radius: 0.8rem 0 0.8rem 0.8rem;
 }
 
 .message-contact-text {
-  background-color: var(--bubleChatContact);
+  background-color: var(--bubble-contact-bg);
   border-radius: 0 0.8rem 0.8rem 0.8rem;
 }
 
@@ -117,7 +117,6 @@
 }
 
 .message-status-ticks {
-  color: #53bdeb;
   display: inline-flex;
   align-items: center;
 }
@@ -182,8 +181,8 @@
 }
 
 .contactMessage-input-relative:focus-within {
-  border-color: var(--inputFocus);
-  box-shadow: 0 0 0 1px var(--inputFocus);
+  border-color: var(--input-focus-color);
+  box-shadow: 0 0 0 1px var(--input-focus-color);
 }
 
 .contactMessage-input-textarea {
@@ -194,7 +193,7 @@
   line-height: 1.5rem;
   resize: none;
   padding: 0.8rem 0.4rem;
-  font-family: var(--font);
+  font-family: var(--font-family);
   font-size: 1.4rem;
 }
 
@@ -211,7 +210,7 @@
 .more-stikers span:hover,
 .contactInfoHeader-right span:hover {
   cursor: pointer;
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
 }
 
 .micro {
@@ -226,12 +225,8 @@
   border-radius: 50%;
 }
 
-.micro button {
-  color: var(--green);
-}
-
 .micro button:hover,
 .micro span:hover {
   cursor: pointer;
-  background-color: var(--hoverBackground-light);
+  background-color: var(--hover-bg-light);
 }

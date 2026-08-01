@@ -12,7 +12,7 @@
   top: 4rem;
   right: 0;
   background-color: var(--white);
-  border: 1px solid var(--boderColor);
+  border: 1px solid var(--border-color);
   z-index: 1600;
   min-width: 12rem;
   border-radius: 1rem;
@@ -28,12 +28,12 @@
 .ModalMoreOption-link {
   display: block;
   padding: 0.8rem 1.2rem;
-  color: var(--text);
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.4rem;
   text-align: left;
 }
 
 .ModalMoreOption-link:hover {
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
 }

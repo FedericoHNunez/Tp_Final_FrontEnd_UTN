@@ -57,7 +57,7 @@
 }
 
 .sideBarHome-options-list a:hover .sideBarHome-options-list-span {
-  background-color: var(--hover-dark);
+  background-color: var(--hover-bg-dark);
 }
 
 .btn-download {

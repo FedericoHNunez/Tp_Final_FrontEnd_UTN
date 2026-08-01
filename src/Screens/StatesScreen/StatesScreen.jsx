@@ -1,4 +1,4 @@
-import { SideBarStatus } from "../../Components/SideBars/SideBarStatus/SideBarStatus";
+import { SideBarStates } from "../../Components/SideBars/SideBarStates/SideBarStates";
 import { SectionStates } from "../../Components/Sections/SectionStates/SectionStates";
 
 export const StatesScreen = () => {
@@ -8,7 +8,7 @@ export const StatesScreen = () => {
         <SectionStates />
       </section>
       <aside className="asideView backgroundSiderBar">
-        <SideBarStatus />
+        <SideBarStates />
       </aside>
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SideBarStatus = () => {
+export const SideBarStates = () => {
   return (
     <>
       <aside className="asideView center backgroundSiderBar center">

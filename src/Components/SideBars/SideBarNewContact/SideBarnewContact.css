@@ -1,5 +1,5 @@
 .new-contact {
-  background-color: var(--layout-color);
+  background-color: var(--layout-bg);
 }
 
 .contact-form-header a {
@@ -9,7 +9,7 @@
 
 .contact-form-header a:hover {
   border-radius: 50%;
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
 }
 
 .contact-form-container {

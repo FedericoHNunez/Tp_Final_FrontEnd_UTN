@@ -40,7 +40,7 @@
 }
 
 .profile-back-link:hover {
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
   border-radius: 50%;
 }
 

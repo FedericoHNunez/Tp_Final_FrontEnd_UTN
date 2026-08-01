@@ -68,6 +68,6 @@
 
 .ModalNewMessage-header button:hover,
 .ModalNewMessage-contacts-list a:hover {
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
   border-radius: 2rem;
 }

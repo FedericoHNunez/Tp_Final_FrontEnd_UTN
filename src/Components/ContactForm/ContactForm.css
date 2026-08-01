@@ -15,7 +15,7 @@
 
 .contact-form input {
   border: none;
-  border-bottom: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--border-color);
   outline: none;
   background: transparent;
   padding: 0.8rem 0;

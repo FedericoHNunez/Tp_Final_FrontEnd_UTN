@@ -1,76 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  --green: #1dab62;
-  --green-light: #1dab62b7;
-  --green-light1: #d9fdd3;
-  --green-light3: var(--green);
-  --grey: #f7f5f2;
-  --grey-light: #eaeaea;
-  --grey-dark: #dedcdade;
-  --white: #fff;
-  --black-dark: #0a0a0ac9;
-  --black-light: #000000af;
-  --red: #ff0000;
-  --red-light: #ffe6e6;
-  --red-dark: rgba(255, 0, 0, 0.473);
+    /* =========================================
+       1. PALETA DE CORES BASE
+       ========================================= */
+    /* Verdes */
+    --green: #1dab62;
+    --green-light: #1dab62b7;
+    --green-light-1: #d9fdd3;
 
-  --layout-color: var(--white);
-  --backgroundColorNav: var(--grey);
-  --borderColor: var(--grey-dark);
-  --borderColorNav: var(--borderColor);
+    /* Grises */
+    --grey: #f7f5f2;
+    --grey-light: #eaeaea;
+    --grey-dark: #dedcdade;
 
-  --font: "Roboto", sans-serif;
-  --text: var(--black-light);
+    /* Neutros */
+    --white: #ffffff;
+    --black-dark: #0a0a0ac9;
+    --black-light: #000000af;
 
-  /* Bubles Chats */
-  --bubleChatContact: var(--white);
-  --bubleChatMe: var(--green-light1);
+    /* Rojos */
+    --red: #ff0000;
+    --red-light: #ffe6e6;
+    --red-dark: #ff000078;
+    /* Convertido de rgba a hex con alpha para consistencia */
 
-  /* WhatsaAppLogo */
-  --whatsappLogo: var(--green);
-  /* backgrounds */
-  --inputBackground: var(--grey);
-  --hover-dark: var(--grey-dark);
-  --hover-light: var(--grey-light);
-  --hoverBackground-light: var(--hover-light);
-  --backgroundHoverDanger: var(--red-light);
-  /* boder */
-  --boderColor: var(--grey-dark);
-  /* input border focus */
-  --inputFocus: var(--green);
+
+    /* =========================================
+       2. LAYOUT Y UI (SEMÁNTICOS)
+       ========================================= */
+    --layout-bg: var(--white);
+    --nav-bg: var(--grey);
+    --border-color: var(--grey-dark);
+
+
+    /* =========================================
+       3. TIPOGRAFÍA
+       ========================================= */
+    --font-family: "Roboto", sans-serif;
+    --text-color: var(--black-light);
+
+
+    /* =========================================
+       4. COMPONENTES
+       ========================================= */
+    /* Chat Bubbles */
+    --bubble-contact-bg: var(--white);
+    --bubble-me-bg: var(--green-light-1);
+
+    /* Inputs & Estados Interactivos */
+    --input-bg: var(--grey);
+    --input-focus-color: var(--green);
+
+    /* Hover States */
+    --hover-bg-light: var(--grey-light);
+    --hover-bg-dark: var(--grey-dark);
+    --hover-bg-danger: var(--red-light);
+
+
+    /* =========================================
+       5. MARCA (BRAND)
+       ========================================= */
+    --whatsapp-logo-color: var(--green);
 }
 
 /* CSS RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 html,
 body,
 #root {
-  height: 100dvh;
-  background-color: var(--layout-color);
-  font-family: var(--font);
-  overflow: hidden;
+    height: 100dvh;
+    background-color: var(--layout-bg);
+    font-family: var(--font-family);
+    overflow: hidden;
 }
 
 body {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 /* Globales */
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
 input {
-  border: none;
+    border: none;
 }
 
 a,
@@ -79,212 +104,209 @@ a:visited,
 a:hover,
 a:active,
 button {
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  background: none;
-  color: inherit;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: inherit;
 }
 
 button {
-  font-family: var(--font);
-  font-size: 1.4rem;
-  color: var(--black-light);
-  font-weight: 400;
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    color: var(--black-light);
+    font-weight: 400;
 }
 
 svg {
-  color: var(--text);
+    color: var(--text-color);
 }
 
 svg.danger,
 .danger svg {
-  color: var(--red);
+    color: var(--red);
 }
 
-/* WhatsApp Brand Logo */
+/* WhatsApp Logo */
 .ChatsPreview-header-logo-icon svg {
-  color: var(--whatsappLogo);
+    color: var(--whatsapp-logo-color);
 }
 
-/* Read Status Ticks */
+/* Mensajes leidos */
 .message-status-ticks svg {
-  color: #53bdeb;
+    color: #53bdeb;
 }
 
-/* Chat Send Button */
+/* Botón de enviar mensaje */
 .micro button svg {
-  color: var(--green);
+    color: var(--green);
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 h1 {
-  font-size: 2rem;
-  color: var(--black-dark);
-  font-weight: 700;
+    font-size: 2rem;
+    color: var(--black-dark);
+    font-weight: 700;
 }
 
 h2 {
-  font-size: 1.8rem;
-  color: var(--black-dark);
-  font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--black-dark);
+    font-weight: 600;
 }
 
 h3 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--black-dark);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black-dark);
 }
 
 p {
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--text);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
 }
 
 .section-header {
-  background-color: var(--white);
-  height: 6.7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background-color: var(--white);
+    height: 6.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .border-bottom {
-  border-bottom: 0.2rem solid var(--borderColor);
+    border-bottom: 0.2rem solid var(--border-color);
 }
 
 .ContactInfo-img {
-  width: 20rem;
-  height: 20rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 .ContactInfo-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* utiles */
 .label-none {
-  display: none;
+    display: none;
 }
 
 .section-width {
-  max-width: 97%;
+    max-width: 97%;
 }
 
 .padding {
-  padding: 2rem;
+    padding: 2rem;
 }
 
 .danger {
-  color: var(--red);
+    color: var(--red);
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.center-margin {
-  margin: 0 auto;
-}
 
 /*Layout  */
 
 .layout-main {
-  grid-area: main;
+    grid-area: main;
 }
 
 .layout-header {
-  grid-area: header;
-  background-color: var(--white);
+    grid-area: header;
+    background-color: var(--white);
 }
 
 .asideView {
-  display: none;
-  overflow: hidden;
-  height: 100dvh;
-  border-left: 0.1rem solid var(--borderColor);
-  background-color: var(--grey);
+    display: none;
+    overflow: hidden;
+    height: 100dvh;
+    border-left: 0.1rem solid var(--border-color);
+    background-color: var(--grey);
 }
 
 .sectionView {
-  height: calc(100dvh - 8rem);
-  background-color: var(--white);
-  overflow-y: scroll;
-  position: relative;
+    height: calc(100dvh - 8rem);
+    background-color: var(--white);
+    overflow-y: scroll;
+    position: relative;
 }
 
 .sectionView:has(.ModalNewMessage) {
-  overflow: hidden;
+    overflow: hidden;
 }
 
-/* Estilos móviles por defecto (pantallas < 480px) */
+/* Estilos móviles por defecto (pantallas < 600px) */
 .layout-header.hide-nav-mobile {
-  display: none;
+    display: none;
 }
 
 .layout-main.has-active-contact .sectionView {
-  display: none;
+    display: none;
 }
 
 .layout-main.has-active-contact .asideView {
-  display: block;
-  width: 100%;
-  height: 100dvh;
+    display: block;
+    width: 100%;
+    height: 100dvh;
 }
 
 @media screen and (min-width: 600px) {
-  .layout {
-    grid-template-columns: 6rem 1fr;
-    display: grid;
-    grid-template-areas: "header main";
-  }
+    .layout {
+        grid-template-columns: 6rem 1fr;
+        display: grid;
+        grid-template-areas: "header main";
+    }
 
-  .sectionView {
-    height: 100dvh;
-  }
+    .sectionView {
+        height: 100dvh;
+    }
 
-  .layout-header.hide-nav-mobile {
-    display: block;
-  }
+    .layout-header.hide-nav-mobile {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 800px) {
-  .layout-main {
-    display: grid;
-    grid-template-columns: clamp(34rem, 30vw, 57rem) 1fr;
-  }
+    .layout-main {
+        display: grid;
+        grid-template-columns: clamp(34rem, 30vw, 57rem) 1fr;
+    }
 
-  .asideView {
-    display: block;
-  }
+    .asideView {
+        display: block;
+    }
 
-  .layout-main.has-active-contact .sectionView {
-    display: block;
-  }
+    .layout-main.has-active-contact .sectionView {
+        display: block;
+    }
 
-  .layout-main.has-active-contact .asideView {
-    width: auto;
-    height: 100dvh;
-  }
+    .layout-main.has-active-contact .asideView {
+        width: auto;
+        height: 100dvh;
+    }
 }
 
 /* Estilos globales para hacer la barra de scroll transparente y delgada */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 }

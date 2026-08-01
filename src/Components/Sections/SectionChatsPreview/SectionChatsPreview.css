@@ -11,7 +11,7 @@
 .ChatsPreview-nav ul li {
   padding: 0 2rem;
   cursor: pointer;
-  border: 1px solid var(--boderColor);
+  border: 1px solid var(--border-color);
   border-radius: 2rem;
   display: flex;
   justify-content: center;
@@ -26,5 +26,5 @@
 }
 
 .ChatsPreview-nav ul li:hover {
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
 }

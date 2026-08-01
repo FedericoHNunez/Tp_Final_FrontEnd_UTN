@@ -7,19 +7,13 @@
   overflow-y: auto;
 }
 
-.editContact-header span {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: var(--black-dark);
-}
-
 .close-btn {
   width: 4rem;
   height: 4rem;
 }
 
 .close-btn:hover {
-  background-color: var(--hover-light);
+  background-color: var(--hover-bg-light);
   border-radius: 50%;
 }
 
@@ -42,7 +36,7 @@
   margin-bottom: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   border: 3px solid var(--white);
-  outline: 2px solid var(--borderColorNav);
+  outline: 2px solid var(--border-color);
   transition:
     transform 0.3s ease,
     outline-color 0.3s ease;
@@ -50,7 +44,7 @@
 
 .editContact-avatar:hover {
   transform: scale(1.05);
-  outline-color: var(--green-light3);
+  outline-color: var(--green);
 }
 
 .editContact-avatar img {
@@ -68,7 +62,7 @@
 
 .editContact-content .subtitle {
   font-size: 1.4rem;
-  color: var(--text);
+  color: var(--text-color);
   line-height: 2rem;
   text-align: center;
   margin-bottom: 1rem;
