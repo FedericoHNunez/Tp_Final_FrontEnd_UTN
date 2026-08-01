@@ -1,47 +1,38 @@
-import { useState, useRef, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { ContactContext } from "../Context/ContactContext";
 
 export const useChatForm = () => {
-    const { contact_selected, createMessage } = useContext(ContactContext);
-    const textareaRef = useRef(null);
+    const { createMessage } = useContext(ContactContext);
+
     const [messageValue, setMessageValue] = useState("");
 
     // Reset textarea height when contact selection changes
-    useEffect(() => {
-        if (textareaRef.current) {
-            textareaRef.current.style.height = "auto";
-            textareaRef.current.style.height = Math.min(textareaRef.current.scrollHeight, 120) + "px";
-        }
-    }, [contact_selected?.id]);
 
-    const handleInputChange = (e) => {
-        setMessageValue(e.target.value);
-        e.target.style.height = "auto";
-        e.target.style.height = Math.min(e.target.scrollHeight, 120) + "px";
-    };
 
-    const handleSubmit = (e) => {
-        if (e) e.preventDefault();
+    const handleInputChange = (event) => {
+        setMessageValue(event.target.value)
+
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
         if (messageValue.trim() === "") return;
         createMessage(messageValue, "me");
-        setMessageValue("");
-        if (textareaRef.current) {
-            textareaRef.current.style.height = "auto";
-        }
-    };
-
-    const handleKeyDown = (e) => {
-        if (e.key === "Enter" && !e.shiftKey) {
-            e.preventDefault();
-            handleSubmit(e);
+        setMessageValue("")
+    }
+    const handleKeyDown = (event) => {
+        if (event.key === "Enter" && !event.shiftKey) {
+            event.preventDefault();
+            handleSubmit(event)
         }
     };
 
     return {
+        setMessageValue,
         messageValue,
-        textareaRef,
         handleInputChange,
         handleSubmit,
         handleKeyDown,
-    };
-};
+    }
+
+}

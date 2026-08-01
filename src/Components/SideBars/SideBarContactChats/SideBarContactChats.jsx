@@ -1,6 +1,7 @@
 import { useContext, useRef, useLayoutEffect } from "react"
 import { ContactContext } from "../../../Context/ContactContext"
-import { useChatForm } from "../../../Hooks/useChatForm"
+import { useChatForm } from "../../../Hooks/useChatForm.jsx"
+import TextareaAutosize from 'react-textarea-autosize';
 import "./SideBarContactChats.css"
 import { Link } from "react-router"
 import { formatTime } from "../../../utils/Timestamp.js"
@@ -13,11 +14,9 @@ export const SideBarContactChats = () => {
 
     const {
         messageValue,
-        textareaRef,
         handleInputChange,
         handleSubmit,
-        handleKeyDown
-    } = useChatForm()
+        handleKeyDown } = useChatForm();
 
 
     useLayoutEffect(() => {
@@ -123,16 +122,17 @@ export const SideBarContactChats = () => {
                                 className="contact-input-label">
                                 Escriba su mensaje
                             </label>
-                            <textarea className="contactMessage-input-textarea"
-                                ref={textareaRef}
-                                name="message"
-                                id="message"
-                                rows="1"
-                                placeholder="Escriba su mensaje"
+                            <TextareaAutosize
+                                minRows={1}
+                                maxRows={10}
+                                className="contactMessage-input-textarea"
                                 value={messageValue}
                                 onChange={handleInputChange}
                                 onKeyDown={handleKeyDown}
-                            ></textarea>
+                                placeholder="Escriba su mensaje"
+                            />
+
+
                         </form>
                         <div className="micro">
                             {messageValue.trim() !== "" ? (

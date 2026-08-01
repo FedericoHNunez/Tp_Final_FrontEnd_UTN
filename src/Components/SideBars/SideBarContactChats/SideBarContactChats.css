@@ -193,6 +193,8 @@
     line-height: 1.5rem;
     resize: none;
     padding: 0.8rem 0.4rem;
+    font-family: var(--font);
+    font-size: 1.4rem;
 }
 
 .more-stikers {

@@ -89,6 +89,14 @@ button {
     color: inherit;
 }
 
+button {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    color: var(--black-light);
+    font-weight: 400;
+}
+
+
 
 img {
     width: 100%;
