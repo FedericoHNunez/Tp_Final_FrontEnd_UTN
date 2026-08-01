@@ -1,27 +1,27 @@
 .ChatsPreview-header-logo-icon {
-    color: var(--whatsappLogo)
+  color: var(--whatsappLogo);
 }
 
 .ChatsPreview-header-actions {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .ChatsPreview-action-btn {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    transition: background-color 0.2s ease;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
 }
 
 .ChatsPreview-action-btn:hover {
-    background-color: var(--hover-light);
+  background-color: var(--hover-light);
 }
 
 .border-none {
-    border: none;
+  border: none;
 }
 
 .ChatsPreview-menu-container {
-    position: relative;
+  position: relative;
 }

@@ -1,36 +1,35 @@
 .ChatsPreview-header-input-container {
-    padding: 0.5rem 2rem;
-    background-color: var(--white);
+  padding: 0.5rem 2rem;
+  background-color: var(--white);
 }
 
 .ChatsPreview-header-input {
-    position: relative;
+  position: relative;
 }
 
 .ChatsPreview-header-input input {
-    width: 100%;
-    height: 4rem;
-    background-color: var(--inputBackground);
-    border-radius: 2rem;
-    padding: 0 2rem 0 6rem;
-    border: 1px solid transparent;
-    font-family: var(--font);
-    font-size: 1.4rem;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--inputBackground);
+  border-radius: 2rem;
+  padding: 0 2rem 0 6rem;
+  border: 1px solid transparent;
+  font-family: var(--font);
+  font-size: 1.4rem;
 }
 
 .ChatsPreview-header-input input:focus {
-    outline: none;
-    border: 1px solid var(--inputFocus);
-
+  outline: none;
+  border: 1px solid var(--inputFocus);
 }
 
 .ChatsPreview-header-input span.search-icon {
-    position: absolute;
-    left: 2rem;
-    top: 1.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    color: var(--text);
+  position: absolute;
+  left: 2rem;
+  top: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--text);
 }

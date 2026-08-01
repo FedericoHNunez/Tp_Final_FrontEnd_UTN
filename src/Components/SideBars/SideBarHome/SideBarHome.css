@@ -1,75 +1,74 @@
 .sideBarHome-div {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--grey);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey);
 }
 
 .sideBarHome-container {
-    width: 35.2rem;
-    height: 36.4rem;
-    padding: 2.4rem;
-    margin: 1.6rem;
-    background-color: var(--white);
-    border-radius: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+  width: 35.2rem;
+  height: 36.4rem;
+  padding: 2.4rem;
+  margin: 1.6rem;
+  background-color: var(--white);
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .sideBarHome-img {
-    width: 15.6rem;
-    height: 13.4rem;
-    margin: 0 auto;
+  width: 15.6rem;
+  height: 13.4rem;
+  margin: 0 auto;
 }
 
 .sideBarHome-options-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 0 auto;
-    padding: 1.6rem 0;
-    text-align: center
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1.6rem 0;
+  text-align: center;
 }
 
 .sideBarHome-options-list a {
-    width: 12.2rem;
-    height: 7.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
+  width: 12.2rem;
+  height: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .sideBarHome-options-list-span {
-    width: 5rem;
-    height: 5rem;
-    background-color: var(--grey);
-    border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--grey);
+  border-radius: 50%;
 }
 
 .sideBarHome-options-list-p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .sideBarHome-options-list a:hover .sideBarHome-options-list-span {
-    background-color: var(--hover-dark);
+  background-color: var(--hover-dark);
 }
 
 .btn-download {
-    background-color: var(--green);
-    color: var(--white);
-    width: 12rem;
-    height: 3rem;
-    border-radius: 2rem;
-    border: none;
+  background-color: var(--green);
+  color: var(--white);
+  width: 12rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
 }
 
 .btn-download:hover {
-    background-color: var(--green-light);
+  background-color: var(--green-light);
 }

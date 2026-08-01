@@ -1,8 +1,14 @@
+import React from "react";
+import "./ModalDanger.css";
 
-import React from 'react';
-import './ModalDanger.css';
-
-export const ModalDanger = ({ isOpen, onClose, title, message, onConfirm, onCancel }) => {
+export const ModalDanger = ({
+  isOpen,
+  onClose,
+  title,
+  message,
+  onConfirm,
+  onCancel,
+}) => {
   if (!isOpen) return null;
 
   return (
@@ -12,12 +18,18 @@ export const ModalDanger = ({ isOpen, onClose, title, message, onConfirm, onCanc
         <p className="modal-message">{message}</p>
         <div className="modal-actions">
           {onCancel && (
-            <button className="modal-button modal-button-cancel" onClick={onCancel}>
+            <button
+              className="modal-button modal-button-cancel"
+              onClick={onCancel}
+            >
               Cancelar
             </button>
           )}
           {onConfirm && (
-            <button className="modal-button modal-button-confirm" onClick={onConfirm}>
+            <button
+              className="modal-button modal-button-confirm"
+              onClick={onConfirm}
+            >
               Confirmar
             </button>
           )}

@@ -1,8 +1,7 @@
 export const SideBarChats = () => {
-    return (
-        <>
-
-            <h1>SideBarChats</h1>
-        </>
-    )
-}
+  return (
+    <>
+      <h1>SideBarChats</h1>
+    </>
+  );
+};

@@ -1,15 +1,15 @@
-import { SideBarChannels } from "../../Components/SideBars/SideBarChannels/SideBarChannels"
-import { SectionChannels } from "../../Components/Sections/SectionChannels/SectionChannels"
+import { SideBarChannels } from "../../Components/SideBars/SideBarChannels/SideBarChannels";
+import { SectionChannels } from "../../Components/Sections/SectionChannels/SectionChannels";
 
 export const ChannelsScreen = () => {
-    return (
-        <>
-            <section className="mainView paddingView">
-                <SectionChannels />
-            </section>
-            <aside className="asideView backgroundSiderBar">
-                <SideBarChannels />
-            </aside>
-        </>
-    )
-}
+  return (
+    <>
+      <section className="mainView paddingView">
+        <SectionChannels />
+      </section>
+      <aside className="asideView backgroundSiderBar">
+        <SideBarChannels />
+      </aside>
+    </>
+  );
+};

@@ -1,39 +1,39 @@
 .new-contact {
-    background-color: var(--layout-color);
+  background-color: var(--layout-color);
 }
 
 .contact-form-header a {
-    width: 4rem;
-    height: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .contact-form-header a:hover {
-    border-radius: 50%;
-    background-color: var(--hover-light);
+  border-radius: 50%;
+  background-color: var(--hover-light);
 }
 
 .contact-form-container {
-    height: calc(100dvh - 6.7rem);
-    margin: 0 auto;
-    max-width: 90%;
+  height: calc(100dvh - 6.7rem);
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 @media (min-width: 996px) {
-    .contact-form-container {
-        max-width: 100%;
-    }
+  .contact-form-container {
+    max-width: 100%;
+  }
 }
 
 .contact-form-header {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-form-header h2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact-form-content {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }

@@ -1,11 +1,10 @@
-
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useModal = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState({
-    title: '',
-    message: '',
+    title: "",
+    message: "",
     onConfirm: null,
     onCancel: null,
   });
@@ -18,8 +17,8 @@ export const useModal = () => {
   const closeModal = () => {
     setIsOpen(false);
     setModalContent({
-      title: '',
-      message: '',
+      title: "",
+      message: "",
       onConfirm: null,
       onCancel: null,
     });

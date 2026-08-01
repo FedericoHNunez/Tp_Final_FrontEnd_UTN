@@ -1,60 +1,56 @@
 .sidebarCalls-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 5rem;
-    justify-content: center;
-    align-items: start;
-    max-width: 32rem;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 5rem;
+  justify-content: center;
+  align-items: start;
+  max-width: 32rem;
+  margin: 0 auto;
 }
 
-.sidebarCalls-content> :nth-child(3) {
-    grid-column: 1 / -1;
-    justify-self: center;
+.sidebarCalls-content > :nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 .sidebarCalls-content a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
 
 .sidebarCalls-content a span {
-    width: 10.8rem;
-    height: 10.8rem;
-    background-color: var(--grey-dark);
-    border-radius: 2.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+  width: 10.8rem;
+  height: 10.8rem;
+  background-color: var(--grey-dark);
+  border-radius: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebarCalls-content a span svg {
-    width: 3.2rem;
-    height: 3.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .sidebarCalls-content a p {
-    margin: 1.2rem 0 0 0;
-    font-size: 1.4rem;
-    text-align: center;
-    line-height: 1.4;
-    max-width: 14rem;
+  margin: 1.2rem 0 0 0;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 14rem;
 }
 
 .backgroundSiderBar-call {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100%;
 }
 
 .sidebarCalls-content a:hover span {
-    background-color: var(--grey-light);
+  background-color: var(--grey-light);
 }

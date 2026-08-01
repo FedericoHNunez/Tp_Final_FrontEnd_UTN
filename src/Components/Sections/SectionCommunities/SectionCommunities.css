@@ -1,35 +1,34 @@
 .communities-section {
-    height: calc(100dvh - 6.7rem);
+  height: calc(100dvh - 6.7rem);
 }
 
 .communities-section div {
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
 }
 
 .communities-back-link {
-    padding: 0.5rem;
-
+  padding: 0.5rem;
 }
 
 .communities-back-link:hover {
-    background-color: var(--hover-light);
-    border-radius: 50%;
+  background-color: var(--hover-light);
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 600px) {
-    .communities-back-link {
-        display: none;
-    }
+  .communities-back-link {
+    display: none;
+  }
 }
 
 .communities-header-content {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
