@@ -10,7 +10,7 @@ export const ChatBox = ({
   imgLink,
   infoLink,
   unreadCount,
-  onClick
+  onClick,
 }) => {
   const location = useLocation();
   const navigate = useNavigate();

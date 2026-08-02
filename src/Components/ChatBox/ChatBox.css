@@ -1,10 +1,13 @@
 .chatbox-container {
   display: flex;
   align-items: center;
-
   padding: 1rem 1rem;
   gap: 1.5rem;
+
   margin: 0.5rem 1rem;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 .chatbox-container.interactive {
@@ -14,27 +17,33 @@
 .chatbox-container.interactive:hover,
 .chatbox-container.active {
   background-color: var(--hover-bg-light);
-  border-radius: 2rem;
+}
+
+.chatbox-container.unread::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.4rem;
+  background-color: var(--green);
 }
 
 .chatbox-container.unread {
-  border-left: 0.4rem solid var(--green);
-  border-radius: 2rem;
-  background: linear-gradient(90deg,
-      color-mix(in srgb, var(--green) 11%, transparent) 0%,
-      color-mix(in srgb, var(--green-light-1) 35%, transparent) 60%,
-      transparent 100%);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--green) 11%, transparent) 0%,
+    color-mix(in srgb, var(--green-light-1) 35%, transparent) 60%,
+    transparent 100%
+  );
   box-shadow: inset 1px 0 6px color-mix(in srgb, var(--green) 2%, transparent);
 }
-
 
 .chatbox-container.unread .chatbox-time {
   color: var(--green);
   font-weight: 600;
   opacity: 1;
 }
-
-
 
 .chatbox-avatar {
   width: 4.9rem;

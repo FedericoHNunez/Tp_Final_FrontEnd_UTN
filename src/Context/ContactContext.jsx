@@ -171,7 +171,7 @@ function ContactContextProvider() {
   };
   return (
     <ContactContext.Provider value={provider_values}>
-      { }
+      {}
       <Outlet />
     </ContactContext.Provider>
   );

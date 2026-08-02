@@ -84,8 +84,8 @@ export const SectionChatsPreview = () => {
             time={
               contact.messages.length > 0
                 ? formatTime(
-                  contact.messages[contact.messages.length - 1].timestamp
-                )
+                    contact.messages[contact.messages.length - 1].timestamp
+                  )
                 : undefined
             }
             imgLink={`/state/${contact.id}`}
