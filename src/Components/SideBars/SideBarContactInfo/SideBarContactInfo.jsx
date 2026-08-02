@@ -70,7 +70,7 @@ export const SideBarContactInfo = () => {
                 />
               ) : (
                 <img
-                  src="./img/avatarDefault.png"
+                  src="/img/avatarDefault.webp"
                   alt={contact_selected.name}
                 />
               )}

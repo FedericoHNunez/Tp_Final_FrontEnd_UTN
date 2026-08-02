@@ -32,7 +32,7 @@ export const ModalNewMessage = ({ onClose }) => {
             onClick={onClose}
             className="ModalNewMessage-contact-item"
           >
-            <span className="center">
+            <span className="center new-contact-svg">
               <svg
                 viewBox="0 0 24 24"
                 height="24"

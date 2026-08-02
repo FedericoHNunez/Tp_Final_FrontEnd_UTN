@@ -51,6 +51,10 @@
   border-radius: 50%;
 }
 
+.new-contact-svg svg {
+  color: var(--white);
+}
+
 .ModalNewMessage-contact-item {
   display: flex;
   align-items: center;

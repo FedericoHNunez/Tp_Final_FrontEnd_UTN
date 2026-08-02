@@ -263,7 +263,7 @@ export const MainNavigation = () => {
             <li className="center">
               <Link to="/profile" className="nav-liButton center">
                 <img
-                  src={`./img/avatarDefault.webp`}
+                  src="/img/avatarDefault.webp"
                   alt="Mi perfil"
                   className="img-profile-link"
                 />
