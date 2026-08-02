@@ -3,13 +3,30 @@ import { useNavigate } from "react-router";
 import { ContactContext } from "../Context/ContactContext";
 import { useModal } from "./useModals";
 
+/**
+ * Hook Personalizado: useContactModalActions
+ * Centraliza la lógica y las acciones de confirmación (mediante ventanas modales)
+ * para vaciar chats, eliminar chats o eliminar contactos de la aplicación.
+ * 
+ * Retorna:
+ * - contact_selected: El objeto del contacto seleccionado actualmente.
+ * - isOpen: Determina si el modal está abierto.
+ * - modalContent: Textos y callbacks del modal activo.
+ * - closeModal: Función para cerrar y limpiar el modal.
+ * - handleVaciarChat: Abre el modal para confirmar el vaciado de los mensajes del chat activo.
+ * - handleEliminarChat: Abre el modal para confirmar la eliminación completa del chat activo.
+ * - handleEliminarContacto: Abre el modal para confirmar la eliminación permanente del contacto.
+ */
 export const useContactModalActions = () => {
+  // Accede a las funciones del contexto global de contactos
   const { contact_selected, deleteAllMessages, deleteChat, deleteContactById } =
     useContext(ContactContext);
 
+  // Inicializa el hook base de modales
   const { isOpen, modalContent, openModal, closeModal } = useModal();
   const navigate = useNavigate();
 
+  // Configura y abre el modal para vaciar los mensajes del chat actual
   const handleVaciarChat = () => {
     openModal({
       title: "Vaciar chat",
@@ -22,6 +39,7 @@ export const useContactModalActions = () => {
     });
   };
 
+  // Configura y abre el modal para eliminar la conversación y redirigir a la lista de chats
   const handleEliminarChat = () => {
     openModal({
       title: "Eliminar chat",
@@ -35,6 +53,7 @@ export const useContactModalActions = () => {
     });
   };
 
+  // Configura y abre el modal para borrar al contacto de forma permanente del listado y redirigir a chats
   const handleEliminarContacto = () => {
     openModal({
       title: "Eliminar contacto",

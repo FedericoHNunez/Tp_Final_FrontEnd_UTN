@@ -7,10 +7,9 @@ export const ModalMoreOption = ({ isOpen, onClose, arrayOptions }) => {
 
   return (
     <>
-      {/* Backdrop click handler to close the dropdown */}
+
       <div className="ModalMoreOption-backdrop" onClick={onClose}></div>
 
-      {/* Dropdown Container */}
       <div className="ModalMoreOption-container">
         <ul className="ModalMoreOption-list">
           {arrayOptions?.map((opcion, index) => {

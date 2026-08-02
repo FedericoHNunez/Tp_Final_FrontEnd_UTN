@@ -21,7 +21,7 @@
   --color-red-dark: #ff000078;
 
   /* =========================================
-       2. VARIABLES SEMÁNTICAS (THEMEABLE)
+       2. VARIABLES SEMÁNTICAS 
        ========================================= */
   --primary-color: var(--color-green);
   --primary-light: var(--color-green-light);
@@ -43,7 +43,7 @@
   --danger-dark: var(--color-red-dark);
 
   /* =========================================
-       3. SYSTEM ALIASES & DEFAULTS
+       3. DEFAULTS
        ========================================= */
   --layout-bg: var(--bg-primary);
   --nav-bg: var(--bg-secondary);
@@ -64,7 +64,7 @@
 }
 
 /* =========================================
-     2.1 PALETAS ALTERNATIVAS (OVERWRITES)
+     2.1 PALETAS ALTERNATIVAS 
      ========================================= */
 body[data-theme="violet"] {
   --primary-color: #7c3aed;
@@ -267,7 +267,7 @@ p {
   overflow: hidden;
 }
 
-/* Estilos móviles por defecto (pantallas < 600px) */
+/* Estilos móviles (pantallas < 600px) */
 .layout-header.hide-nav-mobile {
   display: none;
 }

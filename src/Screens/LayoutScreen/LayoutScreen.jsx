@@ -8,7 +8,7 @@ export function LayoutScreen() {
   const location = useLocation();
   const { contacts } = useContext(ContactContext);
 
-  // Validate contact_id if present
+
   if (contact_id) {
     const isValidContact = contacts.some((c) => c.id === Number(contact_id));
     if (!isValidContact) {
