@@ -43,6 +43,26 @@ La aplicación simula el comportamiento de una plataforma de mensajería interac
 
 ---
 
+## 📱 Diseño y Layout Responsivo
+
+La aplicación cuenta con una estructura de layout adaptativa de tres niveles de resolución basada en **CSS Grid** y **Media Queries**, garantizando una experiencia fluida tanto en dispositivos móviles como en pantallas de escritorio:
+
+1. **Dispositivos Móviles (menor a 600px)**:
+   * **Navegación Móvil de una sola columna**: Para optimizar el espacio en pantallas pequeñas, cuando no hay un chat activo se muestra la lista de chats y la barra de navegación principal.
+   * **Vista de Chat Activo dedicada**: Al seleccionar un chat o acceder a la creación/edición de un contacto, la barra de navegación lateral (`layout-header`) y la lista de previsualizaciones (`sectionView`) se ocultan automáticamente (`display: none`), permitiendo que el panel del chat activo (`asideView`) ocupe el **100% de la pantalla** para una lectura y escritura cómodas.
+   * **Transiciones limpias**: Se controla dinámicamente mediante las clases condicionadas `.has-active-contact` y `.hide-nav-mobile` inyectadas en base al estado de la ruta actual (`contact_id`).
+
+2. **Tabletas (de 600px a 799px)**:
+   * **Layout de Dos Columnas**: La pantalla se divide mediante una rejilla principal (`layout`), posicionando la barra de navegación lateral (`MainNavigation`) con un ancho fijo de `6rem` a la izquierda, y el contenido principal (ya sea la lista de chats o el chat activo si está seleccionado) en la columna derecha.
+
+3. **Escritorio (mayor o igual a 800px)**:
+   * **Layout Multipanel Completo (Tres Columnas)**: Se activa una distribución completa de escritorio que muestra de manera concurrente:
+     * La barra de navegación lateral (`MainNavigation`) a la izquierda (`6rem`).
+     * La lista de conversaciones y búsquedas (`sectionView`) en una columna intermedia con ancho dinámico autolimitado (`clamp(34rem, 30vw, 57rem)`).
+     * El panel del chat activo o el panel lateral de detalles/edición de contacto (`asideView`) en la parte derecha ocupando el resto del espacio disponible.
+
+---
+
 ## 🛠️ Tecnologías y Librerías Utilizadas
 
 *   **React 19**: Desarrollo basado en componentes funcionales, Hooks (`useState`, `useEffect`, `useContext`, `useRef`) y Context API.
@@ -104,6 +124,17 @@ Para compilar y optimizar la aplicación para su despliegue final:
 ```bash
 npm run build
 ```
+
+---
+
+## 🧠 Desafíos Afrontados
+
+*   **Creación del Layout y Adaptabilidad**:
+    *   Al ser el primer proyecto desarrollado utilizando React, estructurar la navegación mediante layouts anidados (`Outlet`) y conectar los estados globales con las diferentes vistas representó un reto inicial duro pero gratificante.
+    *   La implementación de un diseño a pantalla completa utilizando unidades de altura dinámica de viewport (`100dvh`) requirió un cuidadoso control de los desbordamientos (`overflow: hidden` / `overflow-y: scroll`) para evitar el comportamiento extraños o desplazamiento indeseado en navegadores móviles, asegurando que los paneles lateral y de chat se comportaran correctamente a través de CSS Grid. (Este punto fue el más difícil de resolver) 
+*   **Componentización y Reutilización**:
+    *   Si bien se utilizaron componentes lógicos en el desarrollo de la aplicación (como modales y formularios interactivos) es un aspecto en el cual se planea continuar trabajando para lograr una mejor reutilización y escalabilidad en el futuro.
+    
 
 ---
 
