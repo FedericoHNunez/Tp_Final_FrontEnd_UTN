@@ -84,12 +84,12 @@ export const HeaderChatsPreview = ({ onNewChatClick }) => {
               onClose={() => setIsMenuOpen(false)}
               arrayOptions={[
                 {
-                  text: "Perfil",
-                  route: "/profile",
-                },
-                {
                   text: "Comunidades",
                   route: "/communities",
+                },
+                {
+                  text: "Perfil",
+                  route: "/profile",
                 },
               ]}
             />

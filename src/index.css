@@ -2,62 +2,80 @@
 
 :root {
   /* =========================================
-       1. PALETA DE CORES BASE
+       1. PALETA DE COLORES BASE
        ========================================= */
-  /* Verdes */
-  --green: #1dab62;
-  --green-light: #1dab62b7;
-  --green-light-1: #d9fdd3;
+  --color-green: #1dab62;
+  --color-green-light: #1dab62b7;
+  --color-green-light-1: #d9fdd3;
 
-  /* Grises */
-  --grey: #f7f5f2;
-  --grey-light: #eaeaea;
-  --grey-dark: #dedcdade;
+  --color-grey: #f7f5f2;
+  --color-grey-light: #eaeaea;
+  --color-grey-dark: #dedcdade;
 
-  /* Neutros */
-  --white: #ffffff;
-  --black-dark: #0a0a0ac9;
-  --black-light: #000000af;
+  --color-white: #ffffff;
+  --color-black-dark: #0a0a0ac9;
+  --color-black-light: #000000af;
 
-  /* Rojos */
-  --red: #ff0000;
-  --red-light: #ffe6e6;
-  --red-dark: #ff000078;
-  /* Convertido de rgba a hex con alpha para consistencia */
+  --color-red: #ff0000;
+  --color-red-light: #ffe6e6;
+  --color-red-dark: #ff000078;
 
   /* =========================================
-       2. LAYOUT Y UI (SEMÁNTICOS)
+       2. VARIABLES SEMÁNTICAS (THEMEABLE)
        ========================================= */
-  --layout-bg: var(--white);
-  --nav-bg: var(--grey);
-  --border-color: var(--grey-dark);
+  --primary-color: var(--color-green);
+  --primary-light: var(--color-green-light);
+  --primary-bubble-bg: var(--color-green-light-1);
+
+  --bg-primary: var(--color-white);
+  --bg-secondary: var(--color-grey);
+  --bg-hover: var(--color-grey-light);
+  --bg-hover-dark: var(--color-grey-dark);
+
+  --border-color: var(--color-grey-dark);
+
+  --text-primary: var(--color-black-dark);
+  --text-secondary: var(--color-black-light);
+  --text-on-primary: var(--color-white);
+
+  --danger-color: var(--color-red);
+  --danger-bg-light: var(--color-red-light);
+  --danger-dark: var(--color-red-dark);
 
   /* =========================================
-       3. TIPOGRAFÍA
+       3. SYSTEM ALIASES & DEFAULTS
        ========================================= */
+  --layout-bg: var(--bg-primary);
+  --nav-bg: var(--bg-secondary);
   --font-family: "Roboto", sans-serif;
-  --text-color: var(--black-light);
+  --text-color: var(--text-secondary);
 
-  /* =========================================
-       4. COMPONENTES
-       ========================================= */
-  /* Chat Bubbles */
-  --bubble-contact-bg: var(--white);
-  --bubble-me-bg: var(--green-light-1);
+  --bubble-contact-bg: var(--bg-primary);
+  --bubble-me-bg: var(--primary-bubble-bg);
 
-  /* Inputs & Estados Interactivos */
-  --input-bg: var(--grey);
-  --input-focus-color: var(--green);
+  --input-bg: var(--bg-secondary);
+  --input-focus-color: var(--primary-color);
 
-  /* Hover States */
-  --hover-bg-light: var(--grey-light);
-  --hover-bg-dark: var(--grey-dark);
-  --hover-bg-danger: var(--red-light);
+  --hover-bg-light: var(--bg-hover);
+  --hover-bg-dark: var(--bg-hover-dark);
+  --hover-bg-danger: var(--danger-bg-light);
 
-  /* =========================================
-       5. MARCA (BRAND)
-       ========================================= */
-  --whatsapp-logo-color: var(--green);
+  --whatsapp-logo-color: var(--primary-color);
+}
+
+/* =========================================
+     2.1 PALETAS ALTERNATIVAS (OVERWRITES)
+     ========================================= */
+body[data-theme="violet"] {
+  --primary-color: #7c3aed;
+  --primary-light: #a78bfa;
+  --primary-bubble-bg: #ede9fe;
+}
+
+body[data-theme="blue"] {
+  --primary-color: #0284c7;
+  --primary-light: #38bdf8;
+  --primary-bubble-bg: #e0f2fe;
 }
 
 /* CSS RESET */
@@ -110,7 +128,7 @@ button {
 button {
   font-family: var(--font-family);
   font-size: 1.4rem;
-  color: var(--black-light);
+  color: var(--text-secondary);
   font-weight: 400;
 }
 
@@ -120,12 +138,12 @@ svg {
 
 svg.danger,
 .danger svg {
-  color: var(--red);
+  color: var(--danger-color);
 }
 
 /* WhatsApp Logo */
 .ChatsPreview-header-logo-icon svg {
-  color: var(--whatsapp-logo-color);
+  color: var(--primary-color);
 }
 
 /* Mensajes leidos */
@@ -135,7 +153,7 @@ svg.danger,
 
 /* Botón de enviar mensaje */
 .micro button svg {
-  color: var(--green);
+  color: var(--primary-color);
 }
 
 img {
@@ -146,20 +164,20 @@ img {
 
 h1 {
   font-size: 2rem;
-  color: var(--black-dark);
+  color: var(--text-primary);
   font-weight: 700;
 }
 
 h2 {
   font-size: 1.8rem;
-  color: var(--black-dark);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
 h3 {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--black-dark);
+  color: var(--text-primary);
 }
 
 p {
@@ -169,7 +187,7 @@ p {
 }
 
 .section-header {
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   height: 6.7rem;
   display: flex;
   justify-content: space-between;
@@ -210,7 +228,7 @@ p {
 }
 
 .danger {
-  color: var(--red);
+  color: var(--danger-color);
 }
 
 .center {
@@ -227,7 +245,7 @@ p {
 
 .layout-header {
   grid-area: header;
-  background-color: var(--white);
+  background-color: var(--bg-primary);
 }
 
 .asideView {
@@ -235,12 +253,12 @@ p {
   overflow: hidden;
   height: 100dvh;
   border-left: 0.1rem solid var(--border-color);
-  background-color: var(--grey);
+  background-color: var(--bg-secondary);
 }
 
 .sectionView {
   height: calc(100dvh - 8rem);
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   overflow-y: scroll;
   position: relative;
 }

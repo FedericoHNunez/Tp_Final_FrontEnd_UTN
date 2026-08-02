@@ -4,7 +4,7 @@
   align-items: center;
   padding: 3rem 2rem;
   gap: 2.5rem;
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   height: calc(100dvh - 6.7rem);
 }
 
@@ -22,8 +22,8 @@
 }
 
 .profile-logout-btn {
-  background-color: var(--red);
-  color: var(--white);
+  background-color: var(--danger-color);
+  color: var(--text-on-primary);
   padding: 1rem 2.4rem;
   border-radius: 2rem;
   font-size: 1.4rem;
@@ -32,7 +32,7 @@
 }
 
 .profile-logout-btn:hover {
-  background-color: var(--red-dark);
+  background-color: var(--danger-dark);
 }
 
 .profile-back-link {
@@ -54,4 +54,71 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+
+/* Selector de Temas */
+.theme-selector-container {
+  width: 100%;
+  max-width: 32rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.theme-selector-container h3 {
+
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.theme-option-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.2rem 0.8rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.8rem;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-option-btn:hover {
+  background-color: var(--bg-hover);
+}
+
+.theme-option-btn.active {
+  background-color: var(--bg-primary);
+  border-color: var(--primary-color);
+}
+
+.theme-color-preview {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.theme-name {
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+
+  text-align: center;
+}
+
+.theme-option-btn.active .theme-name {
+  color: var(--primary-color);
+
 }

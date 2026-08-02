@@ -27,11 +27,11 @@
 }
 
 .contact-form input.has-content {
-  border-bottom: 1px solid var(--green);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .contact-form span.has-content {
-  color: var(--green);
+  color: var(--primary-color);
 }
 
 @media screen and (min-width: 800px) {
@@ -64,28 +64,28 @@
 }
 
 .contact-form .save-btn {
-  color: var(--white);
-  background-color: var(--green);
+  color: var(--text-on-primary);
+  background-color: var(--primary-color);
 }
 
 .contact-form .save-btn:hover {
-  background-color: var(--green-light);
+  background-color: var(--primary-light);
 }
 
 .contact-form .cancel-btn {
-  color: var(--white);
+  color: var(--text-on-primary);
   font-weight: 600;
-  background-color: var(--red);
-  border: 1px solid var(--red);
+  background-color: var(--danger-color);
+  border: 1px solid var(--danger-color);
 }
 
 .contact-form .cancel-btn:hover {
-  background-color: var(--red-dark);
+  background-color: var(--danger-dark);
 }
 
 .contact-form .disabled-btn {
-  background-color: var(--grey-dark);
-  color: var(--black-light);
+  background-color: var(--bg-hover-dark);
+  color: var(--text-secondary);
 }
 
 .contact-form .disabled-btn:hover {

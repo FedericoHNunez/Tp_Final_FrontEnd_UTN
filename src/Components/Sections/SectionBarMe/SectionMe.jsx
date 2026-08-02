@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { meData } from "../../../Data/meData";
 import { Link } from "react-router";
+import { ThemeContext } from "../../../Context/ThemeContext";
 import "./SectionMe.css";
 
 export const SectionMe = () => {
+  const { themes, theme: activeThemeId, changeTheme } = useContext(ThemeContext);
+
+
+
   return (
     <>
       <div className="section-header">
@@ -29,6 +34,27 @@ export const SectionMe = () => {
           <h2>{meData.alias}</h2>
           <h3>{meData.cell}</h3>
         </div>
+
+        <div className="theme-selector-container">
+          <h3>Temas</h3>
+          <div className="theme-options">
+            {themes.map((theme) => (
+              <button
+                key={theme.id}
+                className={`theme-option-btn ${theme.id === activeThemeId ? "active" : ""}`}
+                onClick={() => changeTheme(theme.id)}
+                title={`Cambiar a tema ${theme.name}`}
+              >
+                <span
+                  className="theme-color-preview"
+                  style={{ backgroundColor: theme.previewColor }}
+                />
+                <span className="theme-name">{theme.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
         <button title="Cerrar Sesión" className="profile-logout-btn">
           Cerrar Sesión
         </button>

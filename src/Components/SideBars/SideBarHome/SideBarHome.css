@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--grey);
+  background-color: var(--bg-secondary);
 }
 
 .sideBarHome-container {
@@ -12,7 +12,7 @@
   height: 36.4rem;
   padding: 2.4rem;
   margin: 1.6rem;
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   border-radius: 2.4rem;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
 .sideBarHome-options-list-span {
   width: 5rem;
   height: 5rem;
-  background-color: var(--grey);
+  background-color: var(--bg-secondary);
   border-radius: 50%;
 }
 
@@ -61,8 +61,8 @@
 }
 
 .btn-download {
-  background-color: var(--green);
-  color: var(--white);
+  background-color: var(--primary-color);
+  color: var(--text-on-primary);
   width: 12rem;
   height: 3rem;
   border-radius: 2rem;
@@ -70,5 +70,5 @@
 }
 
 .btn-download:hover {
-  background-color: var(--green-light);
+  background-color: var(--primary-light);
 }

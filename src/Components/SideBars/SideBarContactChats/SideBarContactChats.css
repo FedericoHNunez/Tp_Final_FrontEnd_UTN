@@ -110,7 +110,7 @@
   bottom: 0.4rem;
   right: 0.8rem;
   font-size: 1.1rem;
-  color: var(--black-light);
+  color: var(--text-secondary);
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -129,7 +129,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--red-dark);
+  color: var(--danger-dark);
   opacity: 0;
   padding: 0.4rem;
   border-radius: 50%;
@@ -142,8 +142,8 @@
 }
 
 .message-delete-btn:hover {
-  background-color: var(--red-dark);
-  color: var(--red-light);
+  background-color: var(--danger-dark);
+  color: var(--danger-bg-light);
 }
 
 .message-me-text:hover .message-delete-btn,
@@ -175,7 +175,7 @@
   align-items: center;
   width: 100%;
   gap: 0.4rem;
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   border-radius: 2.4rem;
   padding: 0.3rem 0.8rem;
 }

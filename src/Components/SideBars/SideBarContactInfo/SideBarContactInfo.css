@@ -15,7 +15,7 @@
 
 /* Foto y datos de contacto */
 .sideBarContactInfo-container {
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   height: calc(100dvh - 6.4rem);
   overflow-y: auto;
 }
@@ -83,7 +83,7 @@
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-color: var(--grey-dark);
+  background-color: var(--bg-hover-dark);
   transition: background-color 0.2s ease;
 }
 
