@@ -8,7 +8,7 @@ import { ModalNewMessage } from "../../ModalNewMessage/ModalNewMessage";
 import { ChatBox } from "../../ChatBox/ChatBox";
 
 export const SectionChatsPreview = () => {
-  const { contacts } = useContext(ContactContext);
+  const { contacts, updateContactUnreadCount } = useContext(ContactContext);
   const [searchChatsValue, setSearchChatsValue] = useState("");
   const [isNewChatOpen, setIsNewChatOpen] = useState(false);
 
@@ -75,6 +75,7 @@ export const SectionChatsPreview = () => {
             imgSrc={contact.picture.thumbnail}
             imgAlt={`Imagen de perfil de ${contact.alias}`}
             title={contact.alias}
+            unreadCount={contact.unreadCount}
             previewText={
               contact.messages.length > 0
                 ? contact.messages[contact.messages.length - 1].text
@@ -83,12 +84,13 @@ export const SectionChatsPreview = () => {
             time={
               contact.messages.length > 0
                 ? formatTime(
-                    contact.messages[contact.messages.length - 1].timestamp
-                  )
+                  contact.messages[contact.messages.length - 1].timestamp
+                )
                 : undefined
             }
             imgLink={`/state/${contact.id}`}
             infoLink={`/chats/${contact.id}`}
+            onClick={() => updateContactUnreadCount(contact.id)}
           />
         ))}
     </>

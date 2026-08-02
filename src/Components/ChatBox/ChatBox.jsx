@@ -9,12 +9,17 @@ export const ChatBox = ({
   time,
   imgLink,
   infoLink,
+  unreadCount,
+  onClick
 }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const isSelected = infoLink && location.pathname === infoLink;
 
   const handleContainerClick = () => {
+    if (onClick) {
+      onClick();
+    }
     if (infoLink) {
       navigate(infoLink);
     }
@@ -23,13 +28,16 @@ export const ChatBox = ({
   const handleKeyDown = (e) => {
     if (infoLink && (e.key === "Enter" || e.key === " ")) {
       e.preventDefault();
+      if (onClick) {
+        onClick();
+      }
       navigate(infoLink);
     }
   };
 
   return (
     <article
-      className={`chatbox-container ${isSelected ? "active" : ""} ${infoLink ? "interactive" : ""}`}
+      className={`chatbox-container ${isSelected ? "active" : ""} ${infoLink ? "interactive" : ""} ${unreadCount > 0 ? "unread" : ""}`}
       onClick={handleContainerClick}
       onKeyDown={handleKeyDown}
       role={infoLink ? "link" : undefined}

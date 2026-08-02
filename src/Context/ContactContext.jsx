@@ -143,6 +143,19 @@ function ContactContextProvider() {
     setContacts(contacts_modified);
   };
 
+  const updateContactUnreadCount = (contactId) => {
+    const contacts_modified = contacts.map((contact) => {
+      if (contact.id === Number(contactId)) {
+        return {
+          ...contact,
+          unreadCount: 0,
+        };
+      }
+      return contact;
+    });
+    setContacts(contacts_modified);
+  };
+
   const provider_values = {
     contacts,
     contact_selected,
@@ -154,10 +167,11 @@ function ContactContextProvider() {
     startChat,
     createContact,
     updateContactById,
+    updateContactUnreadCount,
   };
   return (
     <ContactContext.Provider value={provider_values}>
-      {}
+      { }
       <Outlet />
     </ContactContext.Provider>
   );
